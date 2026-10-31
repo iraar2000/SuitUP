@@ -1,0 +1,62 @@
+{
+    "armLength" : {
+        "image": "/msrntImages/sleeve_length.png",
+        "inputTextTitles": ["armLength"]
+    },
+    "jacketLength": {
+        "image": "/msrntImages/jacket_length.png",
+        "inputTextTitles": ["jacketLength"]
+    },
+    "trouserLength": {
+        "image":"/msrntImages/trouser_length.png",
+        "inputTextTitles": ["trouserLength"]
+    },
+    "trouserRise": {
+        "image": "/msrntImages/trouser_rise.png",
+        "inputTextTitles": ["fullTrouserRise", "frontTrouserRise", "backTrouserRise"]
+    },
+    "shoulderWidth": {
+        "image":"/msrntImages/shoulder_width.png",
+        "inputTextTitles": ["shoulderWidth"]
+    },
+    "jacketWaist": {
+        "image": "/msrntImages/jacket_waist.png",
+        "inputTextTitles": ["jacketWaist"]
+    },
+    "neckCircumference": {
+        "image" : "/msrntImages/neck_circumference.png",
+        "inputTextTitles": ["neckCircumference"]
+    },
+    "bellyCircumference": {
+        "image": "/msrntImages/belly_circumference.png",
+        "inputTextTitles": ["fullBellyCircumference", "frontBellyWidth", "backBellyWidth"]
+    },
+    "bicepsCircumference": {
+        "image":"/msrntImages/biceps_circumference.png",
+        "inputTextTitles":["bicepsCircumference"]
+    },
+    "chestCircumference": {
+        "image":"/msrntImages/chest_circumference.png",
+        "inputTextTitles": ["fullChestCircumference","frontChestWidth","backChestWidth"]
+    },
+    "hipCircumference": {
+        "image":"/msrntImages/hip_circumference.png",
+        "inputTextTitles": ["hipCircumference"]
+    },
+    "kneeCircumference": {
+        "image": "/msrntImages/knee_circumference.png",
+        "inputTextTitles": ["kneeCircumference"]
+    },
+    "thighCircumference": {
+        "image": "/msrntImages/thigh_circumference.png",
+        "inputTextTitles": ["thighCircumference"]
+    },
+    "waistCircumference": {
+        "image": "/msrntImages/waist_circumference.png",
+        "inputTextTitles": ["waistCircumference"]
+    },
+    "wristCircumference": {
+        "image": "/msrntImages/wrist_circumference.png",
+        "inputTextTitles": ["wristCircumference"]
+    }
+}
