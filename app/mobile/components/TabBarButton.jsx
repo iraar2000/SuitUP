@@ -1,25 +1,25 @@
 import { Pressable, Text, View, StyleSheet } from "react-native";
-import { icon } from "../Constants/icons";
-import { Colors } from "../Constants/Colors";
+import { icon } from "../constants/icons";
+import { Colors } from "../constants/Colors";
 
 
-export default function TabBarButton({onPress, onLongPress, label, routeName, isFocused}){
-    
-    return(
+export default function TabBarButton({ onPress, onLongPress, label, routeName, isFocused }) {
+
+    return (
         <Pressable onPress={onPress} onLongPress={onLongPress} style={style.tbBarButton}>
             {routeName == "cart" && (
                 <View style={style.badgeLabelContainer}>
                     <Text style={style.badgeLabelText}>3</Text>
                 </View>
             )}
-            {icon[routeName]({color: isFocused? Colors.Primary: Colors.Gray})}
-            <Text style={{color: isFocused? "#673ab7": "#222"}}>{label}</Text>
+            {icon[routeName]({ color: isFocused ? Colors.Primary : Colors.Gray })}
+            <Text style={{ color: isFocused ? "#673ab7" : "#222" }}>{label}</Text>
         </Pressable>
     )
 }
 
 const style = StyleSheet.create({
-    tbBarButton:{
+    tbBarButton: {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",

@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native"
-import {Colors} from "@/Constants/Colors"
+import { Colors } from "@/constants/Colors"
 
 export const authStyle = StyleSheet.create({
     /** index screesn view style field */
@@ -7,16 +7,16 @@ export const authStyle = StyleSheet.create({
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        fontFamily:"System"
+        fontFamily: "System"
     },
     Background: {
         flex: 1,
         position: "absolute",
-        top:0,
-        left:0,
-        right:0,
-        bottom:0,
-        justifyContent:"flex-end"
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        justifyContent: "flex-end"
     },
     Wrapper: {
         paddingBottom: 50,
@@ -26,19 +26,19 @@ export const authStyle = StyleSheet.create({
     Title: {
         fontSize: 24,
         color: Colors.Primary,
-        fontWeight:"700",
-        letterSpacing:2.4,
+        fontWeight: "700",
+        letterSpacing: 2.4,
         paddingBottom: 5
     },
     Description: {
-        fontSize:14,
+        fontSize: 14,
         color: Colors.Gray,
-        letterSpacing:1.2,
-        lineHeight:30,
-        marginBottom:20
+        letterSpacing: 1.2,
+        lineHeight: 30,
+        marginBottom: 20
     },
     socialLoginWrapper: {
-        alignSelf:"stretch"
+        alignSelf: "stretch"
     },
     Button: {
         flexDirection: "row",
@@ -47,7 +47,7 @@ export const authStyle = StyleSheet.create({
         borderWidth: StyleSheet.hairlineWidth,
         borderRadius: 25,
         alignItems: "center",
-        justifyContent:"center",
+        justifyContent: "center",
         gap: 5,
         marginBottom: 15
     },
@@ -56,15 +56,15 @@ export const authStyle = StyleSheet.create({
         fontWeight: "600",
         color: Colors.Black,
     },
-    loginTxt:{
-        marginTop:30,
-        marginBottom:30,
-        fontSize:14,
+    loginTxt: {
+        marginTop: 30,
+        marginBottom: 30,
+        fontSize: 14,
         color: Colors.Black,
-        lineHeight:24,
+        lineHeight: 24,
     },
     loginTxtSpan: {
-        marginTop:30,
+        marginTop: 30,
         marginBottom: 30,
         fontSize: 14,
         fontWeight: "600",
@@ -78,49 +78,49 @@ export const authStyle = StyleSheet.create({
     },
 
     /** sign in screen view style field */
-    loginWrapper:{
-        alignItems:"center",
+    loginWrapper: {
+        alignItems: "center",
         paddingHorizontal: 20,
-        alignSelf:'stretch'
+        alignSelf: 'stretch'
     },
     loginTitle: {
         fontSize: 24,
         color: Colors.Primary,
-        fontWeight:"700",
-        letterSpacing:2.4,
+        fontWeight: "700",
+        letterSpacing: 2.4,
         paddingBottom: 50
     },
     signinBtn: {
-        backgroundColor:Colors.Primary,
-        paddingVertical:14,
-        paddingHorizontal:18,
-        alignSelf:"stretch",
-        alignItems:"center",
+        backgroundColor: Colors.Primary,
+        paddingVertical: 14,
+        paddingHorizontal: 18,
+        alignSelf: "stretch",
+        alignItems: "center",
     },
     signinBtnTxt: {
         color: Colors.White,
         fontSize: 16,
         fontWeight: "600"
     },
-    Divider:{
+    Divider: {
         borderTopWidth: StyleSheet.hairlineWidth,
         borderColor: Colors.Gray,
         width: "50%",
-        marginBottom:30,
+        marginBottom: 30,
     },
     loginSinupTxt: {
         paddingBottom: 30,
         color: Colors.Black,
-        lineHeight:24,
+        lineHeight: 24,
         fontSize: 14,
     },
 
     /** sign up screen view style field */
-    signupWrapper:{
-        alignSelf:"stretch",
+    signupWrapper: {
+        alignSelf: "stretch",
         paddingHorizontal: 20,
         alignItems: "center",
-        justifyContent:"center"
+        justifyContent: "center"
     }
 
 })

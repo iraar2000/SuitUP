@@ -1,17 +1,17 @@
 import { Ionicons } from '@expo/vector-icons'
 import { View, Text, TouchableOpacity } from 'react-native'
-import { BlackTheme, Colors } from '@/Constants/Colors'
+import { BlackTheme, Colors } from '@/constants/Colors'
 import { router } from 'expo-router'
-import {icon} from "@/Constants/icons"
+import { icon } from "@/constants/icons"
 
 const AuthHeader = () => {
   return (
     <View>
-      <TouchableOpacity onPress={()=>{
+      <TouchableOpacity onPress={() => {
         router.dismissAll();
         router.replace("/");
       }}>
-        {icon["close"]({color:BlackTheme.Black})}
+        {icon["close"]({ color: BlackTheme.Black })}
         {/**<Ionicons name="close-sharp" size={22} color={Colors.Gray}/>*/}
       </TouchableOpacity>
     </View>
