@@ -14,10 +14,13 @@
   "author": "arsene",
   "license": "ISC",
   "dependencies": {
+    "argon2": "^0.45.1",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.3",
     "mysql2": "^3.24.6",
+    "nodemailer": "^10.3.1",
     "os": "^0.1.2",
     "path": "^0.12.7",
     "pg": "^8.23.1"

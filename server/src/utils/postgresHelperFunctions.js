@@ -6,7 +6,7 @@ export async function postgresQueryHelper(q, errorMessage, values = []) {
         const response = await Postgresql.query(q, values);
         if (response.command) return { status: 200, data: response.rows }
     } catch (error) {
-        if (error.code === '23505') return { status: 409, data: { message: 'Road node already exists.', details: error.detail } };
+        if (error.code === '23505') return { status: 409, data: { message: 'Data already exists.', details: error.detail } };
         return { status: 500, data: { error: errorMessage || "Internal server error", errorDetails: error } }
     }
 }
