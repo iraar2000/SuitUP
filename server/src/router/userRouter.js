@@ -1,9 +1,18 @@
 import express from 'express';
-import { createAccountController, verifyAccountController } from '../controller/userController.js';
+import { createAccountController, createRolesController, createUserRolesController, loginAccountController, verifyAccountController } from '../controller/userController.js';
 
 const UserRouter = express.Router();
 
-UserRouter.post('/createAccount', createAccountController);
-UserRouter.get('/verifyEmail', verifyAccountController);
+// authentication
+UserRouter.post('/auth/createAccount', createAccountController);
+UserRouter.post('/auth/loginAccount', loginAccountController);
+UserRouter.get('/auth/verifyEmail', verifyAccountController);
+
+
+// roles
+UserRouter.post('/role/create', createRolesController);
+
+// user 
+UserRouter.post('/assignRole', createUserRolesController);
 
 export default UserRouter;

@@ -1,4 +1,4 @@
-import { postgresQueryHelper } from "../utils/postgresHelperFunctions.js"
+import { postgresQueryHelper } from "../../utils/postgresHelperFunctions.js"
 
 export default class CredentialVerification {
     constructor() { }
