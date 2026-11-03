@@ -1,7 +1,7 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors';
-import AuthRouter from './src/router/authRouter.js';
+import cookieParser from 'cookie-parser'
 import UserRouter from './src/router/userRouter.js';
 import OrderRouter from './src/router/orderRouter.js';
 import PaymentRouter from './src/router/paymentRouter.js';
@@ -18,12 +18,12 @@ dotenv.config();
 const sPort = process.env.SERVER_PORT; // the server port
 
 // server middlewares
+appServer.use(cookieParser()); // the cookieparser 
 appServer.use(express.json()); // allow passing in the json data
 appServer.use(express.urlencoded({ extended: true }));
 appServer.use(cors()); // configuring the cross origin
 
 // main endpoints
-appServer.use('/api/auth', AuthRouter);
 appServer.use('/api/user', UserRouter);
 appServer.use('/api/order', OrderRouter);
 appServer.use('/api/payment', PaymentRouter);

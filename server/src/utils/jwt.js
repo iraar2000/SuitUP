@@ -25,3 +25,13 @@ export function createRefreshToken(payload) {
         }
     );
 }
+
+// verify the the refresh token
+export function verifyRefreshToken(token) {
+    return jwt.verify(token, process.env.REFRESH_TOKEN_SECRET);
+}
+
+// verify the the access token
+export function verifyAccessToken(token) {
+    return jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
+}

@@ -19,6 +19,24 @@ export default class UserRolesModel {
             FROM user_roles AS ur
             JOIN roles AS r ON r.id = ur.role_id
             WHERE ur.user_id = $1;`;
-        return await postgresQueryHelper(q, "Internal server error, failed to retrieve user roles by userId, userRolesModel.js file", [userId]);
+        const response = await postgresQueryHelper(q, "Internal server error, failed to retrieve user roles by userId, userRolesModel.js file", [userId]);
+        if (response.status !== 200) return response;
+        return { status: response.status, data: response.data[0] };
+    }
+
+    // the function which edits the user roles
+    async editUserRoles(userId, newRole) {
+        const q = `UPDATE user_roles SET role_id=$1 WHERE user_id=$2 RETURNING *;`;
+        const response = await postgresQueryHelper(q, "Internal server error, failed to edit the user roles, userRolesModel.js file", [newRole, userId]);
+        if (response.status !== 200) return response;
+        return { status: response.status, data: response.data[0] };
+    }
+
+    // the function which edits the user roles by roleId
+    async editUserRolesByRoleId(roleId, newRole) {
+        const q = `UPDATE user_roles SET role_id=$1 WHERE role_id=$2 RETURNING *;`;
+        const response = await postgresQueryHelper(q, "Internal server error, failed to edit the user roles by roleId, userRolesModel.js file", [newRole, roleId]);
+        if (response.status !== 200) return response;
+        return { status: response.status, data: response.data[0] };
     }
 }

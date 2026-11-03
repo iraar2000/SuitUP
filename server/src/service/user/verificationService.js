@@ -1,4 +1,5 @@
 import CredentialVerification from "../../model/user/credentialVerificationModel.js";
+import { sha256 } from "../../utils/hash.js";
 import { createOtp } from "../../utils/otp.js";
 import { createVerificationToken } from "../../utils/token.js";
 import { sendEmailVerificationService, sendPhoneVerificationService } from "../notificationService.js";
@@ -36,6 +37,7 @@ export async function verifyAccountService(token, type) {
         if (response.status !== 200) return response;
         else return { status: 200, data: { message: "Updated the credential verification!" } };
     } catch (error) {
-        return { status: 500, data: { error: "Internal server error, failed to verify the user account, userService.js file", errorDetails: error } };
+        console.log(error);
+        return { status: 500, data: { error: "Internal server error, failed to verify the user account, verificationService.js file", errorDetails: error } };
     }
 }
