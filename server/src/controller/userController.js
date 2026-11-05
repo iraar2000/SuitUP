@@ -1,5 +1,6 @@
 import { loginAccountService, logoutAccountService, refreshLoginService } from "../service/user/authService.js";
-import { createRolePermissionByNameService } from "../service/user/permissionService.js";
+import { changePasswordService, forgotPasswordService } from "../service/user/passwordService.js";
+import { createRolePermissionByNameService, retrievePermissionService } from "../service/user/permissionService.js";
 import { createRoleService, createUserRoleService, editUserRoleService, retrieveUserRoleService, retrieveRoleService, removeRoleService, editRoleService } from "../service/user/roleService.js";
 import { createAccountService } from "../service/user/userService.js";
 import { createCredentialVerificationService, verifyAccountService } from "../service/user/verificationService.js";
@@ -87,6 +88,38 @@ export async function verifyAccountController(req, res) {
         return res.status(response.status).json(response.data);
     } catch (error) {
         return res.status(500).json({ error: "Internal server error, failed to verify the account, userController.js file", errorDetails: error });
+    }
+}
+
+// the function which controlls the change of password
+export async function changePasswordController(req, res) {
+    try {
+        const { email, password, token } = req.body;
+        const response = await changePasswordService(email, password, token);
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to change the password, userController.js file", errorDetails: error });
+    }
+}
+
+// the function which controlls the forgot password
+export async function forgotPasswordController(req, res) {
+    try {
+        const ipAddress = process.env.IPADDRESS || req.ip; // Use the environment variable or fallback to req.ip
+        const response = await forgotPasswordService(ipAddress, req.body.email);
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        console.log(error);
+        return res.status(500).json({ error: "Internal server error, failed to process forgot password request, userController.js file", errorDetails: error });
+    }
+}
+
+// the function which controlls the reset of password
+export async function resetPasswordController(req, res) {
+    try {
+
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to reset the password, userController.js file", errorDetails: error });
     }
 }
 
@@ -182,6 +215,16 @@ export async function removePermissionsByNameController(req, res) {
         return res.status(response.status).json(response.data);
     } catch (error) {
         return res.status(500).json({ error: "Internal server error, failed to remove the userAccountPermissions from database, userController.js file", errorDetails: error });
+    }
+}
+
+// the function which helps to retrieve permissions
+export async function retrievePermissionsController(req, res) {
+    try {
+        const response = await retrievePermissionService();
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to retrieve the userAccountPermissions from database, userController.js file", errorDetails: error });
     }
 }
 

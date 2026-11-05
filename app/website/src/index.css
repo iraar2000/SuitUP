@@ -1,0 +1,87 @@
+@import "tailwindcss";
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: var(--chocolate-500);
+  
+  /* shadows */
+  --shadow-500: rgba(27, 20, 17,0.2) 0 0 28px -5px;
+  --shadow-400: rgba(27, 20, 17,0.2) 0 0 28px -4px;
+  --shadow-300: rgba(27, 20, 17,0.2) 0 0 28px -3px;
+  --shadow-200: rgba(27, 20, 17,0.2) 0 0 28px -2px;
+  --shadow-100: rgba(27, 20, 17,0.2) 0 0 28px -1px;
+
+  /* the gray theme */
+  --gray-100: #FFFFFF;
+  --gray-200: #B7B7B7;
+  --gray-300: #6F6F6F;
+  --gray-400: #1A1C1C;
+
+  /* the blue theme */
+  --blue-100: #EAF8FF;
+  --blue-200: #00AAFF;
+  --blue-300: #1E32C6;
+  --blue-400: #030B49;
+
+  /* the chocolate theme */
+  --chocolate-100: #EFE8DF;
+  --chocolate-200: #DDCAB1;
+  --chocolate-300: #C59E52;
+  --chocolate-400: #52341E;
+  --chocolate-500: #1B1411;
+
+  /* the borders */
+  --border-05: 0.5px solid var(--chocolate-400);
+  --border-1: 1px solid var(--chocolate-400);
+  --border-05-active: 0.5px solid var(--chocolate-500);
+  --border-1-active: 0.5px solid var(--chocolate-500);
+
+  /* text */
+  --text-inactive: var(--chocolate-400);
+  --text-active: var(--chocolate-500);
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* the main body */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  all: unset;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--chocolate-500);
+  overflow-x: clip;
+}
+
+#root {
+  min-height: 100vh;
+}

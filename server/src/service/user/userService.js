@@ -12,11 +12,8 @@ export async function createAccountService(userData) {
         const rUser = await userModel.createUser([userData.firstName, userData.lastName, userData.userName, userData.phone, userData.email, userData.address, userData.location[0], userData.location[1]]);
         if (rUser.status !== 200) return rUser;
 
-        // generate the hash of the password
-        const passHash = await hashPassword(userData.password);
-
         // create user credentials
-        const rUserCred = await userCredentialModel.createUserCredentials(rUser.data.id, passHash);
+        const rUserCred = await updateUserCredentialsService(rUser.data.id, userData.password)
         if (rUserCred.status !== 200) return rUserCred;
 
         return rUser;
@@ -36,6 +33,38 @@ export async function retrieveAccountService(accountData) {
         }
     } catch (error) {
         return { status: 500, data: { error: "Internal server error, failed to retrieve account from database, userService.js file", errorDetails: error } };
+    }
+}
+
+// the function is used to retrieve the account by email
+export async function retrieveAccountByEmailService(email) {
+    try {
+        return await userModel.retrieveUserByEmail(email);
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to retrieve account by email from database, userService.js file", errorDetails: error } };
+    }
+}
+
+// the function is used to update user credentials
+export async function updateUserCredentialsService(userId, keys, values) {
+    try {
+        // create user credentials
+        return await userCredentialModel.updateUserCredentials(userId, keys, values);
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to update user credentials, userService.js file", errorDetails: error } };
+    }
+}
+
+// the function is used to update user credentials
+export async function createUserCredentialsService(userId, password) {
+    try {
+        // generate the hash of the password
+        const passHash = await hashPassword(password);
+
+        // create user credentials
+        return await userCredentialModel.createUserCredentials(userId, passHash);
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to update user credentials, userService.js file", errorDetails: error } };
     }
 }
 

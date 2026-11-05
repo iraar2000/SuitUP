@@ -85,7 +85,7 @@ export async function retrieveAccountSessionByUserIdService(userId) {
 export async function retrieveUnrevokedAccountSessionByUserIdService(userId) {
     try {
         const session = await userSession.retrieveUnrevokedUserSessionByUserId(userId);
-        if (session.status !== 200) return session;
+        if (session.status !== 200 || !session.data) return session;
 
         // check if the session is revoked
         if (session.data.revoked_at) return { status: 400, data: { error: "Session is revoked!" } }

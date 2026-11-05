@@ -17,14 +17,16 @@ export async function loginAccountService(accountData) {
 
         // check if the account is already in session
         var session = await retrieveUnrevokedAccountSessionByUserIdService(account.data.id);
-        if (session.status === 200 && !session.data.revoked_at) return { status: 400, data: { error: "Account is already in session!" } }
+        if (session.status === 200 && session.data && !session.data.revoked_at) return { status: 400, data: { error: "Account is already in session!" } }
 
         // retrieve the account credentials
         const accountCredential = await userCredentialModel.retrieveUserCredentials(account.data.id);
         if (account.status !== 200) return accountCredential;
+        console.log(accountCredential.data.pass_hash, accountData.password);
 
         // verify the credential password
         const passVerify = await verifyPassword(accountCredential.data.pass_hash, accountData.password);
+        console.log(passVerify);
 
         // if the account is not verified then return the not auth error
         if (!passVerify) return { status: 401, data: { error: "Unauthorised, Invalid email or password!" } }

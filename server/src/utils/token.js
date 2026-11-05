@@ -1,8 +1,7 @@
-import { randomBytes } from "node:crypto";
-import { sha256 } from "./hash.js";
+import { generateRandomHash, sha256 } from "./hash.js";
 
 export function createVerificationToken(expiresIn = 24 * 60 * 60 * 1000) {
-    const token = randomBytes(32).toString("hex");
+    const token = generateRandomHash();
     return {
         token,
         tokenHash: sha256(token),

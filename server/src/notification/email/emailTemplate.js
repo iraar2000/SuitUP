@@ -17,4 +17,21 @@ export default class EmailTemplate {
                 `
         }
     }
+
+    // the function which allows the user to change the password
+    passwordChangeNotification({ firstName, resetUrl }) {
+        return {
+            subject: "You requested a password change!",
+            html: `
+                <h2>Hello ${firstName}</h2>
+                <p>You can follow the link and change your password.</p>
+                <a href="${resetUrl}">Change Password</a>
+                <p>Note: If you did not request a password change, please ignore this email.</p>
+                `,
+            text: `
+                Hello ${firstName}
+                You can follow the link and change your password: ${resetUrl}
+                `
+        }
+    }
 }

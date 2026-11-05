@@ -9,6 +9,7 @@ import ProductsRouter from './src/router/productsRouter.js';
 import DeliveryRouter from './src/router/deliveryRouter.js';
 import StylesRouter from './src/router/stylesRouter.js';
 import AnalyticsRouter from './src/router/analyticsRouter.js';
+import { monitorEndpointRequest } from './src/middleware/monitor.js';
 
 // the application server
 const appServer = express();
@@ -22,6 +23,7 @@ appServer.use(cookieParser()); // the cookieparser
 appServer.use(express.json()); // allow passing in the json data
 appServer.use(express.urlencoded({ extended: true }));
 appServer.use(cors()); // configuring the cross origin
+appServer.use(monitorEndpointRequest) //monitoring the requests
 
 // main endpoints
 appServer.use('/api/user', UserRouter);
