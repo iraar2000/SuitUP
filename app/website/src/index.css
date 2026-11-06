@@ -40,6 +40,10 @@
   --text-inactive: var(--chocolate-400);
   --text-active: var(--chocolate-500);
 
+  /* loading */
+  --loading-bg: rgba(27, 20, 17,0.5);
+  --loading-blur: 8px;
+
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;

@@ -29,7 +29,7 @@ UserRouter.delete('/permission/removeById/:id', Authentication, removePermission
 UserRouter.delete('/permission/removeByName/:name', Authentication, removePermissionsByNameController);
 
 // session
-UserRouter.get('/session/')
+// UserRouter.get('/session/')
 
 // user 
 UserRouter.post('/assignRole', Authentication, createUserRolesController);

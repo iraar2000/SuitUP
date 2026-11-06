@@ -1,26 +1,41 @@
 import { Input } from '@component/base/input/input';
 import '../css/global.css'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Icons } from '@src/constants/icons';
+import { useUserAuthApi } from '@src/hooks/api/Auth/authApi';
+import LoadingNotification from '@src/Notification/LoadingNotification';
 
 // the function component for the register page
 export default function RegisterPage() {
-    const [firstName, setFirstName] = useState<String>('');
-    const [lastName, setLastName] = useState<String>('');
-    const [userName, setUserName] = useState<String>('');
-    const [email, setEmail] = useState<String>('');
-    const [password, setPassword] = useState<String>('');
-    const [confirmPassword, setConfirmPassword] = useState<String>('');
+    const { registerAccount, loading } = useUserAuthApi();
+
+    const [firstName, setFirstName] = useState<string>('');
+    const [lastName, setLastName] = useState<string>('');
+    const [userName, setUserName] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
+    const [password, setPassword] = useState<string>('');
+    const [confirmPassword, setConfirmPassword] = useState<string>('');
     const passwordMismatch = confirmPassword.length > 0 && password !== confirmPassword;
 
-    // useEffect 
-    useEffect(() => {
-        console.log(firstName, lastName, userName, email, password, confirmPassword)
-    }, [firstName, lastName, userName, email, password, confirmPassword])
+    // registration handler
+    const registrationHandler = async () => {
+        if (passwordMismatch) return;
 
+        await registerAccount({
+            firstName,
+            lastName,
+            userName,
+            phone: "",
+            email,
+            password,
+            address: "",
+            location: [0, 0]
+        })
+    }
 
     return (
         <div className='auth-root'>
+            {/* the page container */}
             <div className="page-container">
                 {/* the form container */}
                 <div className="form-container">
@@ -72,8 +87,8 @@ export default function RegisterPage() {
                                     <Icons.leftArrow.Icon />
                                     <p className="go-back">Go back</p>
                                 </button>
-                                <button className="btn finish-btn">
-                                    <p className="finnish">Finnish</p>
+                                <button className="btn finish-btn" onClick={registrationHandler}>
+                                    <p className="finnish">Finish</p>
                                 </button>
                             </div>
                             <div className="op-container">
@@ -89,6 +104,9 @@ export default function RegisterPage() {
                     <img src="/assets/banner.jpg" alt="" />
                 </div>
             </div>
+
+            {/* the loading page */}
+            {loading && <LoadingNotification message={"Please wait while we account creation request."} />}
         </div>
     );
 }

@@ -2,14 +2,25 @@ import { Input } from '@component/base/input/input';
 import '../css/global.css'
 import { useState } from 'react';
 import { Icons } from '@src/constants/icons';
+import { useUserAuthApi } from '@src/hooks/api/Auth/authApi';
+import LoadingNotification from '@src/Notification/LoadingNotification';
 
 // the function component for the register page
 export default function LoginPage() {
-    const [email, setEmail] = useState<String>('');
-    const [password, setPassword] = useState<String>('');
+    const { loginAccount, loading } = useUserAuthApi();
+
+    const [email, setEmail] = useState<string>('');
+    const [password, setPassword] = useState<string>('');
+
+    // login handler
+    const loginHandler = async () => {
+        const { users, error } = await loginAccount({ email, password, type: 'email' });
+        console.log(users, error);
+    }
 
     return (
         <div className='auth-root'>
+            {/* the page container */}
             <div className="page-container">
                 {/* the form container */}
                 <div className="form-container">
@@ -43,8 +54,8 @@ export default function LoginPage() {
                                     <Icons.leftArrow.Icon />
                                     <p className="go-back">Go back</p>
                                 </button>
-                                <button className="btn finish-btn">
-                                    <p className="finnish">Finnish</p>
+                                <button className="btn finish-btn" onClick={loginHandler}>
+                                    <p className="finnish">Finish</p>
                                 </button>
                             </div>
                             <div className="op-container">
@@ -60,6 +71,9 @@ export default function LoginPage() {
                     <img src="/assets/banner.jpg" alt="" />
                 </div>
             </div>
+
+            {/* the loading */}
+            {loading && <LoadingNotification message={"Please wait while we account login request."} />}
         </div>
     );
 }

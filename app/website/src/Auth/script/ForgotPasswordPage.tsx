@@ -8,6 +8,11 @@ import { Icons } from '@src/constants/icons';
 export default function ForgotPasswordPage() {
     const [email, setEmail] = useState<String>('');
 
+    // forgot password handler
+    const forgotPasswodHandler = async () => {
+        console.log(email);
+    }
+
     return (
         <div className='auth-root'>
             <div className="page-container">
@@ -35,8 +40,8 @@ export default function ForgotPasswordPage() {
                                     <Icons.leftArrow.Icon />
                                     <p className="go-back">Go back</p>
                                 </button>
-                                <button className="btn finish-btn">
-                                    <p className="finnish">Finnish</p>
+                                <button className="btn finish-btn" onClick={forgotPasswodHandler}>
+                                    <p className="finnish">Finish</p>
                                 </button>
                             </div>
                             <div className="op-container">

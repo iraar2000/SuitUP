@@ -13,7 +13,7 @@ export async function createAccountService(userData) {
         if (rUser.status !== 200) return rUser;
 
         // create user credentials
-        const rUserCred = await updateUserCredentialsService(rUser.data.id, userData.password)
+        const rUserCred = await createUserCredentialsService(rUser.data.id, userData.password)
         if (rUserCred.status !== 200) return rUserCred;
 
         return rUser;
@@ -51,6 +51,7 @@ export async function updateUserCredentialsService(userId, keys, values) {
         // create user credentials
         return await userCredentialModel.updateUserCredentials(userId, keys, values);
     } catch (error) {
+        console.log(error);
         return { status: 500, data: { error: "Internal server error, failed to update user credentials, userService.js file", errorDetails: error } };
     }
 }

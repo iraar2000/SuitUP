@@ -12,15 +12,15 @@ export async function createAccountController(req, res) {
     try {
         // create the account
         const response = await createAccountService(req.body);
-        if (response.status !== 200) return response;
+        if (response.status !== 200) return res.status(response.status).json(response.data);
 
         // create the verification
         const credVerif = await createCredentialVerificationService(response.data);
-        if (credVerif.status !== 200) return credVerif;
+        if (credVerif.status !== 200) return res.status(credVerif.status).json(credVerif.data);
 
         // create the account user role
         const userRole = await createUserRoleService(response.data.id, 1);
-        if (userRole.status !== 200) return userRole;
+        if (userRole.status !== 200) return res.status(userRole.status).json(userRole.data);
 
         return res.status(response.status).json({ userData: response.data, message: "Verify the account!" });
     } catch (error) {
@@ -43,7 +43,7 @@ export async function loginAccountController(req, res) {
             maxAge: 30 * 24 * 60 * 60 * 1000 // 30 days
         });
 
-        return res.status(response.status).json({ accessToken, profile: { ...profile } });
+        return res.status(response.status).json({ accessToken, userData: { ...profile } });
     } catch (error) {
         return res.status(500).json({ error: "Internal server error, failed to login the account." });
     }
@@ -105,6 +105,7 @@ export async function changePasswordController(req, res) {
 // the function which controlls the forgot password
 export async function forgotPasswordController(req, res) {
     try {
+        console.log(req);
         const ipAddress = process.env.IPADDRESS || req.ip; // Use the environment variable or fallback to req.ip
         const response = await forgotPasswordService(ipAddress, req.body.email);
         return res.status(response.status).json(response.data);

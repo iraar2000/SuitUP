@@ -18,7 +18,7 @@ export async function sendEmailVerificationService(user, token) {
 // the function which sends the notification to email for password change
 export async function sendPasswordChangeNotificationService(ip, user, token) {
     try {
-        const resetUrl = `http://${ip}:${process.env.APP_PORT}/auth/forgotPassword?token=${token}`;
+        const resetUrl = `http://${ip}:${process.env.APP_PORT}/auth/changePassword?token=${token}`;
         const message = emailTemplate.passwordChangeNotification({ firstName: user.first_name, resetUrl: resetUrl });
         return await emailService.sendEmail({ to: user.email, ...message });
     } catch (error) {

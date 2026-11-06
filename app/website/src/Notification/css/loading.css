@@ -1,0 +1,47 @@
+.notification-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Background blur */
+    background: var(--loading-bg);
+    backdrop-filter: blur(--loading-blur);
+    -webkit-backdrop-filter: blur(--loading-blur);
+}
+
+.loading-notification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+
+    background-color: var(--chocolate-100);
+    padding: 20px;
+    width: 800px;
+    height: 500px;
+
+    border-radius: 20px;
+    border: var(--border-05);
+}
+
+.loading-notification h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--chocolate-500);
+    margin: 5px 0 0;
+}
+
+.loading-notification p {
+    font-size: 16px;
+    color: var(--chocolate-400);
+    margin: 0;
+}

@@ -10,6 +10,11 @@ export default function ChangePasswordPage() {
     const [confirmPassword, setConfirmPassword] = useState<String>('');
     const passwordMismatch = confirmPassword.length > 0 && password !== confirmPassword;
 
+    // change password handler
+    const changePasswordHandler = async () => {
+        console.log(email, password, confirmPassword)
+    }
+
     return (
         <div className='auth-root'>
             <div className="page-container">
@@ -51,8 +56,8 @@ export default function ChangePasswordPage() {
                                     <Icons.leftArrow.Icon />
                                     <p className="go-back">Go back</p>
                                 </button>
-                                <button className="btn finish-btn">
-                                    <p className="finnish">Finnish</p>
+                                <button className="btn finish-btn" onClick={changePasswordHandler}>
+                                    <p className="finnish">Finish</p>
                                 </button>
                             </div>
                             <div className="op-container">
