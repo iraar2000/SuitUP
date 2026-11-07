@@ -3,17 +3,26 @@ import '../css/global.css'
 import { useEffect, useState } from 'react';
 import { Icons } from '@src/constants/icons';
 import { useUserAuthApi } from '@src/hooks/api/Auth/authApi';
+import { useNavigate } from 'react-router-dom';
 
 
 // the function component for the forgot password page
 export default function ForgotPasswordPage() {
+    const navigate = useNavigate();
     const { forgotAccountPassword, response, error } = useUserAuthApi();
 
     const [email, setEmail] = useState<string>('');
 
     useEffect(() => {
-        console.log(response);
-    }, [response]);
+        if (!response && !error) return
+
+        if (response) navigate('/notification/success', {
+            state: { message: "The request to change password sent successfully!" }
+        });
+        else if (error) navigate('/notification/error', {
+            state: { message: "Failed to send the request to change the password!" }
+        });
+    }, [response, error])
 
     // forgot password handler
     const forgotPasswodHandler = async () => {

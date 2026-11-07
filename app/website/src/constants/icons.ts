@@ -1,9 +1,10 @@
-import { IoMenu, IoClose } from "react-icons/io5";
+import { IoMenu, IoClose, IoCloseCircle } from "react-icons/io5";
 import { FaHistory, FaRegBookmark, FaEye, FaAngleDown, FaSave, FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight, FaThumbsUp, FaPlus, FaCheck, FaCircleCheck } from "react-icons/fa6";
 import { CiEdit } from "react-icons/ci";
 import { MdOutlinePostAdd } from "react-icons/md";
 import { ImBin } from "react-icons/im";
+import { AiFillHome } from "react-icons/ai";
 
 export const Icons = {
     menu: {
@@ -69,5 +70,13 @@ export const Icons = {
     circleCheck: {
         label: 'circleCheck',
         Icon: FaCircleCheck
+    },
+    circleClose: {
+        label: 'circleClose',
+        Icon: IoCloseCircle
+    },
+    home: {
+        label: 'home',
+        Icon: AiFillHome
     }
 }

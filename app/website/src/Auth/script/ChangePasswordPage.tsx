@@ -4,12 +4,13 @@ import { useEffect, useState } from 'react';
 import { Icons } from '@src/constants/icons';
 import { useUserAuthApi } from '@src/hooks/api/Auth/authApi';
 import LoadingNotification from '@src/Notification/LoadingNotification';
-import { useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 
 // the function component for the register page
 export default function ChangePasswordPage() {
-    const { changeAccountPassword, loading, response } = useUserAuthApi()
+    const { changeAccountPassword, loading, response, error } = useUserAuthApi()
     const [searchParams] = useSearchParams();
+    const navigate = useNavigate();
 
     const [email, setEmail] = useState<string>('');
     const [password, setPassword] = useState<string>('');
@@ -24,6 +25,17 @@ export default function ChangePasswordPage() {
         if (password !== confirmPassword) return;
         await changeAccountPassword({ email, password, token })
     }
+
+    useEffect(() => {
+        if (!response && !error) return
+
+        if (response) navigate('/notification/success', {
+            state: { message: "Password changed successfully!" }
+        });
+        else if (error) navigate('/notification/error', {
+            state: { message: "Failed to change the password!" }
+        });
+    }, [response, error])
 
     return (
         <div className='auth-root'>

@@ -4,10 +4,12 @@ import { useEffect, useState } from 'react';
 import { Icons } from '@src/constants/icons';
 import { useUserAuthApi } from '@src/hooks/api/Auth/authApi';
 import LoadingNotification from '@src/Notification/LoadingNotification';
+import { useNavigate } from 'react-router-dom';
 
 // the function component for the register page
 export default function LoginPage() {
     const { loginAccount, loading, response, error } = useUserAuthApi();
+    const navigate = useNavigate()
 
     const [email, setEmail] = useState<string>('');
     const [password, setPassword] = useState<string>('');
@@ -17,6 +19,17 @@ export default function LoginPage() {
     const loginHandler = async () => {
         await loginAccount({ email, password, type: 'email' });
     }
+
+    useEffect(() => {
+        if (!response && !error) return
+
+        if (response) navigate('/notification/success', {
+            state: { message: "Login successfully into the account!" }
+        });
+        else if (error) navigate('/notification/error', {
+            state: { message: "Failed to login the account!" }
+        });
+    }, [response, error])
 
     return (
         <div className='auth-root'>

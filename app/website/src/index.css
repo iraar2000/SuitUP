@@ -30,6 +30,21 @@
   --chocolate-400: #52341E;
   --chocolate-500: #1B1411;
 
+  /* the red theme */
+  --red-100: #efdfdf;
+  --red-200: #ddb1b1;
+  --red-300: #c55252;
+  --red-400: #521e1e;
+  --red-500: #1b1111;
+
+  /* the green theme */
+  --green-100: #dfefdf;
+  --green-200: #b1ddb3;
+  --green-300: #52c55a;
+  --green-400: #1e5221;
+  --green-500: #111b12;
+
+
   /* the borders */
   --border-05: 0.5px solid var(--chocolate-400);
   --border-1: 1px solid var(--chocolate-400);

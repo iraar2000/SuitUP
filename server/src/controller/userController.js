@@ -95,7 +95,6 @@ export async function verifyAccountController(req, res) {
 export async function changePasswordController(req, res) {
     try {
         const { email, password, token } = req.body;
-        console.log(email, password, token);
         const response = await changePasswordService(email, password, token);
         return res.status(response.status).json(response.data);
     } catch (error) {

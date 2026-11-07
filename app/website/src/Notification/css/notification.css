@@ -1,0 +1,97 @@
+.notification-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--gray-100);
+}
+
+.notification-wrapper {
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    padding:150px 250px;
+    gap: 36px;
+
+    background-color: transparent;
+}
+
+.success {
+    background-color: var(--green-100);
+    color: var(--green-300);
+}
+
+.error {
+    background-color: var(--red-100);
+    color: var(--red-300);
+}
+
+.error-notification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 36px;
+}
+
+.success-notification {
+    background-color: var(--green-100);
+    color: var(--green-300);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 36px;
+}
+
+.success-notification .info h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--green-400);
+}
+
+.error-notification .info h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--red-400);
+}
+
+
+.error-notification .info,
+.success-notification .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.btn-container .btn {
+    border: none;
+    background-color: var(--gray-100);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 8px;
+    cursor: pointer;
+}
+
+.btn.go-back {
+    border: 0.5px solid var(--gray-200);
+}
+
+.btn.home {
+    border: 0.5px solid var(--gray-200);
+    background-color: var(--chocolate-500);
+    color: var(--chocolate-100);
+}
