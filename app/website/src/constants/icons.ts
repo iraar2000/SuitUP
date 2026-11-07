@@ -1,6 +1,6 @@
 import { IoMenu, IoClose } from "react-icons/io5";
 import { FaHistory, FaRegBookmark, FaEye, FaAngleDown, FaSave, FaAngleLeft } from "react-icons/fa";
-import { FaAngleRight, FaThumbsUp, FaPlus } from "react-icons/fa6";
+import { FaAngleRight, FaThumbsUp, FaPlus, FaCheck, FaCircleCheck } from "react-icons/fa6";
 import { CiEdit } from "react-icons/ci";
 import { MdOutlinePostAdd } from "react-icons/md";
 import { ImBin } from "react-icons/im";
@@ -61,5 +61,13 @@ export const Icons = {
     save: {
         label: 'save-tape',
         Icon: FaSave
+    },
+    check: {
+        label: 'tick',
+        Icon: FaCheck
+    },
+    circleCheck: {
+        label: 'circleCheck',
+        Icon: FaCircleCheck
     }
 }

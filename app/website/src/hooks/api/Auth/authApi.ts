@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { apiClient } from "../https";
-import type { AccountType, LoginAccountProps, RegisterAccoutProps, ResponseType } from "./authApi.type";
+import type { ChangeAccountPasswordProps, ForgotAccountPasswordProps, LoginAccountProps, RegisterAccoutProps, ResponseType } from "./authApi.type";
 
 export function useUserAuthApi() {
     const [loading, setLoading] = useState(false);
-    const [users, setUsers] = useState<AccountType | null>(null);
+    const [response, setResponse] = useState<ResponseType | null>()
     const [error, setError] = useState<string | null>(null);
 
     // the function which registers an account
@@ -14,16 +14,14 @@ export function useUserAuthApi() {
             setError(null);
 
             const response = await apiClient.post<ResponseType>("/user/auth/createAccount", accountData);
-            const userData = response.data.userData as AccountType;
 
-            setUsers(userData);
-            return { users: userData, error: null };
+            setResponse(response.data);
+            return { response, error: null };
 
         } catch (error: any) {
             const message = error?.response?.data?.message || error.message || "Failed to create account!";
             setError(message);
-            return { users: null, error: message };
-
+            return { response: null, error: message };
         } finally {
             setLoading(false);
         }
@@ -36,18 +34,17 @@ export function useUserAuthApi() {
             setError(null);
 
             const response = await apiClient.post<ResponseType>("/user/auth/loginAccount", loginData);
-            const userData = response.data.userData as AccountType;
 
             // setting the access token to the localStorage
             localStorage.setItem('accessToken', response.data.accessToken!)
 
-            setUsers(userData);
-            return { users: userData, error: null };
+            setResponse(response.data);
+            return { response, error: null };
 
         } catch (error: any) {
             const message = error?.response?.data?.message || error.message || "Failed to login the account!";
             setError(message);
-            return { users: null, error: message };
+            return { response: null, error: message };
 
         } finally {
             setLoading(false);
@@ -55,24 +52,44 @@ export function useUserAuthApi() {
     }
 
     // the function which is used for forgot password of an account
-    async function forgotAccount(email: string) {
+    async function forgotAccountPassword({ email }: ForgotAccountPasswordProps) {
         try {
             setLoading(true);
             setError(null);
 
             const response = await apiClient.post<ResponseType>("/user/auth/forgotPassword", { email });
-            console.log(response);
+            setResponse(response.data);
 
-            return { error: null };
+            return { response, error: null };
         } catch (error: any) {
             const message = error?.response?.data?.message || error.message || "Failed to login the account!";
             setError(message);
-            return { users: null, error: message };
+            return { response: null, error: message };
 
         } finally {
             setLoading(false);
         }
     }
 
-    return { registerAccount, loginAccount, forgotAccount, loading, users, error };
+    // the function which is used to changing the account password
+    async function changeAccountPassword(changeData: ChangeAccountPasswordProps) {
+        try {
+            setLoading(true);
+            setError(null);
+
+            const response = await apiClient.put<ResponseType>("/user/auth/changePassword", changeData);
+            setResponse(response.data);
+
+            return { response, error: null };
+        } catch (error: any) {
+            const message = error?.response?.data?.message || error.message || "Failed to login the account!";
+            setError(message);
+            return { response: null, error: message };
+
+        } finally {
+            setLoading(false);
+        }
+    }
+
+    return { registerAccount, loginAccount, forgotAccountPassword, changeAccountPassword, loading, response, error };
 }

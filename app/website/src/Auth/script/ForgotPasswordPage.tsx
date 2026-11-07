@@ -1,16 +1,24 @@
 import { Input } from '@component/base/input/input';
 import '../css/global.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Icons } from '@src/constants/icons';
+import { useUserAuthApi } from '@src/hooks/api/Auth/authApi';
 
 
 // the function component for the forgot password page
 export default function ForgotPasswordPage() {
-    const [email, setEmail] = useState<String>('');
+    const { forgotAccountPassword, response, error } = useUserAuthApi();
+
+    const [email, setEmail] = useState<string>('');
+
+    useEffect(() => {
+        console.log(response);
+    }, [response]);
 
     // forgot password handler
     const forgotPasswodHandler = async () => {
-        console.log(email);
+        const { response, error } = await forgotAccountPassword({ email })
+        console.log(response?.data.message, error);
     }
 
     return (

@@ -76,6 +76,53 @@
     gap: 8px;
 }
 
+.button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember-me {
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--chocolate-500);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.remember-me .tick {
+    height: 18px;
+    width: 18px;
+    background-color: var(--gray-100);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.remember-me:hover {
+    cursor: pointer;
+    color: var(--chocolate-400);
+}
+
+.forgot-password {
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--blue-400);
+}
+
+.forgot-password:hover {
+    cursor: pointer;
+    color: var(--blue-300);
+    text-decoration: underline;
+}
+
 .container [data-input-wrapper="true"] > div {
     width: 100%;
     height: 40px;

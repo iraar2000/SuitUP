@@ -9,7 +9,7 @@ interface LoadingNotificationProps {
 export default function LoadingNotification({ message }: LoadingNotificationProps) {
     return (
         <section className="notification-container">
-            <div className="loading-notification">
+            <div className="notification-wrapper">
                 <OrbitProgress
                     variant="spokes"
                     color="#2563eb"

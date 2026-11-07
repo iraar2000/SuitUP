@@ -38,3 +38,15 @@ export interface LoginAccountProps {
     type?: string,
     message?: string
 }
+
+// the forgot password props of the account
+export interface ForgotAccountPasswordProps {
+    email?: string
+}
+
+// the change password props of the account
+export interface ChangeAccountPasswordProps {
+    email?: string,
+    password?: string,
+    token?: string | null
+}

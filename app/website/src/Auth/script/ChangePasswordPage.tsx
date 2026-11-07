@@ -2,21 +2,32 @@ import { Input } from '@component/base/input/input';
 import '../css/global.css'
 import { useEffect, useState } from 'react';
 import { Icons } from '@src/constants/icons';
+import { useUserAuthApi } from '@src/hooks/api/Auth/authApi';
+import LoadingNotification from '@src/Notification/LoadingNotification';
+import { useSearchParams } from 'react-router-dom';
 
 // the function component for the register page
 export default function ChangePasswordPage() {
-    const [email, setEmail] = useState<String>('');
-    const [password, setPassword] = useState<String>('');
-    const [confirmPassword, setConfirmPassword] = useState<String>('');
+    const { changeAccountPassword, loading, response } = useUserAuthApi()
+    const [searchParams] = useSearchParams();
+
+    const [email, setEmail] = useState<string>('');
+    const [password, setPassword] = useState<string>('');
+    const [confirmPassword, setConfirmPassword] = useState<string>('');
     const passwordMismatch = confirmPassword.length > 0 && password !== confirmPassword;
+
 
     // change password handler
     const changePasswordHandler = async () => {
-        console.log(email, password, confirmPassword)
+        const token = searchParams.get("token");
+
+        if (password !== confirmPassword) return;
+        await changeAccountPassword({ email, password, token })
     }
 
     return (
         <div className='auth-root'>
+            {/* the page container */}
             <div className="page-container">
                 {/* the form container */}
                 <div className="form-container">
@@ -73,6 +84,9 @@ export default function ChangePasswordPage() {
                     <img src="/assets/banner.jpg" alt="" />
                 </div>
             </div>
+
+            {/* the loading */}
+            {loading && <LoadingNotification message={'Please wait while we change the account password request.'} />}
         </div>
     );
 }

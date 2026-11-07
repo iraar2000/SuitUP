@@ -1,21 +1,21 @@
 import { Input } from '@component/base/input/input';
 import '../css/global.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Icons } from '@src/constants/icons';
 import { useUserAuthApi } from '@src/hooks/api/Auth/authApi';
 import LoadingNotification from '@src/Notification/LoadingNotification';
 
 // the function component for the register page
 export default function LoginPage() {
-    const { loginAccount, loading } = useUserAuthApi();
+    const { loginAccount, loading, response, error } = useUserAuthApi();
 
     const [email, setEmail] = useState<string>('');
     const [password, setPassword] = useState<string>('');
+    const [rememberMe, setRememberMe] = useState<Boolean>(false);
 
     // login handler
     const loginHandler = async () => {
-        const { users, error } = await loginAccount({ email, password, type: 'email' });
-        console.log(users, error);
+        await loginAccount({ email, password, type: 'email' });
     }
 
     return (
@@ -46,6 +46,15 @@ export default function LoginPage() {
                                     type='password'
                                     onChange={setPassword}
                                 />
+                            </div>
+                            <div className="container">
+                                <div className="button-container">
+                                    <button className="remember-me" onClick={() => setRememberMe(prev => !prev)}>
+                                        <div className="tick">{rememberMe && <Icons.check.Icon />}</div>
+                                        <p className="name">Remember me</p>
+                                    </button>
+                                    <a className='forgot-password' href='/auth/forgotPassword'>Forgot password?</a>
+                                </div>
                             </div>
                         </div>
                         <div className="other-option">

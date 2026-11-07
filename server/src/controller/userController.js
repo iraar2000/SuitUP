@@ -95,6 +95,7 @@ export async function verifyAccountController(req, res) {
 export async function changePasswordController(req, res) {
     try {
         const { email, password, token } = req.body;
+        console.log(email, password, token);
         const response = await changePasswordService(email, password, token);
         return res.status(response.status).json(response.data);
     } catch (error) {
@@ -105,7 +106,6 @@ export async function changePasswordController(req, res) {
 // the function which controlls the forgot password
 export async function forgotPasswordController(req, res) {
     try {
-        console.log(req);
         const ipAddress = process.env.IPADDRESS || req.ip; // Use the environment variable or fallback to req.ip
         const response = await forgotPasswordService(ipAddress, req.body.email);
         return res.status(response.status).json(response.data);
