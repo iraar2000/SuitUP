@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS suits (
+    id SERIAL PRIMARY KEY,
+    style_id BIGINT,
+    product_id BIGINT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
