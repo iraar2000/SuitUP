@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="exploration-final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Mobile-utility-Currency" transform="translate(-338.000000, -19.000000)" stroke="#000000" stroke-width="1.5">
+            <g id="Group" transform="translate(339.000000, 20.000000)">
+                <line x1="17.9550183" y1="-3.19744231e-15" x2="1.12869714e-12" y2="17.7571962" id="Path-6"></line>
+                <line x1="17.9550183" y1="-3.19744231e-15" x2="9.83213511e-13" y2="17.7571962" id="Path-6-Copy" transform="translate(8.977509, 8.878598) scale(-1, 1) translate(-8.977509, -8.878598) "></line>
+            </g>
+        </g>
+    </g>
+</svg>

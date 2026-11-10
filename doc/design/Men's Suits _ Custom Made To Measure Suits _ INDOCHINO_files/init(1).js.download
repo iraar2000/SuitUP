@@ -1,0 +1,3384 @@
+(function () {
+    const baseUrl = "https://cas.zma.gs/c723957e-344e-46c4-859f-c4058177057c/ssr/containers/9b4281e8-8402-4448-a10b-f4bf8c44b643";
+const experienceSchedule = [
+  {
+    "weightedExperiences": [
+      {
+        "weight": 100,
+        "experienceId": "27f3267a-0baa-815a-8006-4912faef4910",
+        "experienceName": "New Experience 2",
+        "contentSlotName": "GA4 Tag",
+        "contentSlotId": "9b4281e8-8402-4448-a10b-f4bf8c44b643",
+        "variants": [
+          {
+            "variantId": "27f3267a-0baa-815a-8006-4912faef4911",
+            "variantName": "Variant 1",
+            "threshold": 0,
+            "width": 5000.000000000001,
+            "height": 1
+          }
+        ]
+      }
+    ]
+  }
+];
+const initContent = "data:image/webp;base64,UklGRoBhAABXRUJQVlA4WAoAAAAwAAAA/w8A/wsASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIJgIAAAEHoBBAABQ0ERFDSJD4f72NiP5n/Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf//znP//5z3/+85//+wFWUDggZF0AABClCp0BKgAQAAw+bTaaSaQjIqEgP+gIgA2JaW7hd2Ef6BdAH4Aey3AP+34B+AH65fbpIB9gP1V7v5/oAHf5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77Y4P9aX6e2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ycfxy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sOX88nIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D31hy/nk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych6wyBsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsG2DbBtg2wbYNsGW8H48+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz4s+LPiz7EMwM8/3ULXVYLUKHMxbxKZKTEd77VYLUKHMxbxKZKTEd77VYLUKHMxbxKZKTEd77VYLUKHMxbxKZKTEd76mZZgWS7Xi5OQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfWDLNo3NrxcnIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtWGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sGW7r+l2vFych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych6wAAP7/vKP+eENBnpsAPrPSevQnrug0Xce+gAAef+4Uj4/FzD3xdXdAoOfHvoAAB0PoAAAv8cBAAAAAAACOYL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAAAAAC9YL6AAAAAAAXu3AgAAIr8ayQOl/mnt9jPcrcoj2M9ytyiPYz3K3KI9jPcrcoj2M9ytyiPYz3K3KI9jPcrcoj2M9ytyiPYz3K3KI9jPcrcoj2M9ytyiPYz3K3KI9jPcrcoj2M9ytyiPYz3K3KI9jPcrcoj2M9ytyiPYz3K3KI9jPcrcoj2M9ytyiPYz3K3KI9jPcrcoj2M9ytyiPYz3K3KI9jPcrcoj2M9ytyiPYz3K3KI9jPcrcoj2M9ytyiPYz3K3KI9jPcrcoj2M99f+y39g+vwuvhkDBUkEd17fHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAJhfHUAUFfQAAAAAAAAoynbqvoAAAAAAAAAAAAAAAAB3nd3cfgAAAAAAEmdwEAAAAAAAeh3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAATZ3PoAAAAAACbO4CAAAAAAA=";
+const companyId = "c723957e-344e-46c4-859f-c4058177057c";
+const casBaseUri = "https://cas.zma.gs";
+
+
+    const debug = {
+        output: console.log,
+        log: console.log,
+        error: console.error,
+        fmt: (message) => {
+            // Format message with optional parameters
+            return `[FF_DEBUG] ${message}`;
+        }
+    };
+
+    function selectExperience() {
+        const currentDateTime = new Date();
+        const currentScheduleBlock = experienceSchedule.find(({ startTime, endTime }) => {
+            const hasStarted = !startTime || (new Date(startTime) <= currentDateTime);
+            const hasEnded = endTime && (new Date(endTime) < currentDateTime);
+            return hasStarted && !hasEnded;
+        });
+
+        const randomWeight = Math.random() * 100;
+        let cumulativeWeight = 0;
+        return currentScheduleBlock?.weightedExperiences?.find(({ weight }) => (cumulativeWeight += weight) >= randomWeight);
+    }
+
+    fastrSetup();
+    const experienceData = selectExperience();
+
+    let isRunningDataIntegrations = false;
+    const pendingOperationsQueue = [];
+
+    if (!experienceData) {
+        console.error('No experience selected based on the current schedule.');
+        return;
+    }
+
+    async function initializeExperience() {
+
+        if (debug.enabled) debug.log(debug.fmt('Initializing experience...'));
+
+        // Set the experienceId and currentVariantId
+        experienceData.currentVariantId = null;
+
+        // Convert variants array to an object for easier access
+        experienceData.variants = experienceData.variants.reduce((acc, variant) => {
+            acc[variant.variantId] = {
+                ...variant,
+                model: null,
+                domRef: null,
+                functionCache: {},
+                providerCache: {},
+                backgroundIntegrationsRun: false,
+                currentSceneIndex: 0,
+                resetCounter: 0,
+                variantAPI: {}
+            };
+            return acc;
+        }, {});
+
+        // Initialize the container
+        const containerDiv = document.createElement("div");
+        containerDiv.setAttribute('class', 'fastr-container');
+        containerDiv.setAttribute('data-experience-id', experienceData.experienceId);
+        containerDiv.style.position = 'relative';
+        containerDiv.style.width = '100%';
+
+        experienceData.domRef = containerDiv;
+
+        // Set up the resize observer
+        const resizeObserver = new ResizeObserver(handleResize);
+        resizeObserver.observe(experienceData.domRef);
+
+        // Select the variant
+        const variant = selectVariant();
+
+        if (!variant) {
+            console.error('No variant selected based on device width.');
+            return;
+        }
+
+        const variantId = variant.variantId;
+
+        // Set containerDiv padding-bottom based on variant dimensions
+        const { width, height } = variant;
+        containerDiv.style.paddingBottom = `${(height / width) * 100}%`;
+
+        // Now insert the containerDiv into the DOM
+        document.currentScript?.insertAdjacentElement('afterend', containerDiv);
+
+        // Apply iOS 26 specific fix for flickering issue
+        if (isIOS26()) {
+            const styleId = 'fastr-ios26-fix';
+            if (!document.getElementById(styleId)) {
+                const styleElement = document.createElement('style');
+                styleElement.id = styleId;
+                styleElement.textContent = `
+                    .fastr-container > div > div {
+                        content-visibility: visible !important;
+                    }
+                `;
+                document.head.appendChild(styleElement);
+            }
+        }
+
+        if (debug.enabled) console.log(debug.fmt('Initialized experienceData:'), experienceData);
+
+        // Continue initializing the variant
+        await loadVariant(variantId);
+
+        // Fetch and display the initial scene
+        await fetchScene(variant.currentSceneIndex);
+
+        await showScene(variant.currentSceneIndex);
+
+        // Run background integrations if not already run for this variant
+        await conditionallyRunBackgroundIntegrations();
+        await runDataIntegrations(variant.currentSceneIndex);
+    }
+
+    // Function to select a variant based on device width
+    function selectVariant() {
+        const outerWidth = window.outerWidth > 0 ? window.outerWidth : Infinity;
+        const deviceWidth = Math.min(window.innerWidth, outerWidth);
+
+        // Convert the map to an array of variant values and filter based on the threshold
+        const filtered = Object.values(experienceData.variants).filter(variant => variant.threshold <= deviceWidth);
+
+        // Return the first matching variant, or the first variant in the map if none match
+        return filtered.length ? filtered[0] : Object.values(experienceData.variants)[0];
+    }
+
+    function initMobileScrollTransition(sceneDiv, sceneIndex) {
+        if (sceneDiv.mobileScrollInitialized || !getScene(sceneIndex).allowSwipeTransitions) {
+            return;
+        }
+        sceneDiv.mobileScrollInitialized = true;
+        let isDragging = false;
+        let startX, startY, lastX, lastY;
+        let isVerticalScroll = false;
+        let isTap = true;
+        let startTime;
+        const TAP_THRESHOLD = 10; // pixels
+        const TAP_TIMEOUT = 200; // milliseconds
+
+        const onStart = (clientX, clientY) => {
+            isDragging = true;
+            startX = lastX = clientX;
+            startY = lastY = clientY;
+            isVerticalScroll = false;
+            isTap = true;
+            startTime = Date.now();
+        };
+
+        const onMove = (clientX, clientY, timestamp) => {
+            if (!isDragging) return;
+            const dx = clientX - startX;
+            const dy = clientY - startY;
+
+            // Check if the movement is larger than the tap threshold
+            if (Math.abs(dx) > TAP_THRESHOLD || Math.abs(dy) > TAP_THRESHOLD) {
+                isTap = false;
+            }
+
+            // Determine if the scroll is primarily vertical
+            if (!isVerticalScroll) {
+                isVerticalScroll = Math.abs(dy) > Math.abs(dx) * 1.5;
+            }
+
+            if (isVerticalScroll) {
+                // Allow default vertical scrolling behavior
+                isDragging = false;
+                return;
+            }
+
+            lastX = clientX;
+            lastY = clientY;
+        };
+
+        async function onEnd(e) {
+            if (isDragging) {
+                isDragging = false;
+                const endTime = Date.now();
+
+                if (isTap && (endTime - startTime) < TAP_TIMEOUT) {
+                    // It's a tap, allow default behavior
+                    return;
+                }
+
+                if (!isVerticalScroll) {
+                    e.preventDefault(); // Prevent click for horizontal scrolls
+                    e.stopPropagation();
+                    const transitionForward = lastX - startX > 0;
+                    const variant = getVariant();
+                    const sceneCount = variant.model.scenes.length;
+                    const nextSceneIndex = ((variant.currentSceneIndex + (transitionForward ? -1 : 1)) + sceneCount) % sceneCount;
+                    if (nextSceneIndex != variant.currentSceneIndex) {
+                        await fetchScene(nextSceneIndex);
+                        showScene(nextSceneIndex, transitionForward ? "right" : "left");
+                    }
+                }
+            }
+        };
+
+        sceneDiv.querySelectorAll('img').forEach(img => img.addEventListener('dragstart', (e) => e.preventDefault()));
+        sceneDiv.addEventListener('touchstart', (e) => {
+            onStart(e.touches[0].clientX, e.touches[0].clientY);
+        }, { passive: false });
+
+        sceneDiv.addEventListener('touchmove', (e) => {
+            onMove(e.touches[0].clientX, e.touches[0].clientY, e.timeStamp);
+        }, { passive: false });
+
+        sceneDiv.addEventListener('touchend', onEnd);
+        sceneDiv.addEventListener('touchcancel', onEnd);
+    }
+
+    async function initVariant(variant) {
+
+        const containerDiv = experienceData.domRef;
+
+        const { variantId } = variant;
+        variant.domRef = document.createElement('div');
+        variant.domRef.setAttribute('data-variant-id', variantId);
+        variant.domRef.setAttribute('data-experience', `C3_${experienceData.experienceId}_${variantId}`);
+        variant.domRef.style.position = 'absolute';
+        variant.domRef.style.width = '100%';
+        variant.domRef.style.height = '100%';
+        variant.domRef.style.display = 'none';
+        variant.domRef.style.overflow = 'hidden';
+
+        // Determine ordinal ID in the page by finding matches for divs with data-experience
+        const ordinalId = document.querySelectorAll(`div[data-experience="C3_${experienceData.experienceId}_${variantId}"]`).length;
+        variant.ordinalId = ordinalId;
+        variant.domRef.setAttribute('data-ordinal', ordinalId);
+
+        variant.c3ExperienceId = `C3_${experienceData.experienceId}_${variantId}_${ordinalId}`;
+
+        variant.domRef.appendChild(initScene());
+
+        variant.eventHandlers = {};
+
+        // Append to the container
+        containerDiv.appendChild(variant.domRef);
+
+        // Load the model for the variant
+        try {
+            // Load the model for the variant
+            const response = await fetch(`${baseUrl}/experiences/${experienceData.experienceId}/variants/${variantId}/model.json`);
+
+            if (!response.ok) {
+                throw new Error(`Failed to load model for variant ${variantId}: ${response.statusText}`);
+            }
+
+            const modelData = await response.json();
+
+            // Store a deep copy of the initial model
+            variant.initialModel = JSON.parse(JSON.stringify(modelData));
+
+            variant.model = modelData;
+
+            // The model's experienceId must be in this format as it needs to contain ordinalId
+            variant.model.experienceId = variant.c3ExperienceId;
+
+        } catch (err) {
+            console.error(`Failed to load model for variant ${variantId}:`, err);
+        }
+
+        modelSetup(variant.model);
+
+        // Initialize variantAPI
+        variant.variantAPI = {
+            model: variant.model,
+            domRef: variant.domRef,
+            getCurrentScene: () => variant.currentSceneIndex + 1,
+            setCurrentScene: async (idx) => {
+                const jumpToScene = idx - 1;
+                await fetchScene(jumpToScene);
+                await showScene(jumpToScene);
+                await runDataIntegrations(jumpToScene);
+            },
+            reset,
+            render: () => { },
+            dumpData: () => console.log(experienceData),
+            customActionHandler,
+            getDOMNode,
+            walkModel,
+            findWidgetByUuid,
+            querySelectorAll,
+            querySelector,
+            runDataIntegrations,
+            waitForDuration,
+            waitForEvent,
+            addEventListener,
+            clearEventListeners,
+            removeEventListener,
+            geometry: {
+                highlightWidget,
+                moveTo,
+                fitToContents,
+                printWidget,
+                printScene,
+                printModel
+            }
+        };
+
+        // Expose the variantAPI to the global context
+        window.FASTR_FRONTEND.experiences[variant.c3ExperienceId] = variant.variantAPI;
+    }
+
+    async function loadVariant(variantId) {
+
+        experienceData.currentVariantId = variantId;
+
+        const variant = experienceData.variants[variantId];
+
+        if (!variant) {
+            console.error(`Variant ${variantId} not found.`);
+            return;
+        }
+
+        // Initialize the variant if it hasn't been loaded yet
+        if (!variant.model) {
+            await initVariant(variant);
+            variant.scenes = variant.model.scenes.map(() => ({}));
+        }
+
+        // Update container padding based on variant dimensions
+        const { width, height, aspectRatio } = variant;
+        const containerDiv = experienceData.domRef;
+
+        // If fitToContents has set an aspectRatio for this variant, use it.  Otherwise, calculate.
+        const targetRatio = aspectRatio || (height / width) * 100;
+
+        containerDiv.style.paddingBottom = `${targetRatio}%`;
+
+        // Show the selected variant and hide others
+        const variants = containerDiv.querySelectorAll('[data-variant-id]');
+
+        // Loop through the scenes and show/hide based on the matching variantId
+        variants.forEach(variant => {
+            if (variant.getAttribute('data-variant-id') === variantId) {
+                variant.style.display = '';
+            } else {
+                variant.style.display = 'none';
+            }
+        });
+
+        if (debug.enabled) debug.log(debug.fmt(`Variant ${variantId} loaded.`));
+    }
+
+    async function handleResize() {
+
+        const variant = selectVariant();
+        const { variantId, currentSceneIndex } = variant;
+
+        if (!variantId) {
+            console.error('No variant selected based on the device width.');
+            return;
+        }
+
+        // If the variant changes due to resize, reinitialize the variant
+        if (variantId !== experienceData.currentVariantId) {
+            await loadVariant(variantId);
+            await fetchScene(currentSceneIndex);
+            await showScene(currentSceneIndex);
+            await conditionallyRunBackgroundIntegrations();
+            await runDataIntegrations(currentSceneIndex);
+
+            await emit('variantChange', variant);
+        }
+
+        getSceneDiv()?.querySelectorAll("canvas.graphics-integration-canvas").forEach(resizeGraphicsCanvas);
+    }
+
+    async function resetModel() {
+        const variantId = experienceData.currentVariantId;
+        const variant = experienceData.variants[variantId];
+
+        // Deep clone the initial model to reset
+        const model = JSON.parse(JSON.stringify(variant.initialModel));
+
+        // Set up the model
+        modelSetup(model);
+
+        // Store the new model in the variant
+        variant.model = model;
+    }
+
+    function preloadNavigableScenes(sceneDiv) {
+        const preloadedDestinations = new Set();
+        Array.from(sceneDiv.querySelectorAll("fastr-interaction")).forEach(async (actionElement) => {
+            const destination = actionElement.getAttribute("destination");
+            if (destination && !preloadedDestinations.has(destination)) {
+                preloadedDestinations.add(destination);
+                const model = getModel();
+                const destinationIndex = model.scenes?.findIndex((s) => s.id === destination);
+                if (destinationIndex >= 0 && !getSceneDiv(destinationIndex)) {
+                    await fetchScene(destinationIndex);
+                    const destinationDiv = getSceneDiv(destinationIndex);
+                    preloadSceneContent(destinationDiv, false); // Lazy preload destination
+                }
+            }
+        });
+    }
+
+    function getVariant() {
+        return experienceData.variants[experienceData.currentVariantId];
+    }
+
+    function getModel() {
+        return getVariant().model;
+    }
+
+    function getVariantDiv() {
+        return getVariant().domRef;
+    }
+
+    function getScene(sceneIndex = getVariant().currentSceneIndex) {
+        return getVariant().model.scenes[sceneIndex];
+    }
+
+    function getSceneDiv(sceneIndex = getVariant().currentSceneIndex) {
+        return getVariantDiv().querySelector(`div[data-scene-index="${sceneIndex}"]`);
+    }
+
+    function cancelSceneTimeouts(previousSceneIndex) {
+        const previousScene = getSceneDiv(previousSceneIndex);
+        const timeoutId = previousScene?.getAttribute("transition-timeout-id");
+        if (timeoutId) {
+            clearTimeout(parseInt(timeoutId));
+            previousScene.removeAttribute("transition-timeout-id");
+        }
+    }
+
+    function setImmediateActionListeners(sceneDiv) {
+        setActionListeners(sceneDiv, false);
+    }
+
+    function setDelayedActionListeners(sceneDiv) {
+        setActionListeners(sceneDiv, true);
+    }
+
+    function insertSceneIntoDOM(sceneDiv, sceneIndex) {
+        const variantDiv = getVariantDiv();
+
+        // Find the first scene with a higher data-scene-index value
+        const nextScene = getSceneDiv(sceneIndex);
+
+        if (!nextScene) {
+            // Append if no higher scene is found
+            variantDiv.appendChild(sceneDiv);
+        } else {
+            // Insert before the found nextScene
+            variantDiv.insertBefore(sceneDiv, nextScene);
+        }
+    }
+
+    async function fetchSceneContent(sceneIndex) {
+        const { experienceId } = experienceData;
+        const variant = getVariant();
+        const response = await fetch(`${baseUrl}/experiences/${experienceId}/variants/${variant.variantId}/scene${sceneIndex}.html`);
+        if (!response.ok) {
+            console.error(`Failed to fetch scene content for scene ${sceneIndex}`);
+            return null;
+        }
+
+        return await response.text();
+    }
+
+    function parseSceneContent(sceneHTML, sceneIndex) {
+        const parser = new DOMParser();
+
+        // Update SVG IDs to be globally unique
+        const uniqueSceneHTML = sceneHTML.replace(/FFUUID-/g, `${getVariant().c3ExperienceId}_`);
+
+        const sceneDoc = parser.parseFromString(uniqueSceneHTML, "text/html");
+        const sceneSvg = sceneDoc.querySelector("svg");
+        if (!sceneSvg) return null;
+        const variantDiv = getVariantDiv();
+
+        const sceneDiv = document.createElement("div");
+        sceneDiv.setAttribute("data-scene-index", sceneIndex);
+        sceneDiv.style.position = "absolute";
+        sceneDiv.style.width = "100%";
+        sceneDiv.style.height = "100%";
+        sceneDiv.style.display = "none";
+
+        const sceneGeometry = getModel().scenes[sceneIndex]?.geometry;
+
+        sceneDiv.style.contentVisibility = "auto";
+        sceneDiv.style.containIntrinsicSize = `${Math.round(sceneGeometry?.absoluteWidth)}px ${Math.round(sceneGeometry?.absoluteHeight)}px`;
+
+        const backgroundChildren = sceneSvg.querySelector("g.background-children");
+        if (backgroundChildren) {
+            if (!getSceneDiv("background")) {
+                const backgroundSvg = sceneSvg.cloneNode(true);
+
+                // exclude non-background elements
+                const bgEl = backgroundSvg.querySelector("g.background-children");
+                bgEl.parentNode.querySelector(":scope > g.frame-children")?.remove();
+                bgEl.parentNode.querySelector(":scope > g.foreground-children")?.remove();
+
+                const backgroundDiv = document.createElement("div");
+                backgroundDiv.setAttribute("data-scene-index", "background");
+                backgroundDiv.style.position = "absolute";
+                backgroundDiv.style.width = "100%";
+                backgroundDiv.style.height = "100%";
+
+                // allow pointer events to pass through background to content behind experience (eg. for transparent experience background)
+                backgroundSvg.style.pointerEvents = "none";
+                backgroundDiv.style.pointerEvents = "none";
+                const bgContent = bgEl.parentNode.querySelector(":scope > g.background-children");
+                if (bgContent) {
+                    bgContent.style.pointerEvents = "auto";
+                }
+
+                backgroundDiv.innerHTML = backgroundSvg.outerHTML;
+                variantDiv.appendChild(backgroundDiv);
+
+                setImmediateActionListeners(backgroundDiv);
+                preloadSceneContent(backgroundDiv, true);
+                requestAnimationFrame(() => initializeSceneAnimations(getVariant().model.backgroundScene, backgroundDiv));
+            }
+
+            // allow pointer events to pass through scene to background
+            sceneSvg.style.pointerEvents = "none";
+            sceneDiv.style.pointerEvents = "none";
+            const sceneContent = backgroundChildren.parentNode.querySelector(":scope > g.frame-children");
+            if (sceneContent) {
+                sceneContent.style.pointerEvents = "auto";
+            }
+
+            // remove background elements from scene
+            backgroundChildren.parentNode.querySelector(":scope > g.fills")?.remove();
+            backgroundChildren.remove();
+        }
+
+        const foregroundChildren = sceneSvg.querySelector("g.foreground-children");
+        if (foregroundChildren) {
+            if (!getSceneDiv("foreground")) {
+                const foregroundSvg = sceneSvg.cloneNode(true);
+
+                // exclude non-foreground elements
+                const fgEl = foregroundSvg.querySelector("g.foreground-children");
+                fgEl.parentNode.querySelector(":scope > g.fills")?.remove();
+                fgEl.parentNode.querySelector(":scope > g.frame-children")?.remove();
+                fgEl.parentNode.querySelector(":scope > g.background-children")?.remove();
+
+                const foregroundDiv = document.createElement("div");
+                foregroundDiv.setAttribute("data-scene-index", "foreground");
+                foregroundDiv.style.position = "absolute";
+                foregroundDiv.style.width = "100%";
+                foregroundDiv.style.height = "100%";
+                foregroundDiv.style.zIndex = 10;
+
+                // allow pointer events to pass through foreground to scene and background
+                foregroundSvg.style.pointerEvents = "none";
+                foregroundDiv.style.pointerEvents = "none";
+                const fgContent = fgEl.parentNode.querySelector(":scope > g.foreground-children");
+                if (fgContent) {
+                    fgContent.style.pointerEvents = "auto";
+                }
+
+                foregroundDiv.innerHTML = foregroundSvg.outerHTML;
+                variantDiv.appendChild(foregroundDiv);
+
+                setImmediateActionListeners(foregroundDiv);
+                preloadSceneContent(foregroundDiv, true);
+                requestAnimationFrame(() => initializeSceneAnimations(getVariant().model.overlayScene, foregroundDiv));
+            }
+
+            // remove foreground elements from scene
+            foregroundChildren.remove();
+        }
+
+        sceneDiv.innerHTML = sceneSvg.outerHTML;
+        return sceneDiv;
+    }
+
+    async function fetchScene(sceneIndex) {
+
+        let sceneDiv = getSceneDiv(sceneIndex);
+
+        if (sceneDiv) {
+            // Scene is already cached
+            return;
+        }
+
+        try {
+            const sceneHTML = await fetchSceneContent(sceneIndex);
+            if (!sceneHTML) {
+                console.error(`Failed to fetch scene content for scene ${sceneIndex}`);
+                return;
+            }
+
+            sceneDiv = parseSceneContent(sceneHTML, sceneIndex);
+
+            const variant = getVariant();
+            variant.scenes[sceneIndex].cachedDiv = sceneDiv.cloneNode(true);
+
+        } catch (err) {
+            if (debug.enabled) console.log(experienceData);
+            console.error(`Failed to fetch and prepare scene ${sceneIndex} for experience variant`, err);
+        }
+
+        insertSceneIntoDOM(sceneDiv, sceneIndex);
+
+        initMobileScrollTransition(sceneDiv, sceneIndex);
+
+        // Set up immediate action listeners
+        setImmediateActionListeners(sceneDiv);
+    }
+
+    async function applySceneTransition(currentSceneIndex, previousSceneIndex, animation) {
+        if (currentSceneIndex === previousSceneIndex) return;
+        if (!animation) return;
+
+        // Validate animation direction
+        if (!["right", "left", "down", "up"].includes(animation)) {
+            console.error(`Invalid transition direction: ${animation}`);
+            return;
+        }
+
+        const sceneDiv = getSceneDiv(currentSceneIndex);
+        initializeSceneAnimations(getScene(currentSceneIndex), sceneDiv);
+        const previousSceneDiv = getSceneDiv(previousSceneIndex);
+
+        // Set initial positions using CSS transforms
+        const setInitialPosition = (div, entering) => {
+            let offsetX = '0%';
+            let offsetY = '0%';
+            switch (animation) {
+                case "right":
+                    offsetX = entering ? '-100%' : '0%';
+                    break;
+                case "left":
+                    offsetX = entering ? '100%' : '0%';
+                    break;
+                case "down":
+                    offsetY = entering ? '-100%' : '0%';
+                    break;
+                case "up":
+                    offsetY = entering ? '100%' : '0%';
+                    break;
+            }
+            div.style.transform = `translate(${offsetX}, ${offsetY})`;
+            div.style.transition = 'none';
+            // Trigger hardware acceleration
+            div.style.willChange = 'transform';
+        };
+
+        // Set transition properties
+        const setTransition = (div) => {
+            div.style.transition = 'transform 0.65s ease-in-out';
+        };
+
+        // Prepare the sceneDiv (the new scene)
+        sceneDiv.style.removeProperty("display");
+        setInitialPosition(sceneDiv, true);
+
+        // Force reflow
+        sceneDiv.getBoundingClientRect();
+
+        // Prepare previousSceneDiv (the current scene)
+        setInitialPosition(previousSceneDiv, false);
+
+        // Force reflow
+        previousSceneDiv.getBoundingClientRect();
+
+        // Set transitions
+        setTransition(sceneDiv);
+        setTransition(previousSceneDiv);
+
+        // Start the animation on the next frame
+        requestAnimationFrame(() => {
+            sceneDiv.style.transform = 'translate(0%, 0%)';
+            switch (animation) {
+                case "right":
+                    previousSceneDiv.style.transform = 'translate(100%, 0%)';
+                    break;
+                case "left":
+                    previousSceneDiv.style.transform = 'translate(-100%, 0%)';
+                    break;
+                case "down":
+                    previousSceneDiv.style.transform = 'translate(0%, 100%)';
+                    break;
+                case "up":
+                    previousSceneDiv.style.transform = 'translate(0%, -100%)';
+                    break;
+            }
+        });
+
+        // Wait for the transition to complete
+        await new Promise((resolve) => {
+            const handleTransitionEnd = (event) => {
+                // Ensure the event is for the transform property
+                if (event.propertyName === 'transform') {
+                    sceneDiv.removeEventListener('transitionend', handleTransitionEnd);
+                    resolve();
+                }
+            };
+            sceneDiv.addEventListener('transitionend', handleTransitionEnd);
+        });
+
+        // Clean up styles
+        previousSceneDiv.style.display = "none";
+        previousSceneDiv.style.transition = '';
+        previousSceneDiv.style.transform = '';
+        previousSceneDiv.style.willChange = '';
+        sceneDiv.style.transition = '';
+        sceneDiv.style.transform = '';
+        sceneDiv.style.willChange = '';
+    }
+
+    async function showScene(sceneIndex, animation) {
+
+        checkPageHit();
+        checkExperienceHitOnIntersection();
+
+        const sceneDiv = getSceneDiv(sceneIndex);
+        if (!sceneDiv) {
+            console.error(`Scene ${sceneIndex} is not loaded. Please load it using fetchScene before showing.`);
+            return;
+        }
+
+        const variant = getVariant();
+        const previousSceneIndex = variant.currentSceneIndex;
+        variant.currentSceneIndex = sceneIndex;
+
+        cancelSceneTimeouts(previousSceneIndex);
+
+        if (previousSceneIndex !== sceneIndex) {
+            if (animation) {
+                await applySceneTransition(sceneIndex, previousSceneIndex, animation);
+            } else {
+                getSceneDiv(previousSceneIndex).style.display = "none";
+            }
+        }
+
+        resetAnimationsAndEffects(previousSceneIndex);
+
+        variant.currentSceneIndex = sceneIndex;
+        sceneDiv.style.removeProperty("display");
+        if (debug.enabled) console.log(debug.fmt(`Scene ${sceneIndex} is now active`));
+
+        requestAnimationFrame(() => extractSceneEmbeds(sceneDiv));
+
+        setDelayedActionListeners(sceneDiv);
+
+        preloadSceneContent(sceneDiv, true);
+
+        preloadNavigableScenes(sceneDiv);
+
+        initializeSceneAnimations();
+    }
+
+    function checkOverlap(a, b) {
+        const aBbox = a.getBBox();
+        const bBbox = b.getBBox();
+
+        if (!aBbox.width || !bBbox.width) return false;
+
+        return !(aBbox.x > bBbox.x + bBbox.width ||
+            aBbox.x + aBbox.width < bBbox.x ||
+            aBbox.y > bBbox.y + bBbox.height ||
+            aBbox.y + aBbox.height < bBbox.y);
+    }
+
+    function extractSceneEmbeds(sceneDiv) {
+        if (!isBrowserWebkit()) return;
+
+        const svgRef = sceneDiv.querySelector("svg");
+        const embeds = Array.from(
+            svgRef.querySelectorAll('g[shape-type="embed"], g[shape-type="html"], g[shape-type="graphics"]')
+        );
+
+        if (!embeds.length) return;
+
+        svgRef.style.position = "absolute";
+        svgRef.style.width = "100%";
+        svgRef.style.top = 0;
+        svgRef.style.left = 0;
+
+        const svgBounds = svgRef.viewBox?.baseVal;
+
+        const embedElementsToExtract = [];
+        const nonEmbedElementsToExtract = [];
+
+        embeds.forEach(embed => {
+            const foreignObject = embed.querySelector("foreignObject");
+            if (!foreignObject) return;
+            const { x: { baseVal: { value: foX } },
+                y: { baseVal: { value: foY } },
+                width: { baseVal: { value: foWidth } },
+                height: { baseVal: { value: foHeight } } } = foreignObject;
+
+            let embedElement = foreignObject.querySelector("iframe") || foreignObject.querySelector("canvas");
+            if (!embedElement) return;
+            const isCanvas = embedElement.tagName.toLowerCase() == "canvas";
+            embedElementsToExtract.push(embedElement);
+
+            const overlaps = [embed];
+            const shapes = Array.from(svgRef.querySelectorAll("g[shape-type]"));
+
+            let graphicsChildrenGroup = foreignObject.parentElement.querySelector("g.graphics-children");
+            if (graphicsChildrenGroup) {
+                overlaps.push(graphicsChildrenGroup);
+            }
+
+            const getWrappedShape = (shape) => {
+                let wrappedShape = shape;
+                wrappedShape = wrappedShape.parent?.closest("g[class='fastr-animation-wrapper']") || wrappedShape;
+                wrappedShape = wrappedShape.parent?.closest("g[class='fastr-effect-wrapper']") || wrappedShape;
+                if (wrappedShape == shape) {
+                    return shape;
+                } else {
+                    return getWrappedShape(animationWrappedShape);
+                }
+            };
+
+            for (const shape of shapes) {
+                const wrappedShape = getWrappedShape(shape);
+                const parentMask = wrappedShape.closest("g[group-type=mask]");
+                if (!embeds.includes(wrappedShape)
+                    && !wrappedShape.contains(embed) // skip (grand)parents of the embed
+                    && !nonEmbedElementsToExtract.includes(wrappedShape) // skip shapes already extracted in previous iterations
+                    && (!parentMask || parentMask === wrappedShape) // skip shapes nested within a mask group but not the mask group itself
+                    && !overlaps.some(overlap => overlap.contains(wrappedShape)) // skip shapes that are nested inside other shapes already marked as overlaps
+                    && overlaps.some(overlap => checkOverlap(wrappedShape, overlap))
+                ) {
+                    overlaps.push(wrappedShape);
+                }
+            }
+
+            embedElement.style.position = "absolute";
+            embedElement.style.top = `${(foY - svgBounds.y) / svgBounds.height * 100}%`;
+            embedElement.style.left = `${(foX - svgBounds.x) / svgBounds.width * 100}%`;
+            embedElement.style.width = `${foWidth / svgBounds.width * 100}%`;
+            embedElement.style.height = `${foHeight / svgBounds.height * 100}%`;
+            embedElement.style.pointerEvents = isCanvas ? "none" : "auto";
+
+            for (const overlap of overlaps) {
+                if (overlap !== embed) nonEmbedElementsToExtract.push(overlap);
+            }
+        });
+
+        const sceneEmbedsRef = document.createElement("div");
+        sceneEmbedsRef.id = "scene-embeds";
+        sceneEmbedsRef.style.width = "100%";
+        sceneEmbedsRef.style.height = "100%";
+        sceneEmbedsRef.style.pointerEvents = "none";
+        sceneEmbedsRef.style.overflow = "hidden";
+        sceneEmbedsRef.style.position = "absolute";
+        sceneEmbedsRef.style.top = 0;
+        sceneEmbedsRef.style.left = 0;
+
+        let elementsToExtract = [...embedElementsToExtract, ...nonEmbedElementsToExtract];
+        elementsToExtract.sort((a, b) => {
+            const pos = a.compareDocumentPosition(b);
+            if (pos & Node.DOCUMENT_POSITION_FOLLOWING) return -1;
+            if (pos & Node.DOCUMENT_POSITION_PRECEDING) return 1;
+            return 0;
+        });
+        let currentSvg = null;
+        let openSvg = () => {
+            if (currentSvg) return;
+            currentSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            const attributes = svgRef.attributes;
+            for (const attr of attributes) {
+                currentSvg.setAttribute(attr.name, attr.value);
+            }
+        };
+        let closeSvg = () => {
+            if (currentSvg) {
+                sceneEmbedsRef.appendChild(currentSvg);
+                currentSvg = null;
+            }
+        };
+        for (const element of elementsToExtract) {
+            element.parentNode.removeChild(element);
+            const name = element.tagName.toLowerCase();
+            if (name == "canvas" || name == "iframe") {
+                closeSvg();
+                sceneEmbedsRef.appendChild(element);
+            } else {
+                element.style.pointerEvents = "auto";
+                openSvg();
+                currentSvg.appendChild(element);
+            }
+        }
+        closeSvg();
+
+        sceneDiv.appendChild(sceneEmbedsRef);
+
+        setImmediateActionListeners(sceneEmbedsRef);
+    }
+
+    function lightboxEscapeListener(keyboardEvent) {
+        if (keyboardEvent.key === "Escape") {
+            closeLightbox();
+        }
+    }
+
+    let lightboxPreviouslyFocusedElement = null;
+    let lightboxStoredBodyStyles = null;
+    let lightboxFocusTransferPrevented = false;
+
+    function preventLightboxFocusTransfer() {
+        lightboxFocusTransferPrevented = true;
+        requestAnimationFrame(() => {
+            lightboxFocusTransferPrevented = false;
+        });
+    }
+
+    function openLightbox(lightboxUrl, widthStr, heightStr) {
+        let lightboxDiv = document.querySelector("div.fastr-lightbox");
+        if (!lightboxDiv) {
+            lightboxDiv = document.createElement("div");
+            lightboxDiv.classList.add("fastr-lightbox");
+            lightboxDiv.style.position = "fixed";
+            lightboxDiv.style.zIndex = 1000;
+            lightboxDiv.style.top = 0;
+            lightboxDiv.style.left = 0;
+            lightboxDiv.style.width = "100vw";
+            lightboxDiv.style.height = "100vh";
+            lightboxDiv.style.display = "flex";
+            lightboxDiv.style.justifyContent = "center";
+            lightboxDiv.style.alignItems = "center";
+            document.addEventListener("keydown", lightboxEscapeListener);
+
+            document.body.appendChild(lightboxDiv);
+        }
+
+        let overlayDiv = lightboxDiv.querySelector("div.fastr-lightbox-overlay");
+        if (!overlayDiv) {
+            overlayDiv = document.createElement("div");
+            overlayDiv.classList.add("fastr-lightbox-overlay");
+            overlayDiv.style.position = "absolute";
+            overlayDiv.style.width = "100vw";
+            overlayDiv.style.height = "100vh";
+            overlayDiv.style.top = 0;
+            overlayDiv.style.left = 0;
+            overlayDiv.style.background = "black";
+            overlayDiv.style.opacity = 0.65;
+            setClickListener(overlayDiv, closeLightbox);
+
+            lightboxDiv.appendChild(overlayDiv);
+        }
+
+        let contentDiv = lightboxDiv.querySelector(".fastr-lightbox-content");
+        if (!contentDiv) {
+            contentDiv = document.createElement("div");
+            contentDiv.classList.add("fastr-lightbox-content");
+            contentDiv.style.position = "relative";
+            contentDiv.style.background = "black";
+            contentDiv.tabIndex = 0;
+
+            lightboxDiv.appendChild(contentDiv);
+        }
+
+        const width = parseInt(widthStr);
+        const height = parseInt(heightStr);
+        const adjustedWidth = Math.min(width, window.innerWidth);
+        const adjustedHeight = Math.min(height, window.innerHeight);
+        const scaleFactor = Math.min((width / adjustedWidth), (height / adjustedHeight));
+        contentDiv.style.width = `${width * scaleFactor}px`;
+        contentDiv.style.height = `${height * scaleFactor}px`;
+
+        const createCloseDiv = (className) => {
+            let closeDiv = lightboxDiv.querySelector(`.${className}`);
+            if (!closeDiv) {
+                closeDiv = document.createElement("div");
+                closeDiv.classList.add(className);
+                closeDiv.ariaLabel = "Close";
+                closeDiv.role = "button";
+                closeDiv.tabIndex = 0;
+                closeDiv.style.position = "absolute";
+                closeDiv.style.top = "-14px";
+                closeDiv.style.right = "-14px";
+                closeDiv.style.width = "28px";
+                closeDiv.style.height = "28px";
+                closeDiv.style.cursor = "pointer";
+                closeDiv.style.zIndex = 1001;
+                setClickListener(closeDiv, closeLightbox);
+
+                const closeIconSvg = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" preserveAspectRatio="none">
+                <g>
+                    <circle stroke='#FFFFFF' fill='#626262' stroke-width='1.5' stroke-miterlimit='10' cx='14' cy='14' r='13.009'/>
+                    <g>
+                        <line stroke='#FFFFFF' stroke-width='1.5' stroke-linecap='round' stroke-miterlimit='10' x1='9.704' y1='18.257' x2='18.296' y2='9.666'/>
+                        <line stroke='#FFFFFF' stroke-width='1.5' stroke-linecap='round' stroke-miterlimit='10' x1='9.704' y1='9.666' x2='18.296' y2='18.257'/>
+                    </g>
+                </g>
+            </svg>`;
+                const closeImg = document.createElement("img");
+                closeImg.alt = "close icon";
+                closeImg.style.width = "28px";
+                closeImg.style.height = "28px";
+                closeImg.src = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(closeIconSvg)}`;
+                closeImg.role = "button";
+                closeImg.style.cursor = "pointer";
+                setClickListener(closeImg, closeLightbox);
+
+                closeDiv.appendChild(closeImg);
+                contentDiv.appendChild(closeDiv);
+            }
+            return closeDiv;
+        }
+
+        let backgroundCloseDiv = createCloseDiv("fastr-lightbox-close-background");
+
+        let contentFrame = lightboxDiv.querySelector("iframe");
+        if (!contentFrame) {
+            contentFrame = document.createElement("iframe");
+            contentFrame.style.position = "relative";
+            contentFrame.style.width = "100%";
+            contentFrame.style.height = "100%";
+            contentFrame.style.border = 0;
+
+            contentDiv.appendChild(contentFrame);
+        }
+
+        let closeDiv = createCloseDiv("fastr-lightbox-close");
+
+        contentFrame.src = lightboxUrl;
+
+        // Store the previously focused element for restoration
+        lightboxPreviouslyFocusedElement = document.activeElement;
+
+        // Store original body styles and prevent background scrolling
+        const body = document.body;
+        lightboxStoredBodyStyles = {
+            overflow: body.style.overflow,
+            height: body.style.height
+        };
+        body.style.overflow = 'hidden';
+        body.style.height = '100%';
+
+        // Add focus trap listeners
+        document.addEventListener("keydown", focusTrapListener);
+        document.addEventListener("focusin", focusReturnListener);
+
+        backgroundCloseDiv.addEventListener("focus", (event) => {
+            if (!lightboxFocusTransferPrevented) {
+                preventLightboxFocusTransfer();
+                closeDiv.focus();
+            }
+        });
+        closeDiv.addEventListener("focus", (event) => {
+            if (!lightboxFocusTransferPrevented) {
+                preventLightboxFocusTransfer();
+                backgroundCloseDiv.focus();
+            }
+        })
+
+        contentFrame.onload = () => {
+            contentFrame.focus();
+        }
+    }
+
+    function focusTrapListener(event) {
+        const lightboxDiv = document.querySelector(".fastr-lightbox");
+        if (!lightboxDiv) return;
+
+        // Only trap focus for Tab key
+        if (event.key !== 'Tab') return;
+
+        const backgroundCloseButton = lightboxDiv.querySelector('.fastr-lightbox-close-background');
+        const closeButton = lightboxDiv.querySelector('.fastr-lightbox-close');
+        const contentDiv = lightboxDiv.querySelector('.fastr-lightbox-content');
+
+        if (!contentDiv || !closeButton) return;
+
+        if (event.shiftKey && document.activeElement === backgroundCloseButton) {
+            preventLightboxFocusTransfer();
+            closeButton.focus();
+        }
+        if (!event.shiftKey && document.activeElement === closeButton) {
+            preventLightboxFocusTransfer();
+            backgroundCloseButton.focus();
+        }
+    }
+
+    function focusReturnListener(event) {
+        const lightboxDiv = document.querySelector(".fastr-lightbox");
+        if (!lightboxDiv) return;
+
+        const target = event.target;
+
+        // Check if focus landed on an element outside the lightbox
+        if (!lightboxDiv.contains(target)) {
+            // Redirect focus back to the lightbox content
+            const contentDiv = lightboxDiv.querySelector('.fastr-lightbox-content');
+            if (contentDiv) {
+                contentDiv.focus();
+            }
+        }
+    }
+
+    function closeLightbox() {
+        const lightboxDiv = document.querySelector(".fastr-lightbox");
+
+        lightboxDiv?.remove();
+        document.removeEventListener("keydown", lightboxEscapeListener);
+        document.removeEventListener("keydown", focusTrapListener);
+        document.removeEventListener("focusin", focusReturnListener);
+
+        // Restore original body styles
+        if (lightboxStoredBodyStyles) {
+            const body = document.body;
+            body.style.overflow = lightboxStoredBodyStyles.overflow;
+            body.style.height = lightboxStoredBodyStyles.height;
+            lightboxStoredBodyStyles = null;
+        }
+
+        // Restore focus to previously focused element
+        if (lightboxPreviouslyFocusedElement && document.contains(lightboxPreviouslyFocusedElement)) {
+            lightboxPreviouslyFocusedElement.focus();
+        }
+
+        lightboxPreviouslyFocusedElement = null;
+    }
+
+    function preloadSceneContent(sceneDiv, eager = true) {
+        const svgEl = sceneDiv.querySelector("svg");
+        if (!svgEl) return;
+
+        // If scene has property rendered, it has already been preloaded.  Return.
+        if (sceneDiv.getAttribute("rendered")) return;
+
+        sceneDiv.setAttribute("rendered", "true");
+
+        const { viewBox } = svgEl;
+        const { y: viewBoxY, height: viewBoxHeight } = viewBox?.baseVal ?? {};
+        const { top: containerTop = 0, height: containerHeight } = experienceData.domRef.getBoundingClientRect();
+        const heightFactor = containerHeight / viewBoxHeight;
+
+        // preconnect origins of urls in styles (eg. fonts)
+        Array.from(svgEl.querySelectorAll("style")).forEach(styleEl => {
+            const matches = styleEl.innerHTML.matchAll(/url\((https?:\/\/[^)]+)\)/g);
+            Array.from(matches).map(match => preconnectOrigin(match[1]));
+        });
+
+        Array.from(svgEl.querySelectorAll("foreignObject")).forEach(foEl => {
+
+            let eagerCandidate = eager;
+
+            const { y: { baseVal: { value: foY } } } = foEl;
+
+            const foTop = Math.max(0, foY - viewBoxY);
+            const scaledFoTop = containerTop + foTop * heightFactor;
+            if (scaledFoTop > (window.innerHeight + scrollY)) {
+                eagerCandidate = false; // Still preload, but preload lazily
+            }
+
+            // if we have reached here with eagerCandidate true, the foreignObject is in or above the viewport, so eager load the content
+            // note: we can not yet filter out those above the viewport because the final scrollY is not available during the initial load
+
+            Array.from(foEl.querySelectorAll("img")).forEach(imgEl => {
+                imgEl.setAttribute("loading", (eagerCandidate) ? "eager" : "lazy");
+                imgEl.setAttribute("decoding", (eagerCandidate) ? "sync" : "async");
+
+                const { src, srcset, sizes } = imgEl;
+                preconnectOrigin(src);
+                if (src && !document.head.querySelector(`link[href="${src}"]`)) {
+                    const preloadLink = document.createElement("link");
+                    preloadLink.setAttribute("rel", "preload");
+                    preloadLink.setAttribute("as", "image");
+                    preloadLink.setAttribute("href", src);
+                    preloadLink.setAttribute("imagesrcset", srcset);
+                    preloadLink.setAttribute("imagesizes", sizes);
+                    preloadLink.setAttribute("decoding", "sync");
+                    document.head.appendChild(preloadLink);
+                }
+            });
+
+            Array.from(foEl.querySelectorAll("iframe")).forEach(iframeEl => {
+                if (iframeEl.src) preconnectOrigin(iframeEl.src);
+                iframeEl.setAttribute("loading", eagerCandidate ? "eager" : "lazy");
+            });
+        });
+    }
+
+    function setClickListener(element, onClick) {
+        element.addEventListener("click", onClick);
+        element.addEventListener("keydown", keyboardEvent => {
+            if (keyboardEvent.key === "Enter" || keyboardEvent.key === " ") {
+                keyboardEvent.preventDefault();
+                onClick(keyboardEvent);
+            }
+        });
+    }
+
+    function addBoundingBox(shapeElement) {
+        const shapeId = shapeElement.id?.replace("shape-", "");
+        if (!shapeId) return;
+
+        const widget = findWidgetByUuid(shapeId);
+        if (!widget?.geometry) return;
+
+        const svgBounds = shapeElement.ownerSVGElement?.viewBox?.baseVal;
+        if (!svgBounds) return;
+
+        const pinnedParent = shapeElement.closest("g.foreground-children") ?? shapeElement.closest("g.background-children");
+        const pinX = pinnedParent?.getAttribute("pinx");
+        const pinY = pinnedParent?.getAttribute("piny");
+        const adjustX = pinX ? parseFloat(pinX) : 0;
+        const adjustY = pinY ? parseFloat(pinY) : 0;
+
+        const boundingRect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        boundingRect.setAttribute("x", svgBounds.x + widget.geometry.absoluteLeft - adjustX);
+        boundingRect.setAttribute("y", svgBounds.y + widget.geometry.absoluteTop - adjustY);
+        boundingRect.setAttribute("width", widget.geometry.absoluteWidth);
+        boundingRect.setAttribute("height", widget.geometry.absoluteHeight);
+        boundingRect.classList.add("fastr-link-bounding-box");
+        boundingRect.style.fill = "#FFF";
+        boundingRect.style.fillOpacity = 0;
+
+        shapeElement.appendChild(boundingRect);
+        return boundingRect;
+    }
+
+    function setFastrAnchorWrapper(shapeElement, url, target, clickBoundingBox, onClick) {
+        let shapeAnchor = shapeElement.closest(`a[shape-id="${shapeElement.id}"]`);
+        if (!shapeAnchor) {
+            shapeAnchor = document.createElementNS("http://www.w3.org/2000/svg", "a");
+            shapeAnchor.classList.add("fastr-shape-anchor");
+            shapeAnchor.setAttribute("shape-id", shapeElement.id);
+            shapeAnchor.setAttribute("tabindex", 0);
+            shapeAnchor.style.textDecoration = "none";
+
+            shapeElement.parentNode.replaceChild(shapeAnchor, shapeElement);
+            shapeAnchor.appendChild(shapeElement);
+
+            if (clickBoundingBox) addBoundingBox(shapeElement);
+        }
+
+        shapeAnchor.setAttribute("href", url);
+        shapeAnchor.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", url);
+        shapeAnchor.setAttribute("title", url);
+        if (target) shapeAnchor.setAttribute("target", target);
+
+        if (onClick) shapeAnchor.onclick = onClick;
+    }
+
+    function setActionListeners(shapeElement, onDelay = false) {
+
+        const variant = getVariant();
+        const model = getModel();
+
+        shapeElement.querySelectorAll("fastr-interaction")
+            .forEach(async (actionElement) => {
+                const type = actionElement.getAttribute("type");
+                const trigger = actionElement.getAttribute("trigger");
+                const clickBoundingBox = (actionElement.getAttribute("click-bounding-box") ?? "enabled") === "enabled";
+                const shapeElement = actionElement.parentElement.parentElement;
+
+                if (onDelay && trigger !== "afterdelay") return;
+                if (!onDelay && trigger === "afterdelay") return;
+
+                const applyInteraction = (interactionCallback) => {
+                    if (trigger === "afterdelay") {
+                        const delay = actionElement.getAttribute("delay");
+                        setTimeout(interactionCallback, delay);
+                    } else if (trigger === "click") {
+                        const clickElement = clickBoundingBox ? addBoundingBox(shapeElement, model) || shapeElement : shapeElement;
+                        clickElement.style.cursor = "pointer";
+                        clickElement.style.pointerEvents = "auto";
+                        clickElement.tabIndex = shapeElement.getAttribute("tabindex") ?? 0;
+                        clickElement.setAttribute("role", "button");
+                        setClickListener(clickElement, interactionCallback);
+                    } else {
+                        shapeElement.addEventListener(trigger, interactionCallback);
+                    }
+                };
+
+                switch (type) {
+                    case "custom-action":
+                        const functionId = actionElement.getAttribute("function-id");
+                        const functionInputStr = actionElement.querySelector("fastr-interaction-function-inputs")?.innerHTML;
+                        const functionInputs = JSON.parse(functionInputStr || "[]");
+                        if (!functionId) return;
+
+                        if (window.location === window.top.location) {
+                            applyInteraction(() => customActionHandler(functionId, functionInputs));
+                        } else {
+                            const functionCode = `window.FASTR_FRONTEND.experiences["${variant.c3ExperienceId}"].customActionHandler("${functionId}", ${functionInputStr})`;
+                            window.top.postMessage({ functionCode, isTrusted: true }, "*");
+                        }
+                        break;
+                    case "execute-js":
+                        const code = actionElement.getAttribute("code");
+                        if (!code) return;
+                        if (window.location === window.top.location) {
+                            const fn = new Function(`return (async () => { ${code} })()`);
+                            applyInteraction(fn);
+                        } else {
+                            window.top.postMessage({ code, isTrusted: true }, "*");
+                        }
+                        break;
+                    case "jump-to-element":
+                        const cssSelector = actionElement.getAttribute("css-selector");
+                        if (!cssSelector) return;
+
+                        if (trigger === "click") {
+                            setFastrAnchorWrapper(shapeElement, "#", undefined, clickBoundingBox, event => {
+                                event.preventDefault();
+                                document.querySelector(cssSelector)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                            });
+                        } else {
+                            applyInteraction(() => document.querySelector(cssSelector)?.scrollIntoView({ behavior: "smooth", block: "start" }));
+                        }
+                        break;
+                    case "navigate":
+                        const destination = actionElement.getAttribute("destination");
+                        let destinationIndex = ["next-scene", "prev-scene"].includes(destination)
+                            ? destination
+                            : model.scenes?.findIndex(s => s.id === destination);
+
+                        if (destinationIndex === undefined || destinationIndex === null || destinationIndex === -1) return;
+                        async function loadDestination() {
+                            if (destination === "next-scene") {
+                                destinationIndex = getVariant().currentSceneIndex + 1;
+                                if (destinationIndex === model.scenes.length) destinationIndex = 0;
+                            } else if (destination === "prev-scene") {
+                                destinationIndex = getVariant().currentSceneIndex - 1;
+                                if (destinationIndex < 0) destinationIndex = model.scenes.length - 1;
+                            }
+
+                            await fetchScene(destinationIndex);
+                            await showScene(destinationIndex, actionElement.getAttribute("animation"));
+                            await runDataIntegrations(destinationIndex);
+                        }
+                        let sceneIndex = getVariant().currentSceneIndex;
+                        function isSceneActive() {
+                            return getSceneDiv(sceneIndex).style.display !== "none";
+                        }
+                        if (trigger === "afterdelay") {
+                            const delay = actionElement.getAttribute("delay");
+                            const startLoadTimeout = () => {
+                                let parentElement = shapeElement;
+                                while (parentElement.getAttribute("data-scene-index") == null) {
+                                    parentElement = parentElement.parentElement;
+                                }
+                                parentElement.setAttribute("transition-timeout-id", setTimeout(() => {
+                                    if (isSceneActive()) {
+                                        loadDestination();
+                                    }
+                                    parentElement.removeAttribute("transition-timeout-id");
+                                }, delay));
+                            }
+                            const cancelLoadTimeout = () => {
+                                let timeoutID = shapeElement.getAttribute("transition-timeout-id");
+                                if (timeoutID != NaN) {
+                                    clearTimeout(timeoutID);
+                                }
+                                shapeElement.removeAttribute("transition-timeout-id");
+                            }
+                            if (!shapeElement.getAttribute("hovered")) {
+                                shapeElement.setAttribute("hovered", "false");
+                                shapeElement.addEventListener("mouseenter", () => {
+                                    shapeElement.setAttribute("hovered", "true");
+                                    cancelLoadTimeout();
+                                });
+                                shapeElement.addEventListener("mouseleave", () => {
+                                    shapeElement.setAttribute("hovered", "false");
+                                    if (isSceneActive()) {
+                                        startLoadTimeout();
+                                    }
+                                });
+                            }
+                            startLoadTimeout();
+                        } else {
+                            applyInteraction(loadDestination);
+                        }
+                        break;
+                    case "open-lightbox":
+                        const lightboxUrl = actionElement.getAttribute("url");
+                        const width = actionElement.getAttribute("width");
+                        const height = actionElement.getAttribute("height");
+
+                        applyInteraction(() => openLightbox(lightboxUrl, width, height));
+                        break;
+                    case "open-url":
+                        const url = actionElement.getAttribute("url");
+                        const target = actionElement.getAttribute("target") || "_top";
+                        if (!url) return;
+
+                        if (trigger === "click") {
+                            setFastrAnchorWrapper(shapeElement, url, target, clickBoundingBox, undefined);
+                        } else {
+                            applyInteraction(() => window.open(url, target));
+                        }
+                        break;
+                    case "toggle-overlay":
+                        const overlayScene = actionElement.getAttribute("destination");
+                        const overlaySceneIndex = overlayScene && model.scenes?.findIndex(s => s.id === overlayScene);
+
+                        console.log(`Overlay Not Implemented`, { overlaySceneIndex });
+                        break;
+                    default:
+                        break;
+                }
+            });
+    }
+
+    function preconnectOrigin(url) {
+        try {
+            const { origin } = new URL(url);
+            if (!document.head.querySelector(`link[href="${origin}"]`) && origin !== window.origin) {
+                const link = document.createElement("link");
+                link.setAttribute("rel", "preconnect");
+                link.setAttribute("href", origin);
+                link.setAttribute("crossorigin", "true");
+                document.head.appendChild(link)
+            }
+        } catch (err) {
+            if (debug.enabled) console.error(`Failed to preconnect to url: ${url}`)
+        }
+    }
+
+    async function conditionallyRunBackgroundIntegrations() {
+
+        const variant = getVariant();
+        if (variant.backgroundIntegrationsRun) return;
+
+        variant.backgroundIntegrationsRun = true;
+
+        const backgroundIntegrations = variant.model.integrations?.background;
+
+        return Promise.all(Object.keys(backgroundIntegrations)
+            .map(async integrationId => {
+                try {
+                    await runJS(backgroundIntegrations[integrationId].body, {}, true);
+                } catch (error) {
+                    if (debug.enabled) {
+                        console.error("Failed to run background integration");
+                        console.error(backgroundIntegrations[integrationId].body);
+                        console.error(error);
+                    }
+                }
+            }));
+    }
+
+    async function runProviderIntegrations(dataProviderKey, dataIntegrations, providerEl, skipCache = false) {
+
+        const variant = getVariant();
+
+        let accumulated = {};
+        let providerInputFn;
+        try {
+            const dynamicInput = providerEl.querySelector("fastr-data-dynamic-input")?.innerHTML;
+            const staticInput = providerEl.querySelector("fastr-data-static-input")?.innerHTML;
+            providerInputFn = dynamicInput ?? `return ${staticInput ?? "input"}`;
+
+            accumulated = await runJS(providerInputFn, {}, skipCache);
+        } catch (error) {
+            if (debug.enabled) {
+                console.error(`Failed to run data provider input function`);
+                console.error(providerInputFn);
+                console.error(error);
+            }
+        }
+
+        const steps = [];
+        const integrationConfigEls = providerEl.querySelectorAll("fastr-data-integration-config");
+        for (const integrationConfigEl of integrationConfigEls) {
+            const integrationId = integrationConfigEl.getAttribute("integration-id");
+            if (!dataIntegrations[integrationId]?.body) {
+                if (debug.enabled) {
+                    console.error(`Encountered missing data integration id: ${integrationId}`, integrationConfigEl);
+                }
+                break;
+            }
+
+            const step = {
+                accumulated: JSON.parse(JSON.stringify(accumulated)),
+                preprocessFn: integrationConfigEl.getAttribute("input") ?? `return input`,
+                integrationFn: dataIntegrations[integrationId].body,
+                postprocessFn: integrationConfigEl.getAttribute("output") ?? `return input`
+            };
+
+            try {
+                step.preprocessedInput = await runJS(step.preprocessFn, step.accumulated, skipCache);
+            } catch (error) {
+                if (debug.enabled) {
+                    console.error(`Failed to run data integration input/preprocess function`);
+                    console.error(step.preprocessFn);
+                    console.error(error);
+                }
+            }
+
+            try {
+                step.integrationOutput = await runJS(step.integrationFn, step.preprocessedInput, skipCache);
+            } catch (error) {
+                if (debug.enabled) {
+                    console.error(`Failed to run data integration function`);
+                    console.error(step.integrationFn);
+                    console.error(error);
+                }
+            }
+
+            try {
+                step.postprocessedOutput = await runJS(step.postprocessFn, step.integrationOutput, skipCache);
+            } catch (error) {
+                if (debug.enabled) {
+                    console.error(`Failed to run data integration output/postprocess function`);
+                    console.error(step.postprocessFn);
+                    console.error(error);
+                }
+            }
+
+            accumulated = {
+                ...accumulated,
+                ...step.postprocessedOutput
+            };
+
+            steps.push(step);
+        }
+
+        variant.providerCache = {
+            ...variant.providerCache,
+            [dataProviderKey]: {
+                ...variant.providerCache[dataProviderKey],
+                steps
+            }
+        };
+
+        return accumulated;
+    }
+
+    async function runDataIntegrations(sceneIndex, skipCache = false) {
+
+        if (isRunningDataIntegrations) {
+            console.log(debug.fmt('A call to runDataIntegrations was queued because another instance is already running.'));
+            pendingOperationsQueue.push(() => runDataIntegrations(sceneIndex, skipCache));
+            return;
+        }
+
+        isRunningDataIntegrations = true;
+
+        const variant = getVariant();
+        const model = getModel();
+        const sceneDiv = getSceneDiv(sceneIndex);
+        const dataIntegrations = model.integrations?.data ?? {};
+        const integrationMap = {};
+
+        const version = variant.resetCounter;
+
+        await emit("beforeBehaviors", model);
+
+        const allPromises = Array.from(sceneDiv.querySelectorAll(`fastr-data-provider:not([type="subrecord"])`)).map(async rootProviderEl => {
+            const rootProviderKey = rootProviderEl.getAttribute("data-provider-key");
+
+            let invoked = variant.providerCache[rootProviderKey]?.invoked;
+            if (!invoked || skipCache) {
+                invoked = await runProviderIntegrations(rootProviderKey, dataIntegrations, rootProviderEl, skipCache);
+                variant.providerCache = {
+                    ...variant.providerCache,
+                    [rootProviderKey]: {
+                        ...variant.providerCache[rootProviderKey],
+                        invoked
+                    }
+                };
+            }
+
+            integrationMap[rootProviderKey] = {
+                ...integrationMap[rootProviderKey],
+                invoked
+            };
+
+            await runDataActions(sceneDiv, model, rootProviderKey, integrationMap);
+        });
+
+        await Promise.all(allPromises);
+
+        if (debug.enabled) console.log(debug.fmt("Data actions complete"));
+
+        // Wait for the next animation frame and then await the 'afterBehaviors' emit
+        await new Promise(resolve => {
+            requestAnimationFrame(async () => {
+                await emit("afterBehaviors", model);
+                resolve();
+            });
+        });
+
+        isRunningDataIntegrations = false;
+        processPendingOperations();
+    }
+
+    const comparatorToFunction = {
+        "<": (a, b) => a < b,
+        "<=": (a, b) => a <= b,
+        "==": (a, b) => a == b,
+        ">=": (a, b) => a >= b,
+        ">": (a, b) => a > b,
+        "!=": (a, b) => a != b,
+        "equals": (a, b) => a === b,
+        "does-not-equal": (a, b) => a !== b,
+        "contains": (a, b) => a?.includes(b),
+        "does-not-contain": (a, b) => !a?.includes(b),
+        "starts-with": (a, b) => a?.startsWith(b),
+        "ends-with": (a, b) => a?.endsWith(b),
+        "is": (a, _) => !!a,
+        "is-not": (a, _) => !a
+    }
+
+    async function getConditionValue(sceneDiv, providerKey, field, integrationMap) {
+        if (!providerKey) return null;
+
+        const dataProvider = getDataProviderFromKey(sceneDiv, providerKey);
+        if (!dataProvider) {
+            return null;
+        }
+
+        const dataProviderResult = await getDataFromProvider(sceneDiv, dataProvider, integrationMap);
+
+        if (dataProviderResult === undefined) {
+            return null;
+        }
+
+        const result = field && dataProviderResult ? dataProviderResult[field] : dataProviderResult;
+
+        return result;
+    }
+
+    async function validateCondition(sceneDiv, conditionEl, integrationMap) {
+        const comparator = conditionEl.getAttribute("comparator");
+        const leftProviderKey = conditionEl.getAttribute("lefthand-data-provider-key");
+        const leftField = conditionEl.querySelector("fastr-data-condition-left")?.getAttribute("name");
+        const rightType = conditionEl.getAttribute("righthand-type");
+        const rightProviderKey = conditionEl.getAttribute("righthand-data-provider-key");
+        const rightField = conditionEl.querySelector("fastr-data-condition-right")?.getAttribute("name");
+
+        const leftValue = await getConditionValue(sceneDiv, leftProviderKey, leftField, integrationMap);
+        let rightValue;
+
+        if (rightType === "static") {
+            rightValue = conditionEl.getAttribute("righthand-value");
+        } else {
+            rightValue = await getConditionValue(sceneDiv, rightProviderKey, rightField, integrationMap);
+        }
+
+        const comparatorFn = comparatorToFunction[comparator];
+        if (!comparatorFn) {
+            throw new Error(`Invalid comparator: ${comparator}`);
+        }
+
+        const result = comparatorFn(leftValue, rightValue);
+
+        return result;
+    }
+
+    async function getDataFromProvider(sceneDiv, dataProvider, integrationMap) {
+        const dataProviderChain = [];
+        let currentDataProvider = dataProvider;
+        while (currentDataProvider) {
+            dataProviderChain.unshift(currentDataProvider);
+            const parentDataProviderKey = currentDataProvider.getAttribute("parent-data-provider-key");
+            if (!parentDataProviderKey) break;
+            currentDataProvider = sceneDiv.querySelector(`fastr-data-provider[data-provider-key="${parentDataProviderKey}"]`);
+        }
+
+        const rootDataProviderKey = dataProviderChain[0].getAttribute("data-provider-key");
+
+        if (debug.enabled) {
+            console.log(debug.fmt(`Root Data Provider Key: ${rootDataProviderKey}`));
+            console.log(debug.fmt(`Provider Chain:`), dataProviderChain);
+        }
+
+        let currentData = await integrationMap[rootDataProviderKey]?.invoked;
+
+        if (currentData === undefined) {
+            if (debug.enabled) console.log(debug.fmt(`Data not found for root key: ${rootDataProviderKey}`));
+            return undefined;
+        }
+
+        for (const provider of dataProviderChain) {
+            const subrecordFieldName = provider.getAttribute("subrecord-field-name");
+            const subrecordArrayIndex = provider.getAttribute("subrecord-array-index");
+
+            if (subrecordFieldName) {
+                currentData = currentData[subrecordFieldName];
+                if (Array.isArray(currentData) && subrecordArrayIndex !== null) {
+                    currentData = currentData[parseInt(subrecordArrayIndex, 10)];
+                }
+            }
+
+            if (debug.enabled) {
+                const dataProviderId = provider.getAttribute("data-provider-id");
+                const parentId = provider.getAttribute("parent-data-provider-id");
+                console.log(debug.fmt(`  Data Provider: ${dataProviderId}`));
+                if (parentId) console.log(debug.fmt(`  Parent Data Provider: ${parentId}`));
+                console.log(debug.fmt(`  Subrecord Index: ${subrecordArrayIndex}`));
+                console.log(debug.fmt(`  Source: ${subrecordFieldName}`));
+                console.log(debug.fmt(`  CurrentData Result:`), currentData);
+            }
+
+            if (currentData === undefined) {
+                if (debug.enabled) console.log(debug.fmt(`Data not found at level: ${provider.getAttribute("data-provider-id")}`));
+                return undefined;
+            }
+        }
+
+        return currentData;
+    }
+
+    function getDataProviderFromKey(sceneDiv, dataProviderKey) {
+        const dataProvider = sceneDiv.querySelector(`fastr-data-provider[data-provider-key="${dataProviderKey}"]`);
+        if (!dataProvider) {
+            if (debug.enabled) console.log(debug.fmt(`Data provider not found for key: ${dataProviderKey}`));
+            return null;
+        }
+        return dataProvider;
+    }
+
+    async function runDataActions(sceneDiv, model, dataProviderKey, integrationMap) {
+
+        if (debug.enabled) console.log(debug.fmt(`Running Data Actions for key: ${dataProviderKey}`));
+
+        const dataProvider = getDataProviderFromKey(sceneDiv, dataProviderKey);
+        const dataProviderId = dataProvider.getAttribute("data-provider-id");
+        const dataProviderResult = await getDataFromProvider(sceneDiv, dataProvider, integrationMap);
+
+        if (dataProviderResult === undefined) {
+            if (debug.enabled) console.log(debug.fmt(`Data provider result is undefined. Skipping actions.`));
+            return;
+        }
+
+        const actionElements = Array.from(sceneDiv.querySelectorAll(`fastr-data-action[data-provider-key="${dataProviderKey}"]`));
+
+        await Promise.all(actionElements.map(async actionElement => {
+            const type = actionElement.getAttribute("type");
+            let shapeElement = actionElement.parentElement.parentElement;
+            shapeElement = sceneDiv.querySelector(`#${shapeElement.id}`); // ensure that shape element is in DOM in case of clone swap from set-href
+            if (!shapeElement) return;
+            const shapeUuid = shapeElement.id.slice(6); // slice the "shape-" prefix
+
+            const source = actionElement.getAttribute("source");
+            if (source === undefined) return;
+
+            const widget = model.widgetsByUuid[shapeUuid];
+
+            if (debug.enabled) console.log(debug.fmt("  Running Data Action:"), actionElement);
+
+            const sourceData = dataProviderResult[source];
+            if (debug.enabled) console.log(debug.fmt(`  Fetched Source Data:`), sourceData);
+
+            const conditionEls = Array.from(actionElement.querySelectorAll("fastr-data-condition"));
+            if (conditionEls.length) {
+                const evaluatedConditions = await Promise.all(conditionEls.map(conditionEl => validateCondition(sceneDiv, conditionEl, integrationMap)));
+                if (evaluatedConditions.some(cond => !cond)) {
+                    shapeElement.classList.remove("fastr-frontend-pending-behavior");
+                    return;
+                }
+            }
+
+            switch (type) {
+                case "select-record":
+                    const subProviderId = actionElement.getAttribute("subrecord-data-provider-id");
+                    const subrecordEl = shapeElement.querySelector(`fastr-data-provider[data-provider-id="${subProviderId}"]`);
+                    const subField = subrecordEl?.getAttribute("subrecord-field-name");
+                    const subrecordKey = subrecordEl?.getAttribute("data-provider-key");
+                    const subProviderIndexStr = subrecordEl.getAttribute("subrecord-array-index");
+                    const subProviderIndex = parseInt(subProviderIndexStr, 10);
+
+                    if (subProviderId && subField) {
+                        let subResult = Array.isArray(dataProviderResult)
+                            ? dataProviderResult[subRecordIndex]?.[subField]
+                            : dataProviderResult[subField];
+
+                        if (!subResult) return;
+                        else if (Array.isArray(subResult) && (subProviderIndex >= subResult.length)) {
+                            widget.hidden = true;
+                            shapeElement.style.display = "none";
+                            return;
+                        }
+
+                        await runDataActions(sceneDiv, model, subrecordKey, integrationMap);
+                    }
+
+                    break;
+                case "set-text":
+                    const placeholder = actionElement.getAttribute("placeholder");
+
+                    Array.from(shapeElement.querySelectorAll(".text-node")).forEach((textNode, nodeIndex) => {
+                        if (placeholder) {
+                            textNode.textContent = textNode.textContent.replaceAll(placeholder, sourceData);
+                        } else if (nodeIndex === 0) {
+                            textNode.textContent = sourceData;
+                        } else {
+                            textNode.hidden = true;
+                            textNode.style.display = "none";
+                        }
+                    });
+
+                    break;
+                case "set-image-url":
+                    const imgEl = shapeElement.querySelector("img");
+                    if (imgEl) {
+                        imgEl.setAttribute("src", sourceData);
+                        imgEl.removeAttribute("srcset");
+                        imgEl.style.objectFit = imgEl.style.objectFit || "contain";
+                    } else {
+                        // there is no foreignObject image in the content being replaced, so create one and swap it in
+                        const fillGroup = Array.from(shapeElement.children).find(child => child.classList.contains("fills"));
+                        const fillElement = fillGroup?.firstChild;
+                        if (!fillElement) break;
+
+                        const img = document.createElementNS("http://www.w3.org/1999/xhtml", "img");
+                        img.setAttribute("src", sourceData);
+                        img.style.width = "100%"
+                        img.style.height = "100%";
+
+                        const div = document.createElementNS("http://www.w3.org/1999/xhtml", "div");
+                        div.style.display = "flex";
+                        div.style.justifyContent = "center";
+                        div.style.alignItems = "center";
+                        div.style.width = "100%";
+                        div.style.height = "100%";
+                        div.appendChild(img);
+
+                        const foreignObject = document.createElementNS("http://www.w3.org/2000/svg", "foreignObject");
+                        foreignObject.setAttribute("x", fillElement.getAttribute("x"));
+                        foreignObject.setAttribute("y", fillElement.getAttribute("y"));
+                        foreignObject.setAttribute("width", fillElement.getAttribute("width"));
+                        foreignObject.setAttribute("height", fillElement.getAttribute("height"));
+                        foreignObject.appendChild(div);
+
+                        fillGroup.replaceChild(foreignObject, fillElement);
+                    }
+                    break;
+                case "set-href":
+                    let interactionListEl = Array.from(shapeElement.children)?.find(child => child.tagName === "fastr-interactions");
+                    const existingInteractionEl = interactionListEl?.querySelector(`fastr-interaction[type="open-url"]`);
+                    const defaultTarget = "_top";
+                    if (existingInteractionEl) {
+                        existingInteractionEl.setAttribute("url", sourceData);
+
+                        const existingTarget = existingInteractionEl.getAttribute("target");
+                        const clickBoundingBox = (existingInteractionEl.getAttribute("click-bounding-box") ?? "enabled") === "enabled";
+                        setFastrAnchorWrapper(shapeElement, sourceData, existingTarget ?? defaultTarget, clickBoundingBox, undefined);
+                    } else {
+                        if (!interactionListEl) {
+                            interactionListEl = document.createElement("fastr-interactions");
+                            if (shapeElement.firstChild) {
+                                shapeElement.insertBefore(interactionListEl, shapeElement.firstChild);
+                            } else {
+                                shapeElement.appendChild(interactionListEl);
+                            }
+                        }
+
+                        const interactionEl = document.createElement("fastr-interaction");
+                        interactionEl.setAttribute("url", sourceData);
+                        interactionEl.setAttribute("trigger", "click");
+                        interactionEl.setAttribute("type", "open-url");
+                        interactionListEl.appendChild(interactionEl);
+
+                        setFastrAnchorWrapper(shapeElement, sourceData, defaultTarget, true, undefined);
+                    }
+                    break;
+                case "set-alt-text":
+                    const imageEl = shapeElement.querySelector("img");
+                    if (imageEl) {
+                        imageEl.setAttribute("alt", sourceData);
+                        imageEl.setAttribute("aria-label", sourceData);
+                        break;
+                    }
+
+                    const foEl = shapeElement.querySelector("foreignObject");
+                    if (foEl) {
+                        foEl.firstChild.setAttribute("aria-label", sourceData);
+                        break;
+                    }
+
+                    shapeElement.setAttribute("aria-label", sourceData);
+                    break;
+                case "hide":
+                    widget.hidden = true;
+                    shapeElement.style.display = "none";
+                    break;
+                default:
+                    break;
+            }
+
+            shapeElement.classList.remove("fastr-frontend-pending-behavior");
+        }));
+    }
+
+    async function customActionHandler(integrationId, args) {
+        const model = getModel();
+        const functionIntegrations = model?.integrations?.function ?? {};
+
+        try {
+            const inputs = args ? Object.fromEntries(args.map(({ name, value }) => [name, value])) : {};
+            await runJS(functionIntegrations[integrationId]?.body, inputs, true);
+        } catch (error) {
+            if (debug.enabled) {
+                console.error("Failed to run custom action handler");
+                console.error(functionIntegrations[integrationId]?.body);
+                console.error(error);
+            }
+        }
+    }
+
+    function hashFnv32a(str, seed = 0x811c9dc5) {
+        let h = seed;
+        for (let i = 0; i < str.length; i++) {
+            h ^= str.charCodeAt(i);
+            h += (h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24);
+        }
+        return h >>> 0;
+    }
+
+    async function runJS(functionString, inputs, skipCache) {
+
+        const variant = getVariant();
+        const { model, domRef, c3ExperienceId, variantAPI } = variant;
+        const functionKey = hashFnv32a(JSON.stringify(functionString));
+        const invocationKey = hashFnv32a(JSON.stringify(inputs ?? '"'));
+
+        if (!variant.functionCache[functionKey]) {
+            variant.functionCache = {
+                ...variant.functionCache,
+                [functionKey]: {
+                    function: new Function("inputs", "input", "model", "_model", "initialModel", "experienceId", "_experienceId", "domRef", "experience", "debug", `return (async () => { ${functionString} })()`),
+                    functionString,
+                    invokedWith: {}
+                }
+            };
+        }
+
+        let invocation = variant.functionCache[functionKey].invokedWith[invocationKey];
+        if (!invocation || skipCache) {
+            try {
+                const fn = variant.functionCache[functionKey].function;
+
+                invocation = await fn(inputs, inputs, model, model, model, c3ExperienceId, c3ExperienceId, domRef, variantAPI, debug);
+
+                variant.functionCache[functionKey].invokedWith = {
+                    ...variant.functionCache[functionKey].invokedWith,
+                    [invocationKey]: invocation,
+                    inputs
+                };
+            } catch (error) {
+                throw error;
+            }
+        }
+
+        return invocation;
+    }
+
+    function findWidgetByUuid(uuid) {
+        return getModel()?.widgetsByUuid[uuid];
+    }
+
+    function getDOMNode(widget) {
+        return getVariantDiv()?.querySelector(`#shape-${widget.uuid}`);
+    }
+
+    async function waitForDuration(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    function on(eventType, handler) {
+        const variant = getVariant();
+
+        if (!variant.eventHandlers[eventType]) {
+            variant.eventHandlers[eventType] = [];
+        }
+
+        // Ignore but log any duplicates
+        if (variant.eventHandlers[eventType].includes(handler)) {
+            if (debug.enabled) console.log(debug.fmt(`Duplicate event handler for ${eventType}`));
+            return;
+        }
+
+        variant.eventHandlers[eventType].push(handler);
+    }
+
+    async function emit(eventType, ...args) {
+        const variant = getVariant();
+        if (variant.eventHandlers[eventType]) {
+            for (const handler of variant.eventHandlers[eventType]) {
+                try {
+                    await handler(...args);
+                } catch (e) {
+                    if (debug.enabled) console.error(debug.fmt(`Error in event handler for ${eventType}`), e);
+                }
+            }
+        }
+    }
+
+    function addEventListener(eventType, handler) {
+        on(eventType, handler);
+    }
+
+    function removeEventListener(eventType, handler) {
+        const variant = getVariant();
+        if (variant.eventHandlers[eventType]) {
+            variant.eventHandlers[eventType] = variant.eventHandlers[eventType].filter(h => h !== handler);
+        }
+    };
+
+    function clearEventListeners(eventType) {
+        const variant = getVariant();
+        variant.eventHandlers[eventType] = [];
+    }
+
+    function highlightWidget(widget) {
+        const domElement = getDOMNode(widget);
+        if (!domElement) return;
+        domElement.style.outline = '2px solid red';
+    }
+
+    async function waitForEvent(eventType) {
+        return new Promise((resolve) => {
+            addEventListener(eventType, function handler(eventData) {
+                resolve(eventData);
+                removeEventListener(eventType, handler);
+            });
+        });
+    };
+
+    function walkModel(visitor, node = getModel()) {
+        visitor(node);
+        const children = node.widgets || node.scenes || node.group;
+
+        if (children && Array.isArray(children)) {
+            children.forEach(child => walkModel(visitor, child));
+        }
+    }
+
+    function querySelectorAll(selector, scene = getScene()) {
+
+        let targetValue = selector;
+        let targetType = 1; // 1 = type, 2 = id, 3 = title
+
+        // Parse selector into prefix and value
+        const prefix = selector[0];
+        if (prefix === '#') {
+            targetType = 2;
+            targetValue = selector.slice(1);
+        } else if (prefix === '.') {
+            targetType = 3;
+            targetValue = selector.slice(1);
+        }
+
+        const widgets = [];
+        walkModel((widget) => {
+            if (targetType === 1 && widget.type === targetValue) {
+                widgets.push(widget);
+            } else if (targetType === 2 && widget.uuid === targetValue) {
+                widgets.push(widget);
+            } else if (targetType === 3 && widget.title === targetValue) {
+                widgets.push(widget);
+            }
+        }, scene);
+
+        return widgets;
+    }
+
+    const modelSetup = (model) => {
+
+        model.widgetsByUuid = {};
+        for (const scene of model.scenes) {
+            for (const widget of scene.widgets) {
+                // Start with 0 offsets for the top-level widgets in the scene
+                widgetSetup(model, widget, []);
+            }
+        }
+
+        for (const widget of model.overlayScene.widgets) widgetSetup(model, widget, []);
+        for (const widget of model.backgroundScene.widgets) widgetSetup(model, widget, []);
+    }
+
+    function widgetSetup(model, widget, parentHierarchy) {
+        if (!widget.parents) {
+            widget.parents = [];
+        }
+
+        widget.uuid = `${getVariant().c3ExperienceId}_${widget.uuid}`;
+
+        model.widgetsByUuid[widget.uuid] = widget;
+        widget.parents = [...parentHierarchy.map(parentShape => parentShape.uuid)];
+
+        const children = widget.scenes || widget.group || widget.widgets;
+
+        if (widget.actions?.length > 0) {
+            widget.action = widget.actions[0];
+        }
+
+        // Recursively apply this to child widgets, passing the new absoluteTop and absoluteLeft as the offsets for children
+        if (children) {
+            const currentHierarchy = [...parentHierarchy, widget];
+            for (const child of children) {
+                widgetSetup(model, child, currentHierarchy);
+            }
+        }
+    }
+
+    function querySelector(selector, scene) {
+        const widgets = querySelectorAll(selector, scene);
+        return widgets.length > 0 ? widgets[0] : null;
+    }
+
+    function roundToInt(num) {
+        return Math.round(num);
+    }
+
+    const getWidgetTitle = (widget) => {
+        const widgetName = widget.sceneNumber ? `scene ${widget.sceneNumber}` : widget.title;
+        if (widget.hidden) return `[hidden] ${widgetName}`;
+        return widgetName;
+    }
+
+    function printWidget(widget, recurse = false) {
+        const spaces = widget.parents ? '   '.repeat(widget.parents.length) : '';
+        console.log(`${spaces}${getWidgetTitle(widget)} ${widget.type ?? ''} | [x1: ${roundToInt(widget.geometry.absoluteLeft)}, x2: ${roundToInt(widget.geometry.absoluteRight)}, y1: ${roundToInt(widget.geometry.absoluteTop)}, y2: ${roundToInt(widget.geometry.absoluteBottom)}, w: ${roundToInt(widget.geometry.absoluteWidth)}, h: ${roundToInt(widget.geometry.absoluteHeight)}]`);
+
+        const children = widget.widgets || widget.group;
+
+        if (recurse && children) {
+            for (const child of children) {
+                printWidget(child, true);
+            }
+        }
+    }
+
+    function printScene(scene) {
+        console.log(`Scene ${scene.sceneNumber} | [x1: ${roundToInt(scene.geometry.absoluteLeft)}, x2: ${roundToInt(scene.geometry.absoluteRight)}, y1: ${roundToInt(scene.geometry.absoluteTop)}, y2: ${roundToInt(scene.geometry.absoluteBottom)}, w: ${roundToInt(scene.geometry.absoluteWidth)}, h: ${roundToInt(scene.geometry.absoluteHeight)}]`);
+        for (const widget of scene.widgets) {
+            printWidget(widget, true);
+        }
+    }
+
+    function printModel() {
+        for (const scene of getModel().scenes) {
+            printScene(scene);
+        }
+    }
+
+    function fitToContents(widget, vertical = true, horizontal = true) {
+        if (!vertical && !horizontal) {
+            if (debug.enabled) {
+                console.log(debug.fmt(`Neither vertical nor horizontal resizing is selected. Exiting fitToContents.`));
+            }
+            return;
+        }
+
+        // Store the original geometry values
+        const originalWidth = widget.geometry.absoluteWidth;
+        const originalHeight = widget.geometry.absoluteHeight;
+
+        // Traverse the widget's children to find the new dimensions
+        let newRight = widget.geometry.absoluteLeft;
+        let newBottom = widget.geometry.absoluteTop;
+
+        const children = widget.widgets || widget.group;
+        const traverse = (w) => {
+            if (w.hidden === true) return;
+
+            if (w.geometry.absoluteRight > newRight) newRight = w.geometry.absoluteRight;
+            if (w.geometry.absoluteBottom > newBottom) newBottom = w.geometry.absoluteBottom;
+
+            const c = w.widgets || w.group;
+            if (c) {
+                c.forEach(traverse);
+            }
+        };
+
+        children.forEach(traverse);
+
+        const newWidth = horizontal ? newRight - widget.geometry.absoluteLeft : originalWidth;
+        const newHeight = vertical ? newBottom - widget.geometry.absoluteTop : originalHeight;
+
+        // Check if dimensions have changed significantly
+        const epsilon = 0.01; // Tolerance for floating-point comparison
+        const widthChanged = Math.abs(newWidth - originalWidth) > epsilon;
+        const heightChanged = Math.abs(newHeight - originalHeight) > epsilon;
+
+        // If neither width nor height has changed, exit early
+        if (!widthChanged && !heightChanged) {
+            if (debug.enabled) {
+                console.log(debug.fmt(`No significant change in dimensions. Exiting fitToContents.`));
+            }
+            return;
+        }
+
+        // Update the widget's geometry after adjustments
+        widget.geometry.absoluteWidth = newWidth;
+        widget.geometry.absoluteHeight = newHeight;
+        widget.geometry.absoluteRight = newRight;
+        widget.geometry.absoluteBottom = newBottom;
+
+        // Proceed to adjust only if there's a significant change
+        // Adjust the sceneDiv's size if the widget is the root scene
+        if (widget.sceneIndex !== undefined) {
+            const variant = getVariant();
+            variant.aspectRatio = (newHeight / newWidth) * 100;
+
+            // Adjust the container's padding to fit the updated dimensions
+            const containerDiv = experienceData.domRef;
+            containerDiv.style.paddingBottom = `${variant.aspectRatio}%`;
+        }
+
+        if (debug.enabled) console.log(debug.fmt(`Adjusted ${widget.title || 'scene'} to fit content: width=${newWidth}, height=${newHeight}`));
+    }
+
+    function moveTo(widget, newX, newY) {
+        const shapeEl = getDOMNode(widget);
+        if (!shapeEl) return;
+
+        // Calculate the change in position
+        const deltaX = newX - widget.geometry.absoluteLeft;
+        const deltaY = newY - widget.geometry.absoluteTop;
+
+        if (Math.round(deltaX) === 0 && Math.round(deltaY) === 0) {
+            return;
+        }
+
+        // Move the DOM element
+        shapeEl.setAttribute('transform', `translate(${deltaX}, ${deltaY})`);
+
+        // Recursively update the geometry of all child widgets
+        walkModel((w) => {
+            if (w.originalAbsoluteLeft === undefined) {
+                w.originalAbsoluteLeft = w.geometry.absoluteLeft;
+                w.originalAbsoluteTop = w.geometry.absoluteTop;
+            }
+
+            // **Update the child widget's position based on deltaX and deltaY**
+            w.geometry.absoluteLeft = w.originalAbsoluteLeft + deltaX;
+            w.geometry.absoluteTop = w.originalAbsoluteTop + deltaY;
+            w.geometry.absoluteRight = w.geometry.absoluteLeft + w.geometry.absoluteWidth;
+            w.geometry.absoluteBottom = w.geometry.absoluteTop + w.geometry.absoluteHeight;
+        }, widget);
+    }
+
+    function fastrSetup() {
+        if (!document.head.querySelector("meta[name=viewport]")) {
+            const meta = document.createElement("meta");
+            meta.setAttribute("name", "viewport");
+            meta.setAttribute("content", "width=device-width, initial-scale=1.0");
+            document.head.appendChild(meta);
+        }
+
+        if (!document.head.querySelector("#fastr-frontend-pending-behavior")) {
+            const style = document.createElement("style");
+            style.id = "fastr-frontend-pending-behavior";
+            style.innerHTML = `
+            .fastr-frontend-pending-behavior {
+                display: none !important;
+            }
+
+            .fastr-container g:focus, .fastr-container a:focus, .fastr-link-bounding-box:focus {
+                outline: none;
+            }
+
+            .fastr-container g:focus-visible, .fastr-container a:focus-visible, .fastr-link-bounding-box:focus-visible {
+                outline: 1px solid Highlight;
+                outline-color: -webkit-focus-ring-color;
+                outline-offset: 2px;
+            }
+        `;
+            document.head.appendChild(style);
+        }
+
+        if (!window.ZMAGS_CustomActionRegistered) {
+            window.addEventListener("message", e => e.data?.isTrusted && (new Function(`return (async () => { ${e.data.code} })()`)()));
+            window.ZMAGS_CustomActionRegistered = true;
+        }
+
+        window.FASTR_FRONTEND = {
+            ...window.FASTR_FRONTEND,
+            experiences: {
+                ...window.FASTR_FRONTEND?.experiences
+            }
+        };
+
+        try {
+            debug.enabled = (JSON.parse(localStorage.getItem("FASTR_FRONTEND_DEBUG") || "{}") || {})?.trace;
+        } catch (error) {
+            console.warn("Error parsing FASTR_FRONTEND_DEBUG from localStorage:", error);
+        }
+    }
+
+    function parentSVGElement(el) {
+        let parentSVG = null;
+        while (el) {
+            if (el.nodeName == "svg") {
+                parentSVG = el;
+            }
+            el = el.parentElement;
+        }
+        return parentSVG;
+    }
+
+    function postMessagesFromRoot() {
+        try {
+            const queue = [window.top]
+            while (queue.length !== 0) {
+                const current = queue.shift();
+                if (!current || current === window) {
+                    return;
+                }
+
+                Array.from(current.frames).forEach(frame => queue.push(frame));
+                current.postMessage("reportFFView", "*")
+            }
+        } catch (err) {
+            window.postMessage("reportFFView", "*");
+        }
+    }
+
+    // In a frame with N experiences, add listener once.
+    if (!(window.fastr_frontend_listener || window.zmags_listener)) {
+        window.addEventListener('message', (event) => {
+            if (event.data === 'reportFFView') {
+                event.source.postMessage("ackFFView", "*")
+            }
+            else if (event.data === 'ackFFView') {
+                window.fastr_frontend_pageHitSent = true;
+            }
+        });
+        window.fastr_frontend_listener = true;
+    }
+
+    let experienceHitTracked = false;
+    function checkExperienceHitOnIntersection() {
+        if (!experienceHitTracked) {
+            const { experienceId, domRef } = experienceData;
+            const { variantId } = getVariant();
+            new IntersectionObserver(
+                ([entry], observer) => {
+                    if (entry.isIntersecting) {
+                        if (!experienceHitTracked) {
+                            experienceHitTracked = true;
+                            const page = window?.location?.href;
+                            let encoded = "";
+                            if (page) {
+                                encoded = encodeURIComponent(page);
+                            }
+                            fetch(`${casBaseUri}/expConfig/config.json?cb=${Date.now()}&cid=${companyId}&pg=${encoded}&eid=C3_${experienceId}_${variantId}`);
+                            checkPageHit();
+                        }
+                        observer.disconnect(domRef);
+                    }
+                },
+            ).observe(domRef);
+        }
+    }
+
+    function checkPageHit(attemptIndex = 0, retryDelay = 200) {
+        postMessagesFromRoot();
+        let shouldRetry = false;
+        if (experienceHitTracked) {
+            if (!(window.fastr_frontend_pageHitSent || window.zmags_pageHitSent)) {
+                try {
+                    const page = window?.location?.href;
+                    let encoded = "";
+                    if (page) {
+                        encoded = encodeURIComponent(page);
+                    }
+                    fetch(`${casBaseUri}/config/config.json?cb=${Date.now()}&cid=${companyId}&pg=${encoded}`);
+                    window.fastr_frontend_pageHitSent = true;
+                } catch (err) {
+                    shouldRetry = true;
+                }
+            }
+        } else {
+            shouldRetry = true;
+        }
+        if (shouldRetry && attemptIndex < 3) {
+            setTimeout(() => {
+                checkPageHit(attemptIndex + 1, retryDelay * 1.5);
+            }, retryDelay);
+        }
+    }
+
+    function initScene() {
+        const containerDiv = experienceData.domRef;
+        const { width, height, top } = containerDiv.getBoundingClientRect();
+        const src = initContent;
+
+        const sceneDiv = document.createElement("div");
+        sceneDiv.setAttribute("data-scene-index", "init");
+        sceneDiv.style.position = "absolute";
+        sceneDiv.style.top = 0;
+        sceneDiv.style.left = 0;
+        sceneDiv.style.zIndex = -1000;
+        sceneDiv.style.width = "100%";
+        sceneDiv.style.height = "100%";
+        sceneDiv.style.maxWidth = "100vw";
+        sceneDiv.style.overflow = "hidden";
+        sceneDiv.style.pointerEvents = "none";
+
+        sceneDiv.style.contentVisibility = "auto";
+        sceneDiv.style.containIntrinsicSize = `${width}px ${height}px`;
+
+        if (src && !document.head.querySelector(`link[href="${src}"]`)) {
+            const preloadLink = document.createElement("link");
+            preloadLink.setAttribute("rel", "preload");
+            preloadLink.setAttribute("fetchpriority", "high");
+            preloadLink.setAttribute("as", "image");
+            preloadLink.setAttribute("href", src);
+            preloadLink.setAttribute("type", "image/webp");
+            preloadLink.setAttribute("decoding", "sync");
+            document.head.appendChild(preloadLink);
+        }
+
+        const tallImg = document.createElement("img");
+        tallImg.src = src;
+        tallImg.style.width = `${width - 10}px`;
+        tallImg.style.height = "100%";
+        tallImg.style.position = "absolute";
+        tallImg.style.top = 0;
+        tallImg.style.left = 0;
+        sceneDiv.appendChild(tallImg);
+
+        const wideImg = document.createElement("img");
+        wideImg.src = src;
+        wideImg.style.width = "100%";
+        wideImg.style.height = `${Math.min(height, window.innerHeight - top - 10)}px`;
+        wideImg.style.position = "absolute";
+        wideImg.style.top = 0;
+        wideImg.style.left = 0;
+        sceneDiv.appendChild(wideImg);
+
+        let finalized = false;
+        const finalizeInit = () => {
+            if (!finalized) {
+                finalized = true;
+                sceneDiv.remove();
+            }
+        }
+        window.addEventListener('load', () => setTimeout(finalizeInit, 2000));
+        document.addEventListener('DOMContentLoaded', () => setTimeout(finalizeInit, 2000));
+        const observer = new MutationObserver(() => {
+            if (document.readyState === 'complete') {
+                observer.disconnect();
+                setTimeout(finalizeInit, 2000);
+            }
+        });
+        observer.observe(document, { childList: true, subtree: true });
+
+        return sceneDiv;
+    }
+
+    async function processPendingOperations() {
+        if (pendingOperationsQueue.length > 0) {
+            const nextOperation = pendingOperationsQueue.shift();
+            await nextOperation();
+        }
+    }
+
+
+    async function reset() {
+
+        if (isRunningDataIntegrations) {
+            // Queue the reset operation
+            console.log(debug.fmt('A reset was queued because runDataIntegrations is currently running.'));
+            pendingOperationsQueue.push(() => reset());
+            return;
+        }
+
+        try {
+
+            const variant = getVariant();
+
+            variant.resetCounter += 1;
+
+            await resetModel();
+            const sceneIndex = variant.currentSceneIndex;
+            variant.model.experienceId = variant.c3ExperienceId;
+
+            const cachedSceneDiv = variant.scenes[sceneIndex].cachedDiv;
+            const sceneDiv = getSceneDiv();
+
+            sceneDiv.innerHTML = cachedSceneDiv.innerHTML;
+
+            const containerDiv = experienceData.domRef;
+            containerDiv.style.paddingBottom = `${(variant.height / variant.width) * 100}%`;
+
+            requestAnimationFrame(() => extractSceneEmbeds(sceneDiv));
+
+            // Set up immediate action listeners
+            setImmediateActionListeners(sceneDiv);
+
+            await runDataIntegrations(sceneIndex, true); // True forces rerun of integrations
+        } finally {
+            isRunningDataIntegrations = false;
+            // Check for pending operations
+            processPendingOperations();
+        }
+    }
+
+    function isBrowserWebkit() {
+        let userAgent = navigator.userAgent.toLowerCase();
+        return userAgent.includes("webkit") && !userAgent.includes("chrome")
+    }
+
+    function isIOS26() {
+        const ua = navigator.userAgent;
+        // Check if it's iOS device
+        const isIOS = /iPhone|iPad|iPod/.test(ua);
+        if (!isIOS) return false;
+
+        // Extract iOS version from user agent
+        // iOS UA format: "CPU iPhone OS 26_0 like Mac OS X" or "CPU OS 26_0 like Mac OS X"
+        const iosMatch = ua.match(/OS (\d+)_/);
+        if (iosMatch && iosMatch[1]) {
+            const majorVersion = parseInt(iosMatch[1], 10);
+            if (majorVersion === 26) return true;
+        }
+
+        // Also check Safari/Browser version (Version/26.x)
+        // This handles cases where iOS version might be older but browser is v26
+        const versionMatch = ua.match(/Version\/(\d+)/);
+        if (versionMatch && versionMatch[1]) {
+            const browserMajorVersion = parseInt(versionMatch[1], 10);
+            if (browserMajorVersion === 26) return true;
+        }
+
+        return false;
+    }
+
+    function isElementInViewport(el) {
+        if (el == null) {
+            return false;
+        }
+        const rect = el.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+
+        return (
+            rect.bottom > 0 &&
+            rect.right > 0 &&
+            rect.top < windowHeight &&
+            rect.left < windowWidth
+        );
+    }
+
+    var unviewedAnimations = [];
+
+    function checkUnviewedAnimations() {
+        for (let i = 0; i < unviewedAnimations.length; i++) {
+            let animation = unviewedAnimations[i];
+            if (isElementInViewport(animation.intersector)) {
+                animation.begin();
+                unviewedAnimations.splice(i, 1);
+                i--;
+            }
+        }
+    }
+
+    function resetAnimationsAndEffects(sceneIndex) {
+        const scene = getScene(sceneIndex);
+
+        scene.animationsInitialized = false;
+
+        // Reset all animations
+        if (scene.animations) {
+            scene.animations.forEach(anim => {
+                anim.reset();
+            });
+        }
+
+        // Reset all effects
+        if (scene.effects) {
+            scene.effects.forEach(eff => {
+                eff.reset();
+            });
+        }
+    }
+
+    function resizeGraphicsCanvas(canvas) {
+        if (canvas?.FastrGL?.disableAutoresize) return;
+        if (isBrowserWebkit()) {
+            let boundingRect = canvas.getBoundingClientRect();
+            canvas.width = boundingRect.width;
+            canvas.height = boundingRect.height;
+        } else {
+            let fo = canvas.parentElement;
+            let parentGroup = fo.parentElement;
+            let x = parseInt(parentGroup.getAttribute("x"));
+            let y = parseInt(parentGroup.getAttribute("y"));
+            let baseWidth = parseInt(parentGroup.getAttribute("width"));
+            let baseHeight = parseInt(parentGroup.getAttribute("height"));
+            let boundingRect = parentGroup.getBoundingClientRect();
+            let scaleFactor = boundingRect.width / baseWidth;
+            let scaledWidth = scaleFactor * baseWidth;
+            let scaledHeight = scaleFactor * baseHeight;
+            canvas.width = scaledWidth;
+            canvas.height = scaledHeight;
+            fo.width = scaledWidth;
+            fo.height = scaledHeight;
+            fo.transform = `scale(${1 / scaleFactor, 1 / scaleFactor})`;
+            fo.x = x - 0.5 * (scaledWidth - baseWidth);
+            fo.y = y - 0.5 * (scaledHeight - baseHeight);
+        }
+    }
+
+    let activeGraphics = [];
+    const graphicsRenderLoop = () => {
+        for (const graphics of activeGraphics) {
+            try {
+                let [canvas, FastrGL] = graphics;
+                FastrGL.renderCallback(canvas);
+            } catch (error) {
+                console.error("Graphics integration render loop error: ", error);
+            }
+        }
+        requestAnimationFrame(graphicsRenderLoop);
+    };
+    graphicsRenderLoop();
+
+    function initializeGraphicsCanvases() {
+        for (const graphics of activeGraphics) {
+            let [canvas, FastrGL] = graphics;
+            if (FastrGL.interruptCallback) {
+                FastrGL.interruptCallback(canvas);
+            }
+        }
+        activeGraphics = [];
+        const sceneDiv = getSceneDiv();
+        sceneDiv?.querySelectorAll("canvas.graphics-integration-canvas").forEach(canvas => {
+            resizeGraphicsCanvas(canvas);
+            let initScript = canvas.firstChild;
+            try {
+                let FastrGL = (new Function(initScript.firstChild.data))();
+                canvas.FastrGL = FastrGL;
+                if (FastrGL.initCallback) {
+                    FastrGL.initCallback(canvas);
+                    if (FastrGL.renderCallback) {
+                        activeGraphics.push([canvas, FastrGL]);
+                    }
+                }
+            } catch (error) {
+                console.error("Graphics integration init error: ", error);
+            }
+        });
+    }
+
+    function initializeSceneAnimations(inputScene, inputSceneDiv) {
+        const scene = inputScene ?? getScene();
+        const sceneDiv = inputSceneDiv ?? getSceneDiv();
+        if (scene.animationsInitialized) {
+            if (isBrowserWebkit()) {
+                checkUnviewedAnimations()
+            }
+            return;
+        }
+        scene.animationsInitialized = true;
+        if (!sceneDiv) return;
+
+        const createAnimation = (el, animation) => {
+            let animationType = animation.getAttribute("animation-style");
+            switch (animationType) {
+                case 'fade-in':
+                    return new FadeInAnimation(animation);
+                case 'fade-out':
+                    return new FadeOutAnimation(animation);
+                case 'move':
+                    return new MoveAnimation(animation);
+                case 'slide-in':
+                    return new SlideInAnimation(animation);
+                case 'slide-out':
+                    return new SlideOutAnimation(animation);
+                case 'zoom-in':
+                    return new ZoomInAnimation(animation);
+                case 'zoom-out':
+                    return new ZoomOutAnimation(animation);
+            }
+            console.error(`Unsupported animation type: ${animationType}`);
+            return null;
+        };
+
+        class Action {
+            constructor(el) {
+                this.el = el;
+                this.el.style.transition = "";
+            }
+
+            setTransform(property, values) {
+                this.el.transformMap[property] = values;
+                let transformString = Object.entries(this.el.transformMap).map(([property, values]) => `${property}(${values})`).join(" ");
+                this.el.style.transform = transformString;
+            }
+
+            setTransition(property, transition) {
+                this.el.transitionMap[property] = transition;
+                let transitionString = Object.entries(this.el.transitionMap).map(([property, transition]) => `${property} ${transition}`).join(", ");
+                this.el.style.transition = transitionString;
+            }
+
+            storeInitialStyles() {
+                this.initialStyles = {
+                    transform: this.el.style.transform || '',
+                    opacity: this.el.style.opacity || '',
+                    transition: this.el.style.transition || '',
+                };
+            }
+
+            reset() {
+                this.el.style.transform = this.initialStyles.transform;
+                this.el.style.opacity = this.initialStyles.opacity;
+                this.el.style.transition = this.initialStyles.transition;
+            }
+
+            setup() { }
+
+            play() { }
+        }
+
+        function calculateShapeBounds(shapeElement) {
+            let bounds = shapeElement.getBBox();
+            let shapeType = shapeElement.getAttribute("shape-type");
+            if (shapeType == "group") {
+                const children = shapeElement.querySelectorAll("[id^='shape-']");
+                const childBounds = Array.from(children).map(calculateShapeBounds);
+                if (bounds.x == 0 && bounds.y == 0 && bounds.width == 0 && bounds.height == 0) {
+                    bounds = childBounds[0];
+                }
+                childBounds.forEach(childBounds => {
+                    bounds.x = Math.min(bounds.x, childBounds.x);
+                    bounds.y = Math.min(bounds.y, childBounds.y);
+                    bounds.width = Math.max(bounds.width, (childBounds.width + childBounds.x) - bounds.x);
+                    bounds.height = Math.max(bounds.height, (childBounds.height + childBounds.y) - bounds.y);
+                });
+            } else if (shapeType != "rect" && shapeType != "circle" && shapeType != "path") {
+                let fo = shapeElement.querySelector("foreignObject");
+                bounds.x = fo.getAttribute("x");
+                bounds.y = fo.getAttribute("y");
+                bounds.width = fo.getAttribute("width");
+                bounds.height = fo.getAttribute("height");
+            }
+            return bounds;
+        }
+
+        class Animation extends Action {
+            constructor(animationElement, useSeparateIntersector) {
+                super(animationElement.parentElement);
+                this.animationElement = animationElement;
+                this.storeInitialStyles();
+                this.setup();
+
+                requestAnimationFrame(() => {
+                    let separateIntersector = null;
+                    if (useSeparateIntersector) {
+                        const sibling = [...animationElement.parentElement.children].filter((child) => child != animationElement)[0];
+                        let bounds = calculateShapeBounds(sibling);
+                        const intersector = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                        sibling.querySelectorAll("foreignObject").forEach(
+                            foreignObject => {
+                                for (const field of ["x", "y", "width", "height"]) {
+                                    const value = parseFloat(foreignObject.getAttribute(field));
+                                    if (value !== NaN) {
+                                        bounds[field] = Math.min(bounds[field], value);
+                                    }
+                                }
+                            }
+                        );
+                        intersector.setAttribute("x", bounds.x);
+                        intersector.setAttribute("y", bounds.y);
+                        intersector.setAttribute("width", bounds.width);
+                        intersector.setAttribute("height", bounds.height);
+                        const pinnedParent = animationElement.closest("g.foreground-children") ?? animationElement.closest("g.background-children");
+                        const pinnedTransform = pinnedParent?.getAttribute("transform");
+                        if (pinnedTransform) {
+                            intersector.setAttribute("transform", pinnedTransform);
+                        }
+                        parentSVGElement(animationElement).appendChild(intersector);
+                        separateIntersector = intersector;
+                    }
+                    this.intersector = separateIntersector || animationElement.parentElement;
+                    if (isBrowserWebkit()) {
+                        // When on a WebKit browser (excluding Chrome on desktop), put
+                        // the animation into the queue of unviewed animations, to be
+                        // checked on resize and scroll for whether it has entered the
+                        // viewport
+                        unviewedAnimations.push(this);
+                        if (isBrowserWebkit()) {
+                            requestAnimationFrame(checkUnviewedAnimations);
+                        }
+                    } else {
+                        // On other browsers, use an IntersectionObserver to detect
+                        // when an element enters the viewport
+                        new IntersectionObserver(
+                            ([entry], observer) => {
+                                if (entry.isIntersecting) {
+                                    this.begin();
+                                    observer.disconnect(this.intersector);
+                                }
+                            },
+                        ).observe(this.intersector);
+                    }
+                });
+            }
+
+            begin() {
+                setTimeout(() => {
+                    this.play();
+                }, this.animationElement.getAttribute("delay") || 1);
+            }
+
+            activateTransition(propertyName) {
+                let easingCssString = null;
+                switch (this.animationElement.getAttribute("easing")) {
+                    case "linear":
+                        easingCssString = 'linear';
+                        break;
+                    case "ease-in":
+                        easingCssString = 'ease-in';
+                        break;
+                    case "ease-out":
+                        easingCssString = 'ease-out';
+                        break;
+                    case "ease-in-and-out":
+                        easingCssString = 'ease-in-out';
+                        break;
+                    case "bounce":
+                        this.animationTemplate = [[
+                            { progress: 0, offset: 0 },
+                            { progress: 1, offset: 0.75 },
+                            { progress: 0.875, offset: 0.85 },
+                            { progress: 1, offset: 0.95 },
+                            { progress: 0.9625, offset: 0.97 },
+                            { progress: 1, offset: 1 }
+                        ],
+                        {
+                            duration: parseFloat(this.animationElement.getAttribute("time")),
+                            easing: 'ease',
+                            fill: 'forwards'
+                        }];
+                        break;
+                    case "elastic":
+                        let reverseCount = 9;
+
+                        let progressRange = 0.35
+                        let progressPower = 0.75;
+
+                        let firstReverseTime = 0.4;
+                        let offsetPower = 3;
+
+                        let keyframes = [
+                            { progress: 0, offset: 0 },
+                            ...Array(reverseCount).fill().map((_, i) => {
+                                let p = (reverseCount - i - 1) / (reverseCount - 1);
+                                return {
+                                    progress: 1 + Math.pow(p, progressPower) * progressRange * (((i % 2) == 0) ? 1 : -1),
+                                    offset: 1 - (1 - firstReverseTime) * Math.pow(p, offsetPower)
+                                };
+                            })
+                        ];
+                        this.animationTemplate = [
+                            keyframes,
+                            {
+                                duration: parseFloat(this.animationElement.getAttribute("time")),
+                                easing: 'cubic-bezier(.55,0,.35,.99)',
+                                fill: 'forwards'
+                            }
+                        ];
+                        break;
+                    case "back-out":
+                        easingCssString = 'cubic-bezier(.41,1.33,.85,1.25)';
+                        break;
+                    default:
+                        console.warn(`Unknown easing type: ${easing}. Using 'ease' as default.`);
+                        easingCssString = 'ease';
+                        break;
+                }
+                if (easingCssString) {
+                    this.setTransition(
+                        propertyName,
+                        `${this.animationElement.getAttribute("time")}ms ${easingCssString}`
+                    );
+                }
+            }
+
+            playAnimation(properties, transformProperty, oldTransformValue, newTransformValue) {
+                const mix = (a, b, p) => a * (1 - p) + b * p;
+                const mixVectors = (va, vb, p) => va.map((a, i) => mix(a, vb[i], p));
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        if (transformProperty) {
+                            if (this.animationTemplate) {
+                                let templateFiller = null;
+                                switch (transformProperty) {
+                                    case "translate":
+                                        templateFiller = (progress) => {
+                                            let pos = mixVectors(
+                                                oldTransformValue,
+                                                newTransformValue,
+                                                progress
+                                            );
+                                            return `translate(${pos[0]}px, ${pos[1]}px)`;
+                                        };
+                                        break;
+                                    case "scale":
+                                        templateFiller = (progress) => {
+                                            let scale = mix(
+                                                oldTransformValue,
+                                                newTransformValue,
+                                                progress
+                                            );
+                                            return `scale(${scale})`;
+                                        };
+                                        break;
+                                    default:
+                                        console.error(`unsupported transform property "${transformProperty}"`);
+                                }
+                                if (templateFiller) {
+                                    let [keyframeTemplate, params] = this.animationTemplate;
+                                    let keyframes = keyframeTemplate.map((keyframe) => {
+                                        keyframe.transform = templateFiller(keyframe.progress);
+                                        delete keyframe.progress;
+                                        return keyframe;
+                                    });
+                                    this.el.animate(keyframes, params);
+                                }
+                            } else {
+                                switch (transformProperty) {
+                                    case "translate":
+                                        this.setTransform(
+                                            "translate",
+                                            `${newTransformValue[0]}px, \
+                                             ${newTransformValue[1]}px`
+                                        );
+                                        break;
+                                    case "scale":
+                                        "playAnimation(scale)"
+                                        this.setTransform(
+                                            "scale",
+                                            `${newTransformValue}`
+                                        );
+                                        break;
+                                    default:
+                                        console.error(`unsupported transform property "${transformProperty}"`);
+                                }
+                            }
+                        }
+                        Object.assign(this.el.style, properties);
+                    });
+                });
+            }
+        }
+
+        class MoveAnimation extends Animation {
+            setup() {
+                this.setTransform("translate", [0, 0])
+            }
+            play() {
+                const currentTransform = new DOMMatrix(getComputedStyle(this.el).transform);
+                const currentX = currentTransform.m41;
+                const currentY = currentTransform.m42;
+
+                const dx = this.animationElement.getAttribute("move-x") * (this.animationElement.getAttribute("move-x-direction") == "left" ? -1 : 1) ?? 0;
+                const dy = this.animationElement.getAttribute("move-y") * (this.animationElement.getAttribute("move-y-direction") == "up" ? -1 : 1) ?? 0;
+
+                const newX = currentX + dx;
+                const newY = currentY + dy;
+
+                this.activateTransition("transform");
+
+                this.playAnimation(
+                    {},
+                    "translate",
+                    [0, 0],
+                    [newX, newY]
+                );
+            }
+        }
+
+        function centerTransformOrigin(el, recursed) {
+            const bb = el.getBBox();
+            if (bb.x == 0 && bb.y == 0 && bb.width == 0 && bb.height == 0 && !recursed) {
+                requestAnimationFrame(() => centerTransformOrigin(el, true));
+                return;
+            }
+            const x = bb.x + bb.width / 2;
+            const y = bb.y + bb.height / 2;
+            el.style.transformOrigin = `${x}px ${y}px`;
+        }
+
+        class ZoomInAnimation extends Animation {
+            setup() {
+                this.el.style.opacity = '0';
+
+                centerTransformOrigin(this.el);
+
+                this.setTransform("scale", "0");
+
+                this.activateTransition("transform");
+            }
+
+            play() {
+                this.playAnimation(
+                    { opacity: 1 },
+                    "scale",
+                    0,
+                    1
+                );
+            }
+        }
+
+        class ZoomOutAnimation extends Animation {
+            setup() {
+                this.el.style.opacity = '1';
+
+                centerTransformOrigin(this.el);
+
+                this.setTransform("scale", "1");
+
+                this.activateTransition("transform");
+            }
+
+            play() {
+                this.playAnimation(
+                    {},
+                    "scale",
+                    1,
+                    0
+                );
+            }
+        }
+
+        class FadeInAnimation extends Animation {
+            setup() {
+                this.el.style.opacity = '0';
+            }
+
+            play() {
+                this.activateTransition("opacity");
+                this.playAnimation({ opacity: '1' });
+            }
+        }
+
+        class FadeOutAnimation extends Animation {
+            setup() {
+                this.el.style.opacity = '1';
+            }
+            play() {
+                this.el.style.opacity = '1';
+                this.activateTransition("opacity");
+                this.playAnimation({ opacity: '0' });
+            }
+        }
+
+        class SlideInAnimation extends Animation {
+            constructor(animationElement) {
+                super(animationElement, true);
+            }
+            setup() {
+                const viewbox = getSceneDiv().querySelector("svg").viewBox.baseVal;
+                this.translateX = 0;
+                this.translateY = 0;
+
+                let direction = this.animationElement.getAttribute("direction")
+                switch (direction) {
+                    case 'left':
+                        this.translateX = -viewbox.width;
+                        break;
+                    case 'right':
+                        this.translateX = viewbox.width;
+                        break;
+                    case 'top':
+                        this.translateY = -viewbox.height;
+                        break;
+                    case 'bottom':
+                        this.translateY = viewbox.height;
+                        break;
+                    default:
+                        console.error(`Unsupported slide direction: ${direction}`);
+                        return;
+                }
+
+                this.el.style.display = 'none';
+                this.setTransform("translate", `${this.translateX}px, ${this.translateY}px`);
+            }
+
+            play() {
+                this.el.style.display = '';
+                this.activateTransition("transform");
+                this.playAnimation(
+                    {},
+                    "translate",
+                    [this.translateX, this.translateY],
+                    [0, 0]
+                );
+            }
+        }
+
+        class SlideOutAnimation extends Animation {
+            setup() {
+                const viewbox = getSceneDiv().querySelector("svg").viewBox.baseVal;
+                this.translateX = 0;
+                this.translateY = 0;
+
+                let direction = this.animationElement.getAttribute("direction")
+                switch (direction) {
+                    case 'left':
+                        this.translateX = -viewbox.width;
+                        break;
+                    case 'right':
+                        this.translateX = viewbox.width;
+                        break;
+                    case 'top':
+                        this.translateY = -viewbox.height;
+                        break;
+                    case 'bottom':
+                        this.translateY = viewbox.height;
+                        break;
+                    default:
+                        console.error(`Unsupported SlideOut direction: ${direction}`);
+                        return;
+                }
+
+                this.setTransform("translate", "0, 0");
+            }
+
+            play() {
+                this.activateTransition("transform");
+                this.playAnimation(
+                    {},
+                    "translate",
+                    [0, 0],
+                    [this.translateX, this.translateY]
+                );
+            }
+        }
+
+        scene.animations = Array.from(sceneDiv.querySelectorAll("fastr-animation")).map(animation => {
+            let parent = animation.parentElement;
+            parent.transformMap = {};
+            parent.transitionMap = {};
+            return createAnimation(parent, animation);
+        });
+
+        if (isBrowserWebkit()) {
+            checkUnviewedAnimations();
+            window.addEventListener("scroll", checkUnviewedAnimations);
+            window.addEventListener("resize", checkUnviewedAnimations);
+        }
+
+        const createEffect = (effect) => {
+            let effectType = effect.getAttribute("type");
+            switch (effectType) {
+                case 'rotate':
+                    return new RotateEffect(effect);
+                case 'scale':
+                    return new ResizeEffect(effect);
+                case 'opacity':
+                    return new OpacityEffect(effect);
+                case 'pulse':
+                    return new PulseEffect(effect);
+            }
+            console.error(`Unsupported effect type: ${effectType}`);
+            return null;
+        };
+
+        class Effect extends Action {
+            constructor(effect) {
+                super(effect.parentElement);
+                this.effect = effect;
+                this.transitionDuration = effect.getAttribute("duration");
+                let eff = this;
+                let effectTrigger = effect.getAttribute("trigger-type");
+                switch (effectTrigger) {
+                    case "mouseover":
+                        let currentElement = this.el;
+                        let groupElement = null;
+                        while (currentElement && currentElement.tagName !== 'svg') {
+                            let elementType = currentElement.getAttribute('shape-type');
+                            let interactions = currentElement.querySelector('fastr-interactions');
+                            if (elementType === 'group' && interactions !== null) {
+                                groupElement = currentElement;
+                            }
+                            currentElement = currentElement.parentElement;
+                        }
+
+                        if (groupElement) {
+                            const respondToMouseEvent = (event) => {
+                                const elementsAtMouse = document.elementsFromPoint(event.clientX, event.clientY);
+                                if (elementsAtMouse.some(el => el.ownerSVGElement && this.el.contains(el))) {
+                                    eff.begin();
+                                } else {
+                                    eff.end();
+                                }
+                            }
+                            for (const eventName of ['mouseenter', 'mousemove', 'mouseleave']) {
+                                groupElement.addEventListener(eventName, respondToMouseEvent);
+                            }
+                        } else {
+                            this.el.onmouseenter = () => eff.begin();
+                            this.el.onmouseleave = () => eff.end();
+                        }
+                        break;
+                    case "loop":
+                        this.transitionDuration *= 0.5;
+                        let flag = true;
+                        requestAnimationFrame(() => {
+                            let loop = () => {
+                                if (flag) {
+                                    eff.begin();
+                                } else {
+                                    eff.end();
+                                }
+                                flag = !flag;
+                                setTimeout(loop, eff.transitionDuration)
+                            };
+                            loop();
+                        });
+                        break;
+                    default:
+                        console.error(`Unsupported effect trigger: ${effectTrigger}`);
+                }
+
+                this.storeInitialStyles();
+                this.setup();
+            }
+
+            begin() {
+                setTimeout(() => {
+                    this.play();
+                }, this.effect.getAttribute("delay") || 1);
+            }
+
+            end() {
+                setTimeout(() => {
+                    this.unplay();
+                }, this.effect.getAttribute("delay") || 1);
+            }
+
+            unplay() { }
+
+            playEffect(properties, beforeAssignCallback) {
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        if (beforeAssignCallback != null) {
+                            beforeAssignCallback();
+                        }
+                        Object.assign(this.el.style, properties);
+                    });
+                });
+            }
+
+            activateTransition(propertyName, easing) {
+                this.setTransition(propertyName, `${this.transitionDuration}ms ${easing}`);
+            }
+        }
+
+        class RotateEffect extends Effect {
+            setup() {
+                centerTransformOrigin(this.el);
+            }
+
+            play() {
+                this.activateTransition("transform", "ease-out");
+                this.playEffect(
+                    {},
+                    () => this.setTransform("rotate", `${this.effect.getAttribute("rotation")}deg`)
+                );
+            }
+
+            unplay() {
+                this.activateTransition("transform", "ease-in");
+                this.playEffect(
+                    {},
+                    () => this.setTransform("rotate", "0deg")
+                );
+            }
+        }
+
+        class ResizeEffect extends Effect {
+            setup() {
+                centerTransformOrigin(this.el);
+            }
+
+            play() {
+                this.activateTransition("transform", "ease-out");
+                this.playEffect(
+                    {},
+                    () => this.setTransform("scale", `${this.effect.getAttribute("scale") / 100}`)
+                );
+            }
+
+            unplay() {
+                this.activateTransition("transform", "ease-in");
+                this.playEffect(
+                    {},
+                    () => this.setTransform("scale", "1")
+                );
+            }
+        }
+
+        class PulseEffect extends Effect {
+            setup() {
+                this.transitionDuration = 300;
+
+                centerTransformOrigin(this.el);
+
+                this.activateTransition("transform", "linear");
+            }
+
+            play() {
+                this.activateTransition("transform", "ease-out");
+                var scale;
+                switch (this.effect.getAttribute("pulse")) {
+                    case "1": scale = 1.1; break;
+                    case "2": scale = 1.2; break;
+                    case "3": scale = 1.4; break;
+                    case "4": scale = 1.6; break;
+                    case "5": scale = 2; break;
+                }
+                this.playEffect(
+                    {},
+                    () => this.setTransform("scale", scale)
+                );
+            }
+
+            unplay() {
+                this.activateTransition("transform", "ease-in");
+                this.playEffect(
+                    {},
+                    () => this.setTransform("scale", "1")
+                );
+            }
+        }
+
+        class OpacityEffect extends Effect {
+            play() {
+                this.activateTransition("opacity", "ease-out");
+                this.playEffect({ opacity: `${this.effect.getAttribute("opacity") / 100}` });
+            }
+
+            unplay() {
+                this.activateTransition("opacity", "ease-in");
+                this.playEffect({ opacity: '1' });
+            }
+        }
+
+        scene.effects = Array.from(sceneDiv.querySelectorAll("fastr-effect")).map(effect => {
+            let parent = effect.parentElement;
+            parent.transformMap = {};
+            parent.transitionMap = {};
+            return createEffect(effect);
+        });
+
+        // run all graphics integrations on canvases
+        requestAnimationFrame(initializeGraphicsCanvases);
+    }
+
+    initializeExperience();
+
+})()
