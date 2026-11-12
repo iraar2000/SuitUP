@@ -29,7 +29,7 @@ appServer.use(monitorEndpointRequest) //monitoring the requests
 appServer.use('/api/user', UserRouter);
 appServer.use('/api/order', OrderRouter);
 appServer.use('/api/payment', PaymentRouter);
-appServer.use('/api/products', ProductsRouter);
+appServer.use('/api/product', ProductsRouter);
 appServer.use('/api/delivery', DeliveryRouter);
 appServer.use('/api/styles', StylesRouter);
 appServer.use('/api/analytics', AnalyticsRouter);

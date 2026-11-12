@@ -8,7 +8,7 @@ export const Postgresql = new Pool({
     password: process.env.PGPASSWORD,
     port: process.env.PGPORT,
     database: process.env.PGDATABASE
-})
+});
 
 
 

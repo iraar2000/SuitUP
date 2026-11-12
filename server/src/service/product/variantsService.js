@@ -1,7 +1,7 @@
-import SpecificationModel from "../../model/product/specificationModel";
-import VariantsImageModel from "../../model/product/variantImagesModel";
-import variantsModel from "../../model/product/variantsModel";
-import VariantSpecificationModel from "../../model/product/variantSpecificationModel";
+import SpecificationModel from "../../model/product/specificationModel.js";
+import VariantsImageModel from "../../model/product/variantImagesModel.js";
+import variantsModel from "../../model/product/variantsModel.js";
+import VariantSpecificationModel from "../../model/product/variantSpecificationModel.js";
 
 const variantModel = new variantsModel();
 const variantSpecificationModel = new VariantSpecificationModel();
@@ -19,8 +19,11 @@ export async function createVariantService(variantData) {
         const specifications = variantData.specifications;
         delete variantData.specifications;
 
+        console.log(variantData);
+
         // create the variant
-        const variantResp = await variantModel.createVariant(variantData);
+        const variantResp = await variantModel.createVariant(Object.values(variantData));
+        if (variantResp.status !== 200) return variantResp;
 
         // create the variant images
         for (let i = 0; i < variantImages.length; i++) {
@@ -28,7 +31,10 @@ export async function createVariantService(variantData) {
         }
 
         // creating the variant specification
-        await createVariantSpecificationService([variantResp.data.id, spec.data.id, Object.values(specifications)[i]])
+        const varSpecResp = await createVariantSpecificationService(variantResp.data.id, specifications);
+        if (varSpecResp.status !== 200) return varSpecResp;
+
+        return { status: 201, data: { message: "Created variant successfully!" } }
     } catch (error) {
         return { status: 500, data: { error: "Internal server error, failed to create variant in database, variantsService.js file", errorDetails: error } };
     }
@@ -46,7 +52,7 @@ export async function createVariantImagesService(variantImageData) {
 // the function which creates the specifications
 export async function createSpecificationService(specificationData) {
     try {
-        return await specificationModel.createSpecification(specificationData);
+        return await specificationModel.createSpecification([specificationData.name, specificationData.unit]);
     } catch (error) {
         return { status: 500, data: { error: "Internal server error, failed to create specifications, variantService.js file", errorDetails: error } }
     }
@@ -56,8 +62,9 @@ export async function createSpecificationService(specificationData) {
 export async function createVariantSpecificationService(variantId, specificationData) {
     try {
         for (let i = 0; i < Object.keys(specificationData).length; i++) {
-            // console.log(Object.keys(specifications)[i], Object.values(specifications)[i])
+            console.log(Object.keys(specificationData)[i], Object.values(specificationData)[i])
             const spec = await specificationModel.retrieveSpecificationByName(Object.keys(specificationData)[i])
+            console.log(spec);
             await variantSpecificationModel.createVariantSpecification([variantId, spec.data.id, Object.values(specificationData)[i]])
         }
         return { status: 200, data: { message: "Created variant specification successfully!" } };

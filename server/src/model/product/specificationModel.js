@@ -1,4 +1,4 @@
-import { postgresQueryHelper } from "../../utils/postgresHelperFunctions";
+import { postgresQueryHelper } from "../../utils/postgresHelperFunctions.js";
 
 // the class which manages the specification table
 export default class SpecificationModel {
@@ -13,7 +13,7 @@ export default class SpecificationModel {
     // the function which retrieves the specification by name from database
     async retrieveSpecificationByName(name) {
         const q = `SELECT id, name, unit FROM specification WHERE name=$1;`;
-        const response = await postgresQueryHelper(q, "Internal server error, failed to retrieve specification by name, specificationModel.js file", [`${name}`.toUpperCase()]);
+        const response = await postgresQueryHelper(q, "Internal server error, failed to retrieve specification by name, specificationModel.js file", [`${name}`.toLowerCase()]);
         if (response.status !== 200) return response;
         return { status: response.status, data: response.data[0] };
     }

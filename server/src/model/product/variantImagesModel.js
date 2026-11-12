@@ -1,4 +1,4 @@
-import { postgresQueryHelper } from "../../utils/postgresHelperFunctions";
+import { postgresQueryHelper } from "../../utils/postgresHelperFunctions.js";
 
 export default class VariantsImageModel {
     constructor() { }
