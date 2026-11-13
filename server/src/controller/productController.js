@@ -1,6 +1,6 @@
-import { assignProductToCollectionService, createProductBrandService, createProductCategoryService, createProductCollectionService, createProductService, createProductSubCategoryService, createProductSupplierService, retrieveProductByIdService } from "../service/product/productsService.js";
+import { assignProductToCollectionService, createProductBrandService, createProductCategoryService, createProductCollectionService, createProductService, createProductSubCategoryService, createProductSupplierService, retrieveProductByIdService, retrieveProductByOffsetService } from "../service/product/productsService.js";
 import { createReviewService } from "../service/product/reviewService.js";
-import { createSpecificationService, createVariantImagesService, createVariantService, createVariantSpecificationService } from "../service/product/variantsService.js";
+import { createSpecificationService, createVariantImagesService, createVariantService, createVariantSpecificationService, retrieveVariantByIdService } from "../service/product/variantsService.js";
 
 // the function which controlls the creation of the product
 export async function createProductController(req, res) {
@@ -125,8 +125,15 @@ export async function createProductReviewController(req, res) {
 }
 
 // the function which retrieves the product by offsets
-export async function retrieveAllProductByOffsetController(req, res) {
-
+export async function retrieveProductByOffsetController(req, res) {
+    try {
+        const response = await retrieveProductByOffsetService(req.params.offset);
+        console.log(response);
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        console.log(error)
+        return res.status(500).json({ error: "Internal server error, failed to retrieve the product by offset, productController.js file", errorDetails: error });
+    }
 }
 
 // the function which retrieves the product by id
@@ -136,5 +143,15 @@ export async function retrieveProductByIdController(req, res) {
         return res.status(prodResp.status).json(prodResp.data);
     } catch (error) {
         return res.status(500).json({ error: "Internal server error, failed to retrieve product by id, productController.js file" })
+    }
+}
+
+// the function which retrieves the variant id
+export async function retrieveVariantByIdController(req, res) {
+    try {
+        const response = await retrieveVariantByIdService(req.params.variantId);
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to retrieve variant by id, productController.js file", errorDetails: error });
     }
 }

@@ -1,3 +1,4 @@
+import { response } from "express";
 import BrandModel from "../../model/product/brandModel.js";
 import CategoryModel from "../../model/product/categoryModel.js";
 import CollectionModel from "../../model/product/collectionModel.js";
@@ -5,7 +6,9 @@ import ProductCollectionModel from "../../model/product/productCollectionModel.j
 import ProductModel from "../../model/product/productsModel.js"
 import subCategoryModel from "../../model/product/subCategoryModel.js";
 import SupplierModel from "../../model/product/suppliersModel.js";
+import variantsModel from "../../model/product/variantsModel.js";
 import { createVariantService } from "./variantsService.js";
+import ReviewModel from "../../model/product/reviewsModel.js";
 
 const productModel = new ProductModel();
 const categModel = new CategoryModel();
@@ -14,6 +17,8 @@ const brandModel = new BrandModel();
 const collectionModel = new CollectionModel();
 const prodCollModel = new ProductCollectionModel();
 const supplierModel = new SupplierModel();
+const variantModel = new variantsModel();
+const reviewModel = new ReviewModel();
 
 // the service function which creates the product
 export async function createProductService(productData) {
@@ -113,10 +118,40 @@ export async function retrieveProductByIdService(productId) {
         const prodResp = await productModel.retrieveProductById(productId);
         if (prodResp.status !== 200) return prodResp;
 
-        return prodResp;
+        // retrieve the product variants
+        const varResp = await variantModel.retrieveVariantByProductId(productId);
+        if (varResp.status !== 200) return varResp;
+
+        // retrieve the product reviews
+        const reviewResp = await reviewModel.retrieveReviewByProdId(productId);
+        if (reviewResp.status !== 200) return reviewResp;
+
+        return {
+            status: 200,
+            data: {
+                product: prodResp.data,
+                variants: varResp.data,
+                reviews: reviewResp.data
+            }
+        };
     } catch (error) {
         return { status: 500, data: { error: "Internal server error, failed to retrieve product by Id, productsService.js file" } };
     }
 }
 
 // the service function which retrieves product by offset
+export async function retrieveProductByOffsetService(offset) {
+    try {
+        // creating the offset based on thelimit
+        const limit = 10;
+        const ofNumber = limit * (offset - 1)
+
+        // retrieve the product by id
+        const prodResp = await productModel.retrieveProductByOffset(limit, ofNumber);
+        return prodResp;
+
+    } catch (error) {
+        console.log(error);
+        return { status: 500, data: { error: "Internal server error, failed to retrieve the product by offset, productService.js file", errorDetails: error } };
+    }
+}

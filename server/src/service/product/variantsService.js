@@ -80,3 +80,12 @@ export async function createVariantSpecificationService(variantId, specification
         return { status: 500, data: { error: "Internal server error, failed to create variant specification, variantService.js file", errorDetails: error } };
     }
 }
+
+// the function which retrieves the variant by id
+export async function retrieveVariantByIdService(variantId) {
+    try {
+        return await variantModel.retrieveVariantById(variantId);
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to retrieve the variant by id, variantService.js file", errorDetails: error } };
+    }
+}

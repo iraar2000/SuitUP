@@ -15,7 +15,20 @@ export default class ReviewModel {
 
     // the function which retrieves the review using prodId
     async retrieveReviewByProdId(prodId) {
-        const q = `SELECT * FROM reviews WHERE product_id=$1;`;
+        const q = `
+            SELECT 
+                r.title as reviewTitle,
+                r.review as reviewMessage,
+                r.rating as reviewRating,
+                r.created_at as reviewCreatedAt,
+                
+                u.first_name as userFirstName,
+                u.last_name as userLastName,
+                u.email as userEmail,
+                u.profile_image as userImage
+            FROM reviews AS r
+            JOIN users AS u ON  r.user_id=u.id
+            WHERE product_id=$1;`;
         return await postgresQueryHelper(q, "Internal server error, failed to retrieve review by product id, reviewsModel.js file", [prodId]);
     }
 
