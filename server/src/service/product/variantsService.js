@@ -19,16 +19,13 @@ export async function createVariantService(variantData) {
         const specifications = variantData.specifications;
         delete variantData.specifications;
 
-        console.log(variantData);
-
         // create the variant
         const variantResp = await variantModel.createVariant(Object.values(variantData));
         if (variantResp.status !== 200) return variantResp;
 
         // create the variant images
-        for (let i = 0; i < variantImages.length; i++) {
-            await createVariantImagesService([variantResp.data.id, variantImages[i], ''])
-        }
+        const viResp = await createVariantImagesService(variantResp.data.id, variantImages)
+        if (viResp.status !== 201) return viResp;
 
         // creating the variant specification
         const varSpecResp = await createVariantSpecificationService(variantResp.data.id, specifications);
@@ -41,9 +38,17 @@ export async function createVariantService(variantData) {
 }
 
 // the function which creats the variant images
-export async function createVariantImagesService(variantImageData) {
+export async function createVariantImagesService(variantId, variantImageData) {
     try {
-        return await variantImageModel.createVariantImage(variantImageData)
+        // check if the variant exists
+        const vResp = await variantModel.retrieveVariantById(variantId);
+        if (vResp.status !== 200) return vResp;
+
+        // create the images then
+        for (let i = 0; i < variantImageData.length; i++) {
+            await variantImageModel.createVariantImage(variantId, [variantImageData[i], ""]);
+        }
+        return { status: 201, data: { message: "Create the variant image successfully!" } }
     } catch (error) {
         return { status: 500, data: { error: "Internal server error, failed to create variant image, variantsService.js file", errorDetails: error } };
     }
@@ -61,10 +66,13 @@ export async function createSpecificationService(specificationData) {
 // the function which creates the variant specification
 export async function createVariantSpecificationService(variantId, specificationData) {
     try {
+        // check if the variant exists
+        const vResp = await variantModel.retrieveVariantById(variantId);
+        if (vResp.status !== 200) return vResp;
+
+        // create variant specification
         for (let i = 0; i < Object.keys(specificationData).length; i++) {
-            console.log(Object.keys(specificationData)[i], Object.values(specificationData)[i])
             const spec = await specificationModel.retrieveSpecificationByName(Object.keys(specificationData)[i])
-            console.log(spec);
             await variantSpecificationModel.createVariantSpecification([variantId, spec.data.id, Object.values(specificationData)[i]])
         }
         return { status: 200, data: { message: "Created variant specification successfully!" } };

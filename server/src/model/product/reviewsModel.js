@@ -6,6 +6,7 @@ export default class ReviewModel {
 
     // the function which creates the review
     async createReview(reviewData) {
+        console.log(reviewData);
         const q = `INSERT INTO reviews(product_id, user_id, title, verified_purchase, rating, review) VALUES($1, $2, $3, $4, $5, $6) RETURNING *;`;
         const response = await postgresQueryHelper(q, "Internal server error, failed to create a review, reviewModel.js file", reviewData);
         if (response.status !== 200) return response;

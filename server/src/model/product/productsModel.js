@@ -20,4 +20,9 @@ export default class ProductModel {
         if (response.status !== 200) return response;
         return { status: response.status, data: response.data[0] };
     }
+
+    // retrieve products data
+    async retrieveProductsData(dataIds) {
+
+    }
 } 

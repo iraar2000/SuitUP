@@ -105,3 +105,18 @@ export async function createProductSupplierService(supplierData) {
         return { status: 500, data: { error: "Internal server error, failed to create the supplier in the database, productService.js file", errorDetails: error } };
     }
 }
+
+// the service function which retrieves product by id
+export async function retrieveProductByIdService(productId) {
+    try {
+        // retrieve the product by id
+        const prodResp = await productModel.retrieveProductById(productId);
+        if (prodResp.status !== 200) return prodResp;
+
+        return prodResp;
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to retrieve product by Id, productsService.js file" } };
+    }
+}
+
+// the service function which retrieves product by offset

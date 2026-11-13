@@ -10,4 +10,12 @@ export default class variantsModel {
         if (response.status !== 200) return response;
         return { status: response.status, data: response.data[0] }
     }
+
+    // the function which retrieves the variant
+    async retrieveVariantById(variantId) {
+        const q = `SELECT * FROM variants WHERE id=$1;`;
+        const response = await postgresQueryHelper(q, "Internal server error, failed to retrieve the variant by id, variantModel.js file", [variantId]);
+        if (response.status !== 200) return response;
+        return { status: response.status, data: response.data[0] }
+    }
 }

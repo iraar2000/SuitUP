@@ -6,7 +6,8 @@ export default class CollectionModel {
 
     // the function which creates the collection in database
     async createCollection(collectionData) {
-        const q = `INSERT INTO collection(name, season, manufacturer) VALUES($1, $2, $3) RETURNING *;`;
+        console.log(collectionData);
+        const q = `INSERT INTO collection(name, season, creator, image) VALUES($1, $2, $3, $4) RETURNING *;`;
         return await postgresQueryHelper(q, "Internal server error, failed to create collection, collectionModel.js file", collectionData);
     }
 

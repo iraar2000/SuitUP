@@ -1,4 +1,4 @@
-import { assignProductToCollectionService, createProductBrandService, createProductCategoryService, createProductCollectionService, createProductService, createProductSubCategoryService, createProductSupplierService } from "../service/product/productsService.js";
+import { assignProductToCollectionService, createProductBrandService, createProductCategoryService, createProductCollectionService, createProductService, createProductSubCategoryService, createProductSupplierService, retrieveProductByIdService } from "../service/product/productsService.js";
 import { createReviewService } from "../service/product/reviewService.js";
 import { createSpecificationService, createVariantImagesService, createVariantService, createVariantSpecificationService } from "../service/product/variantsService.js";
 
@@ -17,7 +17,7 @@ export async function createProductController(req, res) {
 // the function which controlls the creation of the product variants
 export async function createProductVariantsController(req, res) {
     try {
-        const response = await createVariantService([req.params.prodId, ...Object.values(req.body)])
+        const response = await createVariantService({ productId: req.params.prodId, ...req.body })
         return res.status(response.status).json(response.data);
     } catch (error) {
         return res.status(500).json({ error: "Internal server error, failed to create product variants, productController.js file", errorDetails: error });
@@ -47,7 +47,7 @@ export async function createSpecificationController(req, res) {
 // the function which creates the variant images
 export async function createVariantImagesController(req, res) {
     try {
-        const response = await createVariantImagesService(req.body.images);
+        const response = await createVariantImagesService(req.params.variantId, req.body.images);
         return res.status(response.status).json(response.data);
     } catch (error) {
         return res.status(500).json({ error: "Internal server error, failed to create variant images, productController.js file", errorDetails: error });
@@ -124,3 +124,17 @@ export async function createProductReviewController(req, res) {
     }
 }
 
+// the function which retrieves the product by offsets
+export async function retrieveAllProductByOffsetController(req, res) {
+
+}
+
+// the function which retrieves the product by id
+export async function retrieveProductByIdController(req, res) {
+    try {
+        const prodResp = await retrieveProductByIdService(req.params.prodId);
+        return res.status(prodResp.status).json(prodResp.data);
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to retrieve product by id, productController.js file" })
+    }
+}

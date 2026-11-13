@@ -1,15 +1,17 @@
 import express from 'express';
-import { assignProductToCollectionController, createProductBrandController, createProductCategoryController, createProductCollectionController, createProductController, createProductReviewController, createProductSubCategoryController, createProductSupplierController, createProductVariantsController, createSpecificationController, createVariantImagesController, createVariantSpecificationController } from '../controller/productController.js';
+import { assignProductToCollectionController, createProductBrandController, createProductCategoryController, createProductCollectionController, createProductController, createProductReviewController, createProductSubCategoryController, createProductSupplierController, createProductVariantsController, createSpecificationController, createVariantImagesController, createVariantSpecificationController, retrieveAllProductByOffsetController, retrieveProductByIdController } from '../controller/productController.js';
 
 const ProductsRouter = express.Router()
 
 // product
 ProductsRouter.post('/create', createProductController);
+ProductsRouter.get('/retrieve/all/:offset', retrieveAllProductByOffsetController);
+ProductsRouter.get('/retrieve/:prodId', retrieveProductByIdController);
 
 // variants
-ProductsRouter.post('/variant/create', createProductVariantsController);
-ProductsRouter.post('/variant/images/create', createVariantImagesController);
-ProductsRouter.post('/variant/specification/create', createVariantSpecificationController);
+ProductsRouter.post('/variant/create/:prodId', createProductVariantsController);
+ProductsRouter.post('/variant/images/create/:variantId', createVariantImagesController);
+ProductsRouter.post('/variant/specification/create/:variantId', createVariantSpecificationController);
 
 // category
 ProductsRouter.post('/category/create', createProductCategoryController);
