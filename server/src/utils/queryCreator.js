@@ -13,7 +13,8 @@ export default class QueryCreator {
         includeBrand = true,
         includeSupplier = true,
         includeCategory = true,
-        includeSubCategory = true
+        includeSubCategory = true,
+        includeCollection = false
     }) {
         return (
             `
@@ -47,6 +48,8 @@ export default class QueryCreator {
                 c.description AS categoryDescription`
                 : ""}
 
+                ${includeCollection ? `,col.name AS collection` : ""}
+
                 ${includeVariant ? `
                 ,v.price,
                 v.sku,
@@ -65,6 +68,8 @@ export default class QueryCreator {
             ${includeBrand ? `LEFT JOIN brand b ON b.id = p.brand_id` : ""}
             ${includeSubCategory ? `LEFT JOIN sub_category sc ON sc.id = p.sub_categ_id` : ""}
             ${includeCategory ? `LEFT JOIN category c ON c.id = sc.category_id` : ""}
+            ${includeCollection ? `LEFT JOIN product_collection pc ON pc.product_id = p.id
+            LEFT JOIN collection col ON col.id = pc.collection_id` : ""}
             
             ${where}
             ${order}
@@ -74,4 +79,6 @@ export default class QueryCreator {
             `
         )
     }
+
+    // the product re
 }

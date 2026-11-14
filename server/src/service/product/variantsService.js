@@ -89,3 +89,13 @@ export async function retrieveVariantByIdService(variantId) {
         return { status: 500, data: { error: "Internal server error, failed to retrieve the variant by id, variantService.js file", errorDetails: error } };
     }
 }
+
+// the function which retrieves the variant by productId
+export async function retrieveVariantByProductIdService(prodId) {
+    try {
+        // retrieve the product variants
+        return await variantModel.retrieveVariantByProductId(prodId);
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to retrieve the product variant by product id, variantService.js file", errorDetails: error } };
+    }
+}

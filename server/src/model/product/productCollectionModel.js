@@ -1,8 +1,11 @@
 import { postgresQueryHelper } from "../../utils/postgresHelperFunctions.js";
+import QueryCreator from "../../utils/queryCreator.js";
 
 // the class which controlls the category table
 export default class ProductCollectionModel {
-    constructor() { }
+    constructor() {
+        this.queryCreator = new QueryCreator();
+    }
 
     // the function which creates the productCollection in database
     async createProductCollection(prodColData) {

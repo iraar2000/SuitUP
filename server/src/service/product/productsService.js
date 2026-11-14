@@ -7,9 +7,11 @@ import ProductModel from "../../model/product/productsModel.js"
 import subCategoryModel from "../../model/product/subCategoryModel.js";
 import SupplierModel from "../../model/product/suppliersModel.js";
 import variantsModel from "../../model/product/variantsModel.js";
-import { createVariantService } from "./variantsService.js";
+import { createVariantService, retrieveVariantByProductIdService } from "./variantsService.js";
 import ReviewModel from "../../model/product/reviewsModel.js";
+import { retrieveReviewByProductIdService } from "./reviewService.js";
 
+// service objects
 const productModel = new ProductModel();
 const categModel = new CategoryModel();
 const subCategModel = new subCategoryModel();
@@ -17,8 +19,6 @@ const brandModel = new BrandModel();
 const collectionModel = new CollectionModel();
 const prodCollModel = new ProductCollectionModel();
 const supplierModel = new SupplierModel();
-const variantModel = new variantsModel();
-const reviewModel = new ReviewModel();
 
 // the service function which creates the product
 export async function createProductService(productData) {
@@ -120,11 +120,11 @@ export async function retrieveProductByIdService(productId) {
         if (prodResp.status !== 200) return prodResp;
 
         // retrieve the product variants
-        const varResp = await variantModel.retrieveVariantByProductId(productId);
+        const varResp = await retrieveVariantByProductIdService(productId);
         if (varResp.status !== 200) return varResp;
 
         // retrieve the product reviews
-        const reviewResp = await reviewModel.retrieveReviewByProdId(productId);
+        const reviewResp = await retrieveReviewByProductIdService(productId);
         if (reviewResp.status !== 200) return reviewResp;
 
         return {
@@ -180,5 +180,23 @@ export async function retrieveBrandsService() {
         return await brandModel.retrieveBrands();
     } catch (error) {
         return { status: 500, data: { error: "Internal server error, failed to retrieve brands, productService.js file", errorDetails: error } };
+    }
+}
+
+// the service function which retrieves the product collections
+export async function retrieveCollectionsService() {
+    try {
+        return await collectionModel.retrieveCollections();
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to retrieve the collections, productService.js file", errorDetails: error } };
+    }
+}
+
+// the service function which retrieves the products suppliers
+export async function retrieveSuppliersService() {
+    try {
+        return await supplierModel.retrieveSuppliers();
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to retrieve the suppliers, productService.js file", errorDetails: error } };
     }
 }

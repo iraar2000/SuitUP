@@ -11,11 +11,17 @@ export default class CollectionModel {
         return await postgresQueryHelper(q, "Internal server error, failed to create collection, collectionModel.js file", collectionData);
     }
 
-    // the function which retrieve the collection in the database
+    // the function which retrieve the collection By id from the database
     async retrieveCollectionById(collectionId) {
         const q = `SELECT * FROM collection WHERE id=$1;`;
         const response = await postgresQueryHelper(q, "Internal server error, failed to retrieve collection by ID, collectionModel.js file", [collectionId]);
         if (response.status !== 200) return response;
         return { status: response.status, data: response.data[0] };
+    }
+
+    // the function which retrieves the collections
+    async retrieveCollections() {
+        const q = `SELECT * FROM collection;`;
+        return await postgresQueryHelper(q, "Internal server error, failed to retrieve the collections, collectionModel.js file");
     }
 }

@@ -23,3 +23,13 @@ export async function createReviewService(reviewData) {
         return { status: 500, data: { error: "Internal server error, failed to create the review, reviewService.js file", errorDetails: error } };
     }
 }
+
+// the function which retrieves the product review
+export async function retrieveReviewByProductIdService(prodId) {
+    try {
+        // retrieve the product reviews
+        return await reviewModel.retrieveReviewByProdId(prodId);
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to retrieve product reviews by productId. reviewService.js file", errorDetails: error } };
+    }
+}

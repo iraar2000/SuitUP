@@ -7,8 +7,6 @@ export default class ProductModel {
         this.queryCreator = new QueryCreator();
     }
 
-    // building the 
-
     // the function which creates the product
     async createProduct(productData) {
         const q = `INSERT INTO products(name, description, create_by_id, sub_categ_id, brand_id, supplier_id) 
@@ -34,6 +32,7 @@ export default class ProductModel {
             else if (cond === 'supplier') return `s.id=$${index + 3}`
             else if (cond === 'category') return `c.id=$${index + 3}`
             else if (cond === 'subCategory') return `sc.id=$${index + 3}`
+            else if (cond === 'collection') return `col.id=$${index + 3}`
         })
 
         // query creator
@@ -42,11 +41,10 @@ export default class ProductModel {
             limit: "LIMIT $1",
             offset: "OFFSET $2",
             includeVariant: true,
+            includeCollection: !!condition.collection
         });
 
-        const response = await postgresQueryHelper(q, "Internal server error, failed to retrieve products by offset, productsModel.js file", [limit, offset, ...Object.values(condition)]);
-        if (response.status !== 200) return response;
-        return { status: response.status, data: response.data[0] };
+        return await postgresQueryHelper(q, "Internal server error, failed to retrieve products by offset, productsModel.js file", [limit, offset, ...Object.values(condition)]);
     }
 
     // the function

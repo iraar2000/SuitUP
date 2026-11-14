@@ -18,5 +18,10 @@ export default class SupplierModel {
         return { status: response.status, data: response.data[0] }
     }
 
+    // the function which retrieves the suppliers in the database
+    async retrieveSuppliers() {
+        const q = `SELECT * FROM suppliers;`;
+        return await postgresQueryHelper(q, "Internal server error, failed to retrieve all suppliers, suppliersModel.js file");
+    }
 
 }

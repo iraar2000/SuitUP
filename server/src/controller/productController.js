@@ -1,4 +1,4 @@
-import { assignProductToCollectionService, createProductBrandService, createProductCategoryService, createProductCollectionService, createProductService, createProductSubCategoryService, createProductSupplierService, retrieveBrandsService, retrieveCategoryService, retrieveProductByIdService, retrieveProductByOffsetService, retrieveSubCategoryByCategIdService } from "../service/product/productsService.js";
+import { assignProductToCollectionService, createProductBrandService, createProductCategoryService, createProductCollectionService, createProductService, createProductSubCategoryService, createProductSupplierService, retrieveBrandsService, retrieveCategoryService, retrieveCollectionsService, retrieveProductByIdService, retrieveProductByOffsetService, retrieveSubCategoryByCategIdService, retrieveSuppliersService } from "../service/product/productsService.js";
 import { createReviewService } from "../service/product/reviewService.js";
 import { createSpecificationService, createVariantImagesService, createVariantService, createVariantSpecificationService, retrieveVariantByIdService } from "../service/product/variantsService.js";
 
@@ -185,3 +185,22 @@ export async function retrieveProductBrandsController(req, res) {
     }
 }
 
+// the function which retrieves the product collections
+export async function retrieveProductCollectionsController(req, res) {
+    try {
+        const response = await retrieveCollectionsService();
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to retrieve the products collections, productController.js file", errorDetails: error });
+    }
+}
+
+// the function which retrieves the products suppliers
+export async function retrieveProductSuppliersController(req, res) {
+    try {
+        const response = await retrieveSuppliersService();
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to retrieve product suppliers, productController.js file", errorDetails: error });
+    }
+}

@@ -16,7 +16,9 @@ import {
     retrieveProductByIdController,
     retrieveProductByOffsetController,
     retrieveProductCategoryController,
+    retrieveProductCollectionsController,
     retrieveProductSubCategoryByCategIdController,
+    retrieveProductSuppliersController,
     retrieveVariantByIdController
 } from '../controller/productController.js';
 
@@ -24,9 +26,8 @@ const ProductsRouter = express.Router()
 
 // product
 ProductsRouter.post('/create', createProductController);
-ProductsRouter.get('/retrieve/all/:offset', retrieveProductByOffsetController);
-ProductsRouter.get('/retrieve/:prodId', retrieveProductByIdController);
-
+ProductsRouter.get('/retrieve/:offset', retrieveProductByOffsetController);
+ProductsRouter.get('/retrieveByProductId/:prodId', retrieveProductByIdController);
 
 // variants
 ProductsRouter.post('/variant/create/:prodId', createProductVariantsController);
@@ -50,9 +51,11 @@ ProductsRouter.get('/brand/retrieve', retrieveProductBrandsController);
 // collection
 ProductsRouter.post('/collection/create', createProductCollectionController);
 ProductsRouter.post('/collection/assign', assignProductToCollectionController)
+ProductsRouter.get('/collection/retrieve', retrieveProductCollectionsController);
 
 // supplier
 ProductsRouter.post('/supplier/create', createProductSupplierController);
+ProductsRouter.get('/supplier/retrieve', retrieveProductSuppliersController);
 
 // review
 ProductsRouter.post('/review/create', createProductReviewController);

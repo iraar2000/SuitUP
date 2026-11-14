@@ -266,3 +266,12 @@
 [2026-11-14T07:47:16.292Z] POST /api/product/create | IP: ::1
 [2026-11-14T08:04:51.346Z] POST /api/product/create | IP: ::1
 [2026-11-14T08:15:56.490Z] POST /api/product/create | IP: ::1
+[2026-11-14T08:50:43.698Z] GET /api/product/brand/retrieve | IP: ::1
+[2026-11-14T08:51:41.538Z] GET /api/product/category/retrieve | IP: ::1
+[2026-11-14T08:52:50.355Z] GET /api/product/category/retrieveSubCateg/1 | IP: ::1
+[2026-11-14T08:53:25.761Z] GET /api/product/variant/retrieve/3 | IP: ::1
+[2026-11-14T10:25:17.027Z] GET /api/product/retrieve/all/1?collection=1 | IP: ::1
+[2026-11-14T10:34:32.036Z] GET /api/product/retrieve/all/1?collection=1 | IP: ::1
+[2026-11-14T10:35:21.356Z] GET /api/product/retrieve/all/1?collection=2 | IP: ::1
+[2026-11-14T10:37:22.513Z] GET /api/product/retrieve/all/1?collection=1 | IP: ::1
+[2026-11-14T10:45:44.317Z] GET /api/product/collection/retrieve | IP: ::1
