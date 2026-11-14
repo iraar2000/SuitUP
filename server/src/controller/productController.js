@@ -1,4 +1,4 @@
-import { assignProductToCollectionService, createProductBrandService, createProductCategoryService, createProductCollectionService, createProductService, createProductSubCategoryService, createProductSupplierService, retrieveProductByIdService, retrieveProductByOffsetService } from "../service/product/productsService.js";
+import { assignProductToCollectionService, createProductBrandService, createProductCategoryService, createProductCollectionService, createProductService, createProductSubCategoryService, createProductSupplierService, retrieveBrandsService, retrieveCategoryService, retrieveProductByIdService, retrieveProductByOffsetService, retrieveSubCategoryByCategIdService } from "../service/product/productsService.js";
 import { createReviewService } from "../service/product/reviewService.js";
 import { createSpecificationService, createVariantImagesService, createVariantService, createVariantSpecificationService, retrieveVariantByIdService } from "../service/product/variantsService.js";
 
@@ -127,8 +127,7 @@ export async function createProductReviewController(req, res) {
 // the function which retrieves the product by offsets
 export async function retrieveProductByOffsetController(req, res) {
     try {
-        const response = await retrieveProductByOffsetService(req.params.offset);
-        console.log(response);
+        const response = await retrieveProductByOffsetService(req.query, req.params.offset);
         return res.status(response.status).json(response.data);
     } catch (error) {
         console.log(error)
@@ -155,3 +154,34 @@ export async function retrieveVariantByIdController(req, res) {
         return res.status(500).json({ error: "Internal server error, failed to retrieve variant by id, productController.js file", errorDetails: error });
     }
 }
+
+// the function which retrieves product category
+export async function retrieveProductCategoryController(req, res) {
+    try {
+        const response = await retrieveCategoryService();
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to retrieve the product category, productController.js file", errorDetails: error });
+    }
+}
+
+// the function which retrieves the product sub category
+export async function retrieveProductSubCategoryByCategIdController(req, res) {
+    try {
+        const response = await retrieveSubCategoryByCategIdService(req.params.categId);
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to retrieve the subCategory by categId, productController.js file", errorDetails: error });
+    }
+}
+
+// the function which retrieves the product brands
+export async function retrieveProductBrandsController(req, res) {
+    try {
+        const response = await retrieveBrandsService();
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to retrieve the product brands from database, productController.js file", errorDetails: error });
+    }
+}
+

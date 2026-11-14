@@ -12,8 +12,11 @@ import {
     createSpecificationController,
     createVariantImagesController,
     createVariantSpecificationController,
+    retrieveProductBrandsController,
     retrieveProductByIdController,
     retrieveProductByOffsetController,
+    retrieveProductCategoryController,
+    retrieveProductSubCategoryByCategIdController,
     retrieveVariantByIdController
 } from '../controller/productController.js';
 
@@ -24,6 +27,7 @@ ProductsRouter.post('/create', createProductController);
 ProductsRouter.get('/retrieve/all/:offset', retrieveProductByOffsetController);
 ProductsRouter.get('/retrieve/:prodId', retrieveProductByIdController);
 
+
 // variants
 ProductsRouter.post('/variant/create/:prodId', createProductVariantsController);
 ProductsRouter.post('/variant/images/create/:variantId', createVariantImagesController);
@@ -33,12 +37,15 @@ ProductsRouter.get('/variant/retrieve/:variantId', retrieveVariantByIdController
 // category
 ProductsRouter.post('/category/create', createProductCategoryController);
 ProductsRouter.post('/category/sub/create', createProductSubCategoryController);
+ProductsRouter.get('/category/retrieve', retrieveProductCategoryController);
+ProductsRouter.get('/category/retrieveSubCateg/:categId', retrieveProductSubCategoryByCategIdController);
 
 // specification
 ProductsRouter.post('/specification/create', createSpecificationController);
 
 // brand
 ProductsRouter.post('/brand/create', createProductBrandController);
+ProductsRouter.get('/brand/retrieve', retrieveProductBrandsController);
 
 // collection
 ProductsRouter.post('/collection/create', createProductCollectionController);

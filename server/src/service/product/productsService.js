@@ -33,8 +33,9 @@ export async function createProductService(productData) {
 
         // creating the variants of the product
         for (let i = 0; i < variants.length; i++) {
+            console.log(variants[i]);
             const varResp = await createVariantService({ productId: productResp.data.id, ...variants[i] });
-            if (varResp.status !== 200) return varResp;
+            if (varResp.status !== 201) return varResp;
         }
 
         return { status: 200, data: "Created product successfully!" };
@@ -140,18 +141,44 @@ export async function retrieveProductByIdService(productId) {
 }
 
 // the service function which retrieves product by offset
-export async function retrieveProductByOffsetService(offset) {
+export async function retrieveProductByOffsetService(condition = {}, offset) {
     try {
         // creating the offset based on thelimit
         const limit = 10;
         const ofNumber = limit * (offset - 1)
 
         // retrieve the product by id
-        const prodResp = await productModel.retrieveProductByOffset(limit, ofNumber);
+        const prodResp = await productModel.retrieveProductByOffset(condition, limit, ofNumber);
         return prodResp;
 
     } catch (error) {
-        console.log(error);
         return { status: 500, data: { error: "Internal server error, failed to retrieve the product by offset, productService.js file", errorDetails: error } };
+    }
+}
+
+// the service function which retrieves the category
+export async function retrieveCategoryService() {
+    try {
+        return await categModel.retrieveAllCategory();
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to retrieve categories, productService.js file", errorDetails: error } }
+    }
+}
+
+// the service function which retrieves the product subCategory
+export async function retrieveSubCategoryByCategIdService(categId) {
+    try {
+        return await subCategModel.retrieveSubCategoryByCategId(categId);
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to retrieve subcategory by categoryId, productService.js file", errorDetails: error } };
+    }
+}
+
+// the service function which retrieve the product brand
+export async function retrieveBrandsService() {
+    try {
+        return await brandModel.retrieveBrands();
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to retrieve brands, productService.js file", errorDetails: error } };
     }
 }
