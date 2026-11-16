@@ -27,9 +27,26 @@ export async function createReviewService(reviewData) {
 // the function which retrieves the product review
 export async function retrieveReviewByProductIdService(prodId) {
     try {
+        const limit = 10;
+        const offset = 0;
+        const condition = { prodId: prodId };
+
         // retrieve the product reviews
-        return await reviewModel.retrieveReviewByProdId(prodId);
+        return await reviewModel.retrieveReviews(condition, limit, offset);
     } catch (error) {
         return { status: 500, data: { error: "Internal server error, failed to retrieve product reviews by productId. reviewService.js file", errorDetails: error } };
+    }
+}
+
+// the function which retrieves the reviews
+export async function retrieveReviewsService() {
+    try {
+        const limit = 10;
+        const offset = 0;
+
+        // retrieve the product reviews
+        return await reviewModel.retrieveReviews({}, limit, offset);
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to retrieve reviews from the database. reviewService.js file", errorDetails: error } };
     }
 }

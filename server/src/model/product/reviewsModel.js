@@ -1,71 +1,38 @@
 import { postgresQueryHelper } from "../../utils/postgresHelperFunctions.js";
+import QueryCreator from "../../utils/queryCreator.js";
 
 // the class which managers the review table
 export default class ReviewModel {
-    constructor() { }
+    constructor() {
+        this.queryCreator = new QueryCreator();
+    }
 
     // the function which creates the review
     async createReview(reviewData) {
-        console.log(reviewData);
         const q = `INSERT INTO reviews(product_id, user_id, title, verified_purchase, rating, review) VALUES($1, $2, $3, $4, $5, $6) RETURNING *;`;
         const response = await postgresQueryHelper(q, "Internal server error, failed to create a review, reviewModel.js file", reviewData);
         if (response.status !== 200) return response;
         return { status: response.status, data: response.data[0] };
     }
 
-    // the function which retrieves the review using prodId
-    async retrieveReviewByProdId(prodId) {
-        const q = `
-            SELECT 
-                r.title as reviewTitle,
-                r.review as reviewMessage,
-                r.rating as reviewRating,
-                r.created_at as reviewCreatedAt,
-                
-                u.first_name as userFirstName,
-                u.last_name as userLastName,
-                u.email as userEmail,
-                u.profile_image as userImage
-            FROM reviews AS r
-            JOIN users AS u ON  r.user_id=u.id
-            WHERE product_id=$1;`;
-        return await postgresQueryHelper(q, "Internal server error, failed to retrieve review by product id, reviewsModel.js file", [prodId]);
-    }
-
-    // the function which retrieves the review using userId
-    async retrieveReviewByUserId(userId) {
-        const q = `SELECT * FROM reviews WHERE user_id=$1;`;
-        return await postgresQueryHelper(q, "Internal server error, failed to retrieve review by user id, reviewsModel.js file", [userId]);
-    }
-
     // the function which retrieves all reviews
-    async retrieveReviews(limit = null, offset = 0) {
-        let q = `SELECT * FROM reviews`;
+    async retrieveReviews(conditions = {}, limit = null, offset = 0) {
+        // the condition creator
+        const condition = Object.keys(conditions).map((cond, index) => {
+            if (cond === "userId") return `u.id=$${index + 3}`
+            else if (cond === "prodId") return `r.product_id=$${index + 3}`
+        })
 
-        const values = [];
+        // the query creator
+        const q = this.queryCreator.buildReviewRetrievalQuery({
+            where: condition.length ? `WHERE ${condition.join(' AND ')}` : "",
+            limit: `LIMIT $1`,
+            offset: `OFFSET $2`
+        });
 
-        if (limit !== null) {
-            values.push(limit);
-            q += ` LIMIT $${values.length}`;
+        console.log(q, [limit, offset, ...Object.values(conditions)])
 
-            if (offset > 0) {
-                values.push(offset);
-                q += ` OFFSET $${values.length}`;
-            }
-        }
-
-        q += ";";
-
-        return await postgresQueryHelper(q, "Internal server error, failed to retrieve reviews, reviewModel.js file", values);
-    }
-
-    // the function which retrieve the reviews by id 
-    async retrieveReviewById(reviewId) {
-        const q = `SELECT * FROM reviews WHERE id = $1;`;
-        const response = await postgresQueryHelper(q, "Internal server error, failed to retrieve review, reviewsModel.js file", [reviewId]);
-
-        if (response.status !== 200) return response;
-        return { status: response.status, data: response.data[0] };
+        return await postgresQueryHelper(q, "Internal server error, failed to retrieve reviews, reviewModel.js file", [limit, offset, ...Object.values(conditions)]);
     }
 
     // the function which is used to delete the review by id
@@ -82,6 +49,5 @@ export default class ReviewModel {
         const q = `SELECT COUNT(*) AS total_reviews, ROUND(AVG(rating), 1) AS average_rating FROM reviews WHERE product_id = $1;`;
         return await postgresQueryHelper(q, "Internal server error, failed to retrieve product rating, reviewsModel.js file", [productId]);
     }
-
 
 }

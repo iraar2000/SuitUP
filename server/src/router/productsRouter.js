@@ -17,47 +17,58 @@ import {
     retrieveProductByOffsetController,
     retrieveProductCategoryController,
     retrieveProductCollectionsController,
+    retrieveProductReviewsController,
     retrieveProductSubCategoryByCategIdController,
     retrieveProductSuppliersController,
-    retrieveVariantByIdController
+    retrieveVariantByIdController,
+    updateProductByIdContoller,
+    updateProductVariantController,
+    updateVariantImagesController,
+    updateVariantSpecificationController
 } from '../controller/productController.js';
 
 const ProductsRouter = express.Router()
 
 // product
-ProductsRouter.post('/create', createProductController);
-ProductsRouter.get('/retrieve/:offset', retrieveProductByOffsetController);
-ProductsRouter.get('/retrieveByProductId/:prodId', retrieveProductByIdController);
+ProductsRouter.post('/p', createProductController);
+ProductsRouter.get('/p/:prodId', retrieveProductByIdController);
+ProductsRouter.put('/p/:prodId', updateProductByIdContoller);
+ProductsRouter.get('/all/:offset', retrieveProductByOffsetController);
 
 // variants
-ProductsRouter.post('/variant/create/:prodId', createProductVariantsController);
-ProductsRouter.post('/variant/images/create/:variantId', createVariantImagesController);
-ProductsRouter.post('/variant/specification/create/:variantId', createVariantSpecificationController);
-ProductsRouter.get('/variant/retrieve/:variantId', retrieveVariantByIdController);
+ProductsRouter.post('/variant/:prodId', createProductVariantsController);
+ProductsRouter.put('/variant/:prodId/:variantId', updateProductVariantController);
+ProductsRouter.post('/variant/:variantId/images', createVariantImagesController);
+ProductsRouter.put('/variant/:variantId/images', updateVariantImagesController);
+ProductsRouter.post('/variant/:variantId/specification', createVariantSpecificationController);
+ProductsRouter.put('/variant/:variantId/specification', updateVariantSpecificationController);
+
+ProductsRouter.get('/variant/:variantId', retrieveVariantByIdController);
 
 // category
-ProductsRouter.post('/category/create', createProductCategoryController);
-ProductsRouter.post('/category/sub/create', createProductSubCategoryController);
-ProductsRouter.get('/category/retrieve', retrieveProductCategoryController);
-ProductsRouter.get('/category/retrieveSubCateg/:categId', retrieveProductSubCategoryByCategIdController);
+ProductsRouter.post('/category', createProductCategoryController);
+ProductsRouter.get('/category', retrieveProductCategoryController);
+ProductsRouter.post('/subCategory/:categId', createProductSubCategoryController);
+ProductsRouter.get('/subCategory/:categId', retrieveProductSubCategoryByCategIdController);
 
 // specification
-ProductsRouter.post('/specification/create', createSpecificationController);
+ProductsRouter.post('/specification', createSpecificationController);
 
 // brand
-ProductsRouter.post('/brand/create', createProductBrandController);
-ProductsRouter.get('/brand/retrieve', retrieveProductBrandsController);
+ProductsRouter.post('/brand', createProductBrandController);
+ProductsRouter.get('/brand', retrieveProductBrandsController);
 
 // collection
-ProductsRouter.post('/collection/create', createProductCollectionController);
-ProductsRouter.post('/collection/assign', assignProductToCollectionController)
-ProductsRouter.get('/collection/retrieve', retrieveProductCollectionsController);
+ProductsRouter.post('/collection', createProductCollectionController);
+ProductsRouter.get('/collection', retrieveProductCollectionsController);
+ProductsRouter.post('/assignCollection', assignProductToCollectionController);
 
 // supplier
-ProductsRouter.post('/supplier/create', createProductSupplierController);
-ProductsRouter.get('/supplier/retrieve', retrieveProductSuppliersController);
+ProductsRouter.post('/supplier', createProductSupplierController);
+ProductsRouter.get('/supplier', retrieveProductSuppliersController);
 
 // review
-ProductsRouter.post('/review/create', createProductReviewController);
+ProductsRouter.post('/review', createProductReviewController);
+ProductsRouter.get('/review', retrieveProductReviewsController);
 
 export default ProductsRouter;

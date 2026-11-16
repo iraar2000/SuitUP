@@ -99,3 +99,30 @@ export async function retrieveVariantByProductIdService(prodId) {
         return { status: 500, data: { error: "Internal server error, failed to retrieve the product variant by product id, variantService.js file", errorDetails: error } };
     }
 }
+
+// the function which updates the product variant
+export async function updateProductVariantService(variantId, prodId, data) {
+    try {
+        return await variantModel.updateProductVariant(prodId, variantId, data);
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to update the product variant, variantService.js file", errorDetails: error } }
+    }
+}
+
+// the function which updates the variant images
+export async function updateVariantImagesService(variantId, data) {
+    try {
+        return await variantImageModel.updateImageByVariantId(variantId, data);
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to update the variant images, variantService.js file", errorDetails: error } }
+    }
+}
+
+// the function which updates the variant specification
+export async function updateVariantSpecificationService(variantId, data) {
+    try {
+        return await variantSpecificationModel.updateVariantSpecification(variantId, data);
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to update the variant specifications, variantService.js file", errorDetails: error } };
+    }
+}

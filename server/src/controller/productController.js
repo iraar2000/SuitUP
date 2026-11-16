@@ -1,6 +1,6 @@
-import { assignProductToCollectionService, createProductBrandService, createProductCategoryService, createProductCollectionService, createProductService, createProductSubCategoryService, createProductSupplierService, retrieveBrandsService, retrieveCategoryService, retrieveCollectionsService, retrieveProductByIdService, retrieveProductByOffsetService, retrieveSubCategoryByCategIdService, retrieveSuppliersService } from "../service/product/productsService.js";
-import { createReviewService } from "../service/product/reviewService.js";
-import { createSpecificationService, createVariantImagesService, createVariantService, createVariantSpecificationService, retrieveVariantByIdService } from "../service/product/variantsService.js";
+import { assignProductToCollectionService, createProductBrandService, createProductCategoryService, createProductCollectionService, createProductService, createProductSubCategoryService, createProductSupplierService, retrieveBrandsService, retrieveCategoryService, retrieveCollectionsService, retrieveProductByIdService, retrieveProductByOffsetService, retrieveSubCategoryByCategIdService, retrieveSuppliersService, updateProductByIdService } from "../service/product/productsService.js";
+import { createReviewService, retrieveReviewsService } from "../service/product/reviewService.js";
+import { createSpecificationService, createVariantImagesService, createVariantService, createVariantSpecificationService, retrieveVariantByIdService, updateProductVariantService, updateVariantImagesService, updateVariantSpecificationService } from "../service/product/variantsService.js";
 
 // the function which controlls the creation of the product
 export async function createProductController(req, res) {
@@ -67,7 +67,7 @@ export async function createProductCategoryController(req, res) {
 // the function which creates the product category subCategory
 export async function createProductSubCategoryController(req, res) {
     try {
-        const response = await createProductSubCategoryService(req.body);
+        const response = await createProductSubCategoryService({ ...req.body, categoryId: req.params.categId });
         return res.status(response.status).json(response.data);
     } catch (error) {
         return res.status(500).json({ error: "Internal server error, failed to create product subCategory, productController.js file", errorDetails: error });
@@ -178,6 +178,7 @@ export async function retrieveProductSubCategoryByCategIdController(req, res) {
 // the function which retrieves the product brands
 export async function retrieveProductBrandsController(req, res) {
     try {
+        console.log("retrieving the product brands")
         const response = await retrieveBrandsService();
         return res.status(response.status).json(response.data);
     } catch (error) {
@@ -202,5 +203,55 @@ export async function retrieveProductSuppliersController(req, res) {
         return res.status(response.status).json(response.data);
     } catch (error) {
         return res.status(500).json({ error: "Internal server error, failed to retrieve product suppliers, productController.js file", errorDetails: error });
+    }
+}
+
+// the function which controlls the retrieval of the product reviews
+export async function retrieveProductReviewsController(req, res) {
+    try {
+        const response = await retrieveReviewsService();
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to retrieve product reviews, productController.js file", errorDetails: error });
+    }
+}
+
+// the function which updates the product by ID
+export async function updateProductByIdContoller(req, res) {
+    try {
+        const response = await updateProductByIdService(req.params.prodId, req.body);
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to update the product by id, productController.js file", errorDetails: error });
+    }
+}
+
+// the function which updates the product's variant
+export async function updateProductVariantController(req, res) {
+    try {
+        const response = await updateProductVariantService(req.params.prodId, req.params.variantId);
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to update the product's variant, productController.js file", errorDetails: error });
+    }
+}
+
+// the function which updates the products variant images
+export async function updateVariantImagesController(req, res) {
+    try {
+        const response = await updateVariantImagesService(req.params.variantId, req.body);
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to update the variant images, productController.js file", errorDetails: error });
+    }
+}
+
+// the function which updates the products variant specifications
+export async function updateVariantSpecificationController(req, res) {
+    try {
+        const response = await updateVariantSpecificationService(req.params.variantId, req.body);
+        return res.status(response.status).json(response.data);
+    } catch (error) {
+        return res.status(500).json({ error: "Internal server error, failed to update the variant specifications, productController.js file", errorDetails: error });
     }
 }

@@ -1,7 +1,10 @@
 import { postgresQueryHelper } from "../../utils/postgresHelperFunctions.js";
+import QueryCreator from "../../utils/queryCreator.js";
 
 export default class variantsModel {
-    constructor() { }
+    constructor() {
+        this.queryCreator = new QueryCreator();
+    }
 
     // the function which creates the variant
     async createVariant(variantData) {
@@ -103,5 +106,22 @@ export default class variantsModel {
         const response = await postgresQueryHelper(q, "Internal server error, failed to retrieve the variant by productId, variantsModel.js file", limit ? [prodId, limit] : [prodId]);
         if (response.status !== 200) return response;
         return { status: response.status, data: limit === 1 ? response.data[0] : response.data };
+    }
+
+    // the function which updates the product variant
+    async updateProductVariant(prodId, variantId, data) {
+        const keys = Object.keys(data);
+        if (!keys.length) throw new Error("No fields to update.");
+
+        const setters = keys.map((key, index) => `${key} = $${index + 3}`).join(',');
+        const values = [prodId, variantId, ...Object.values(data)]
+
+        const q = this.queryCreator.buildUpdatorQuery({
+            table: "variants",
+            setters,
+            where: "WHERE product_id=$1 AND id=$2 RETURNING *"
+        })
+
+        return await postgresQueryHelper(q, "Internal server error, failed to update the product variant, variantsModel.js file", values);
     }
 }

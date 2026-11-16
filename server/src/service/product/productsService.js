@@ -125,6 +125,7 @@ export async function retrieveProductByIdService(productId) {
 
         // retrieve the product reviews
         const reviewResp = await retrieveReviewByProductIdService(productId);
+        console.log(reviewResp);
         if (reviewResp.status !== 200) return reviewResp;
 
         return {
@@ -145,7 +146,7 @@ export async function retrieveProductByOffsetService(condition = {}, offset) {
     try {
         // creating the offset based on thelimit
         const limit = 10;
-        const ofNumber = limit * (offset - 1)
+        const ofNumber = limit * (offset - 1);
 
         // retrieve the product by id
         const prodResp = await productModel.retrieveProductByOffset(condition, limit, ofNumber);
@@ -198,5 +199,16 @@ export async function retrieveSuppliersService() {
         return await supplierModel.retrieveSuppliers();
     } catch (error) {
         return { status: 500, data: { error: "Internal server error, failed to retrieve the suppliers, productService.js file", errorDetails: error } };
+    }
+}
+
+// the service function which updates the product data by id
+export async function updateProductByIdService(prodId, prodData) {
+    try {
+        const response = await productModel.updateProduct(prodId, prodData);
+        console.log(response);
+        return response
+    } catch (error) {
+        return { status: 500, data: { error: "Internal server error, failed to update the products by Id, productService.js file", errorDetails: error } };
     }
 }

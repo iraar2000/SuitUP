@@ -47,6 +47,21 @@ export default class ProductModel {
         return await postgresQueryHelper(q, "Internal server error, failed to retrieve products by offset, productsModel.js file", [limit, offset, ...Object.values(condition)]);
     }
 
-    // the function
+    // the function which updates the product
+    async updateProduct(prodId, data) {
+        const keys = Object.keys(data);
+        if (!keys.length) throw new Error("No fields to update.");
+
+        const setters = keys.map((key, index) => `${key} = $${index + 2}`).join(", ");
+        const values = [prodId, ...Object.values(data)];
+
+        const q = this.queryCreator.buildUpdatorQuery({
+            table: "products",
+            setters,
+            where: "WHERE id = $1 RETURNING *"
+        });
+
+        return await postgresQueryHelper(q, "Internal server error, failed to update the product, productsModel.js file", values);
+    }
 
 } 

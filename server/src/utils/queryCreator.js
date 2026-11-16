@@ -2,7 +2,7 @@
 export default class QueryCreator {
     constructor() { }
 
-    // product retrieval function handler
+    // product retrieval query builder function handler
     buildProductRetrievalQuery({
         where = "",
         order = "",
@@ -80,5 +80,58 @@ export default class QueryCreator {
         )
     }
 
-    // the product re
+    // the product updator query builder function handler
+    buildUpdatorQuery({
+        table,
+        setters,
+        where = ""
+    }) {
+        if (!table) throw new Error("Table name is required.");
+        if (!setters) throw new Error("SET clause is required.");
+
+        return `
+            UPDATE ${table}
+            SET ${setters}
+            ${where}
+        `.trim();
+    }
+
+
+    // the product review retrieval query builder function handler
+    buildReviewRetrievalQuery({
+        where = "",
+        order = "",
+        group = "",
+        limit = "",
+        offset = "",
+        includeUser = false
+    }) {
+
+        return (
+            `
+            SELECT 
+                r.id reviewId,
+                r.title,
+                r.review,
+                r.created_at,
+                r.rating
+                
+                ${includeUser ? `
+                ,u.first_name AS firstName,
+                u.last_name AS lastName,
+                u.username as userName,
+                u.profile_image AS profileImage
+                `: ""} 
+            FROM reviews AS r
+            ${includeUser ? `LEFT JOIN users AS u ON r.user_id = u.id` : ""}
+            
+            ${where}
+            ${order}
+            ${group}
+            ${limit}
+            ${offset}
+            `
+        )
+    }
+
 }

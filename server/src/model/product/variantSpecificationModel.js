@@ -17,4 +17,21 @@ export default class VariantSpecificationModel {
             WHERE variant_id=$1;`;
         return await postgresQueryHelper(q, "Internal server error, failed to retrieve variant specification by variant id, variantSpecificationModel.js file", [variantId]);
     }
+
+    // the function which updates the variant specifications
+    async updateVariantSpecification(variantId, data) {
+        const keys = Object.keys(data);
+        if (!keys.length) throw new Error("No fields to update.");
+
+        const setters = keys.map((key, index) => `${key} = $${index + 3}`).join(',');
+        const values = [variantId, ...Object.values(data)]
+
+        const q = this.queryCreator.buildUpdatorQuery({
+            table: "variant_specification",
+            setters,
+            where: "WHERE variant_id=$1 RETURNING *"
+        });
+
+        return await postgresQueryHelper(q, "Internal server error, failed to update variant specifications, variantSpecificationModel.js file", values);
+    }
 }

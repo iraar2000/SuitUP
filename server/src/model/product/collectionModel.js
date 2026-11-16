@@ -24,4 +24,6 @@ export default class CollectionModel {
         const q = `SELECT * FROM collection;`;
         return await postgresQueryHelper(q, "Internal server error, failed to retrieve the collections, collectionModel.js file");
     }
+
+
 }
