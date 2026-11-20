@@ -1,0 +1,199 @@
+.header-navigator-section {
+    width: 100%;
+    height: 56px;
+    background-color: var(--chocolate-100);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.popup-menu {
+    width: 100%;
+    height: 100px;
+    background-color: var(--chocolate-100);
+    border: 1px solid var(--chocolate-200);
+}
+
+.navigation-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 0 20px 0 0;
+    height: 100%;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    font: var(--font-size-2) var(--sans);
+    font-weight: 700;
+    color: var(--chocolate-400);
+    text-transform: uppercase;
+}
+
+.nav-list .nav-list-element {
+    padding: 0 16px;
+    cursor: pointer;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-nav {
+    position: relative;
+    height: 100%;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--chocolate-400);
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-list-element:hover .sub-nav::after,
+.active-menu .sub-nav::after {
+    transform: scaleX(1);
+}
+
+.nav-list-element:first-child {
+    padding: 0 16px 0 0;    
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    height: 100%;
+    overflow: hidden;
+}
+
+.logo-container .company-logo {
+    height: 45px;
+    width: 45px;
+    border-radius: 40px;
+    color: var(--chocolate-500);
+}
+
+
+.company-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.company-description .company-name {
+    font: var(--font-size-4) var(--sans);
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--chocolate-500);
+}
+
+.company-description .company-details {
+    font: var(--font-size-2) var(--sans);
+    line-height: 12px;
+    font-weight: 500;
+    color: var(--gray-300);
+
+    text-transform: capitalize;
+}
+
+.feature-container,
+.feature-navigator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 100%;
+}
+
+.feature-listing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    height: 100%;
+}
+
+.feature-listing .feature-element {
+    height: 36px;
+    min-width: 36px;
+    border-radius: 4px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--chocolate-500);
+}
+
+.feature-listing .feature-element:last-child a {
+    padding: 0 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: var(--chocolate-500);
+    color: var(--chocolate-100);
+    line-height: 10px;
+    height: 36px;
+}
+
+.feature-element a {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.feature-element a:hover {
+    color: var(--chocolate-400);
+    background-color: var(--chocolate-200);
+}
+
+.appointment-navigator {
+    height: 36px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.appointment-navigator p {
+    margin: 0;
+    text-decoration: none;
+}
