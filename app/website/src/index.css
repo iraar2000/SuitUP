@@ -24,11 +24,12 @@
   --blue-400: #030B49;
 
   /* the chocolate theme */
-  --chocolate-100: #EFE8DF;
-  --chocolate-200: #DDCAB1;
-  --chocolate-300: #C59E52;
-  --chocolate-400: #52341E;
-  --chocolate-500: #1B1411;
+  --chocolate-100: #FAF8F4;
+  --chocolate-200: #EFE8DF;
+  --chocolate-300: #DDCAB1;
+  --chocolate-400: #C59E52;
+  --chocolate-500: #52341E;
+  --chocolate-600: #1B1411;
 
   /* the red theme */
   --red-100: #efdfdf;
@@ -100,7 +101,7 @@ body,
 #root {
   margin: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 }
 
 body {
@@ -109,5 +110,6 @@ body {
 }
 
 #root {
+  display: flex;
   min-height: 100vh;
 }

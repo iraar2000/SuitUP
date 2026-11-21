@@ -1,5 +1,5 @@
 import { IoMenu, IoClose, IoCloseCircle, IoBagHandle, IoBagHandleOutline } from "react-icons/io5";
-import { FaHistory, FaRegBookmark, FaEye, FaAngleDown, FaSave, FaAngleLeft, FaSearch } from "react-icons/fa";
+import { FaHistory, FaRegBookmark, FaEye, FaAngleDown, FaSave, FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight, FaThumbsUp, FaPlus, FaCheck, FaCircleCheck } from "react-icons/fa6";
 import { CiEdit } from "react-icons/ci";
 import { MdOutlinePostAdd } from "react-icons/md";
@@ -7,6 +7,7 @@ import { ImBin } from "react-icons/im";
 import { AiFillHome } from "react-icons/ai";
 import { IoIosSearch } from "react-icons/io";
 import { HiOutlineUser, HiUser } from "react-icons/hi2";
+import { LuCopyright } from "react-icons/lu";
 
 export const Icons = {
     menu: {
@@ -94,5 +95,9 @@ export const Icons = {
         label: 'cart',
         outlineIcon: IoBagHandleOutline,
         fillIcon: IoBagHandle
+    },
+    copyright: {
+        label: 'copyright',
+        Icon: LuCopyright
     }
 }
