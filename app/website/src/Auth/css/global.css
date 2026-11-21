@@ -70,6 +70,8 @@
 }
 
 .logo-container {
+    all: unset;
+    box-sizing: border-box;
     padding: 28px 0;
 }
 

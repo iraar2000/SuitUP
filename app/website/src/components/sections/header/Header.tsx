@@ -1,5 +1,6 @@
 import HeaderInfo from "./HeaderInfo";
 import HeaderNavigator from "./HeaderNavigator";
+import './Header.css'
 
 export default function Header() {
     return (

@@ -1,0 +1,6 @@
+.header-section {
+    position: sticky;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid var(--chocolate-200);
+}

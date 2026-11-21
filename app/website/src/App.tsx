@@ -1,10 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 
-import LoginPage from "./Auth/script/LoginPage";
-import RegisterPage from "./Auth/script/RegisterPage";
-import ProfilePage from "./Auth/script/ProfilePage";
-import ChangePasswordPage from "./Auth/script/ChangePasswordPage";
-import ForgotPasswordPage from "./Auth/script/ForgotPasswordPage";
+import LoginPage from "./Auth/LoginPage";
+import RegisterPage from "./Auth/RegisterPage";
+import ChangePasswordPage from "./Auth/ChangePasswordPage";
+import ForgotPasswordPage from "./Auth/ForgotPasswordPage";
 import Notification from "./Notification/Notification";
 import Home from "./pages/Home";
 import Appointment from "./pages/Appointment";
@@ -33,7 +32,6 @@ export default function App() {
             {/* the authentication routes */}
             <Route path="auth/login" element={<LoginPage />} />
             <Route path="auth/register" element={<RegisterPage />} />
-            <Route path="auth/profile" element={<ProfilePage />} />
             <Route path="auth/changePassword" element={<ChangePasswordPage />} />
             <Route path="auth/forgotPassword" element={<ForgotPasswordPage />} />
 

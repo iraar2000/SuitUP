@@ -1,5 +1,5 @@
 import { Icons } from "@src/constants/icons"
-import "../css/global.css"
+import "./css/global.css"
 
 export default function AuthFooter() {
     return (

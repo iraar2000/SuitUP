@@ -89,6 +89,7 @@
 
     height: 100%;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .logo-container .company-logo {
@@ -178,7 +179,8 @@
 }
 
 
-.feature-element a:hover {
+.feature-element a:hover,
+.menu-btn-active {
     color: var(--chocolate-400);
     background-color: var(--chocolate-200);
 }

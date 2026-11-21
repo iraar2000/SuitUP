@@ -1,5 +1,5 @@
 import { Input } from '@component/base/input/input';
-import '../css/global.css'
+import './css/global.css'
 import { useEffect, useState } from 'react';
 import { Icons } from '@src/constants/icons';
 import { useUserAuthApi } from '@src/hooks/api/Auth/authApi';

@@ -1,13 +1,15 @@
 import { useState } from "react"
 import "./headerNavigator.css"
 import { Icons } from "@src/constants/icons";
+import { Link } from "react-router-dom";
 
 export default function HeaderNavigator() {
-    const [activeMenu, setActiveMenu] = useState<"men" | "women" | "wedding" | "business" | "clearence" | null>(null)
-    const [menu, setMenu] = useState<"men" | "women" | "wedding" | "business" | "clearence" | null>(null);
+    const [activeMenu, setActiveMenu] = useState<"men" | "women" | "wedding" | "business" | "clearence" | "search" | "profile" | "cart" | null>(null)
+    const [menu, setMenu] = useState<"men" | "women" | "wedding" | "business" | "clearence" | "search" | "profile" | "cart" | null>(null);
+    const [activeBtn, setActiveBtn] = useState<"search" | "profile" | "cart" | null>(null);
 
     // the function which handles the mouseEnter
-    const handleMouseEnter = (menu: "men" | "women" | "wedding" | "business" | "clearence" | null) => {
+    const handleMouseEnter = (menu: "men" | "women" | "wedding" | "business" | "clearence" | "search" | "profile" | "cart" | null) => {
         setActiveMenu(menu);
         setMenu(menu);
     };
@@ -40,13 +42,13 @@ export default function HeaderNavigator() {
                 </nav>
 
                 {/* the site logo */}
-                <div className="logo-container">
+                <Link to={"/home"} className="logo-container" onClick={() => setActiveBtn(null)}>
                     <img src="/favicon.svg" alt="logo" className="company-logo" />
                     <div className="company-description">
                         <p className="company-name">SuitUP</p>
                         <p className="company-details">Elegance first.</p>
                     </div>
-                </div>
+                </Link>
 
                 {/* the header features */}
                 <div className="feature-container">
@@ -54,30 +56,30 @@ export default function HeaderNavigator() {
                     <nav className="feature-navigator">
                         <ul className="feature-listing">
                             <li className="feature-element">
-                                <a aria-label={Icons.search.label} href="/search" className="search-navigator">
+                                <Link aria-label={Icons.search.label} to="/search" className={`search-navigator ${activeBtn === 'search' ? 'menu-btn-active' : ''}`} onClick={() => setActiveBtn('search')}>
                                     <Icons.search.Icon />
-                                </a>
+                                </Link>
                             </li>
 
                             {/* the profile button */}
                             <li className="feature-element">
-                                <a aria-label={Icons.user.label} href="/profile" className="profile-navigator">
+                                <Link aria-label={Icons.user.label} to="/profile" className={`profile-navigator ${activeBtn === 'profile' ? 'menu-btn-active' : ''}`} onClick={() => setActiveBtn('profile')} >
                                     <Icons.user.outlineIcon />
-                                </a>
+                                </Link>
                             </li>
 
                             {/* the cart button */}
                             <li className="feature-element">
-                                <a aria-label={Icons.cart.label} href="/cart" className="cart-navigator">
+                                <Link aria-label={Icons.cart.label} to="/cart" className={`cart-navigator ${activeBtn === 'cart' ? 'menu-btn-active' : ''}`} onClick={() => setActiveBtn('cart')}>
                                     <Icons.cart.outlineIcon />
-                                </a>
+                                </Link>
                             </li>
 
                             {/* the appointment button */}
                             <li className="feature-element">
-                                <a href="/appointment" className="appointment-navigator">
+                                <Link to="/appointment" className="appointment-navigator">
                                     <p>book appointment</p>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </nav>
