@@ -5,6 +5,8 @@ import { Icons } from '@src/constants/icons';
 import { useUserAuthApi } from '@src/hooks/api/Auth/authApi';
 import LoadingNotification from '@src/Notification/LoadingNotification';
 import { useNavigate } from 'react-router-dom';
+import AuthFooter from './AuthFooter';
+import AuthHeader from './AuthHeader';
 
 // the function component for the register page
 export default function LoginPage() {
@@ -33,64 +35,83 @@ export default function LoginPage() {
 
     return (
         <div className='auth-root'>
+
             {/* the page container */}
             <div className="page-container">
                 {/* the form container */}
                 <div className="form-container">
-                    <div className="form-wrapper">
-                        <div className="form-header">
-                            <p className="form-title">Login</p>
-                            <p className="form-subtitle">Have an account already, welcome!</p>
-                        </div>
-                        <div className="form-input-container">
-                            <div className="container">
-                                <Input
-                                    isRequired
-                                    size='sm'
-                                    placeholder="Email"
-                                    tooltip="This is a tooltip"
-                                    onChange={setEmail}
-                                />
-                            </div>
-                            <div className="container">
-                                <Input
-                                    size='sm'
-                                    placeholder="Password"
-                                    type='password'
-                                    onChange={setPassword}
-                                />
-                            </div>
-                            <div className="container">
-                                <div className="button-container">
-                                    <button className="remember-me" onClick={() => setRememberMe(prev => !prev)}>
-                                        <div className="tick">{rememberMe && <Icons.check.Icon />}</div>
-                                        <p className="name">Remember me</p>
-                                    </button>
-                                    <a className='forgot-password' href='/auth/forgotPassword'>Forgot password?</a>
+                    {/* the header */}
+                    <AuthHeader />
+
+                    {/* the main */}
+                    <main className="form-main auth-wrapper">
+                        <div className="main-container">
+                            <div className="main-header">
+                                <p className="upper-title">YOUR PERSONAL WARDROBE</p>
+                                <div className="title-container">
+                                    <p className="form-title">Welcome back.</p>
+                                    <p className="form-subtitle">Sign in to a world tailored to you.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div className="other-option">
-                            <div className="controller-btns">
-                                <button className="btn go-back-btn">
-                                    <Icons.leftArrow.Icon />
-                                    <p className="go-back">Go back</p>
-                                </button>
-                                <button className="btn finish-btn" onClick={loginHandler}>
-                                    <p className="finnish">Finish</p>
-                                </button>
+
+                            <div className="main-body">
+                                <div className="input-container">
+                                    <Input
+                                        isRequired
+                                        size='sm'
+                                        label='Email'
+                                        placeholder="your@example.com"
+                                        tooltip="Enter your registration email"
+                                        onChange={setEmail}
+                                    />
+                                </div>
+                                <div className="input-container">
+                                    <Input
+                                        size='sm'
+                                        label='Password'
+                                        placeholder="Password"
+                                        type='password'
+                                        onChange={setPassword}
+                                    />
+                                </div>
+                                <div className="input-container">
+                                    <div className="remember-forgot">
+                                        <button className="remember-me" onClick={() => setRememberMe(prev => !prev)}>
+                                            <div className="tick">{rememberMe && <Icons.check.Icon />}</div>
+                                            <p className="name">Remember me</p>
+                                        </button>
+                                        <a className='forgot-password' href='/auth/forgotPassword'>Forgot password?</a>
+                                    </div>
+                                </div>
+
+                                <div className="input-container">
+                                    <p className="info">At least 8 characters, including a number.</p>
+                                </div>
+
+                                <div className="input-container">
+                                    <button className="btn-main" onClick={loginHandler}>
+                                        <p className="finnish">Create account</p>
+                                    </button>
+                                </div>
+
+                                <div className="input-container">
+                                    <p className="info">Already have an account?</p>
+                                    <a href="/auth/register" className="info info-nav">Create account</a>
+                                </div>
+
                             </div>
-                            <div className="op-container">
-                                <p className="op-title">Or continue with</p>
-                                <div className="option-list"></div>
-                            </div>
                         </div>
-                    </div>
+                    </main>
+
+                    {/* the footer */}
+                    <AuthFooter />
                 </div>
 
                 {/* the banner container */}
                 <div className="banner-container">
-                    <img src="/assets/banner.jpg" alt="" />
+                    <div className="image-container">
+                        <img src="/assets/banner.jpg" alt="banner image" />
+                    </div>
                 </div>
             </div>
 

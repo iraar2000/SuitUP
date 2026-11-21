@@ -49,62 +49,66 @@ export default function RegisterPage() {
                         <div className="main-container">
                             <div className="main-header">
                                 <p className="upper-title">A BETTER DRESSED BEGINING</p>
-                                <p className="form-title">Make it personal.</p>
-                                <p className="form-subtitle">Create your SuitUP account. Find your signature style.</p>
+                                <div className="title-container">
+                                    <p className="form-title">Make it personal.</p>
+                                    <p className="form-subtitle">Create your SuitUP account. Find your signature style.</p>
+                                </div>
                             </div>
 
                             <div className="main-body">
-                                <div className="container">
-                                    <Input isRequired placeholder="First name" tooltip="This is a tooltip" onChange={setFirstName} />
-                                    <Input isRequired placeholder="Last name" tooltip="This is a tooltip" onChange={setLastName} />
+                                <div className="input-container">
+                                    <Input isRequired label='First name' placeholder="Muhire" tooltip="This is a tooltip" onChange={setFirstName} />
+                                    <Input isRequired label='Last name' placeholder="Christophe" tooltip="This is a tooltip" onChange={setLastName} />
                                 </div>
-                                <div className="container">
+                                <div className="input-container">
                                     <Input
                                         isRequired
-                                        placeholder="User name"
+                                        label='User name'
+                                        placeholder="iraar2000"
                                         tooltip="This is a tooltip"
                                         onChange={setUserName}
                                     />
                                 </div>
-                                <div className="container">
+                                <div className="input-container">
                                     <Input
                                         isRequired
-                                        placeholder="Email"
+                                        label='Email'
+                                        placeholder="your@example.com"
                                         tooltip="This is a tooltip"
                                         onChange={setEmail}
                                     />
                                 </div>
-                                <div className="container">
+                                <div className="input-container">
                                     <Input
                                         placeholder="Password"
+                                        label='Password'
                                         type='password'
                                         onChange={setPassword}
                                     />
-                                </div>
-                                <div className="container">
                                     <Input
                                         hint={passwordMismatch && 'Password does not match!'}
+                                        label='Repeat password'
                                         placeholder="Confirm password"
                                         type='password'
                                         onChange={setConfirmPassword}
                                     />
                                 </div>
-                            </div>
 
-                            <div className="other-option">
-                                <div className="controller-btns">
-                                    <button className="btn go-back-btn">
-                                        <Icons.leftArrow.Icon />
-                                        <p className="go-back">Go back</p>
-                                    </button>
-                                    <button className="btn finish-btn" onClick={registrationHandler}>
-                                        <p className="finnish">Finish</p>
+                                <div className="input-container">
+                                    <p className="info">At least 8 characters, including a number.</p>
+                                </div>
+
+                                <div className="input-container">
+                                    <button className="btn-main" onClick={registrationHandler}>
+                                        <p className="finnish">Create account</p>
                                     </button>
                                 </div>
-                                <div className="op-container">
-                                    <p className="op-title">Or continue with</p>
-                                    <div className="option-list"></div>
+
+                                <div className="input-container">
+                                    <p className="info">Already have an account?</p>
+                                    <a href="/auth/login" className="info info-nav">Signin</a>
                                 </div>
+
                             </div>
                         </div>
                     </main>
@@ -115,7 +119,9 @@ export default function RegisterPage() {
 
                 {/* the banner container */}
                 <div className="banner-container">
-                    <img src="/assets/banner.jpg" alt="" />
+                    <div className="image-container">
+                        <img src="/assets/banner.jpg" alt="banner image" />
+                    </div>
                 </div>
             </div>
 

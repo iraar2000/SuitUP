@@ -1,3 +1,33 @@
+/* the input custom design */
+[data-input-wrapper="true"] {
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+[data-input-wrapper="true"] > label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--chocolate-500);
+}
+
+[data-input-wrapper="true"] > div {
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 12px;
+}
+
+
+[data-input-wrapper="true"] > div > button {
+    all: unset;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
 .auth-root {
     display: flex;
     flex: 1;
@@ -19,7 +49,7 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-    padding: 24px;
+    padding: 0 24px;
 }
 
 .form-header, 
@@ -29,12 +59,18 @@
     padding: 0 20px;
 }
 
+.form-header {
+    cursor: pointer;
+}
+
 .form-main {
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .logo-container {
-    padding: 48px 0;
+    padding: 28px 0;
 }
 
 .copyright-container {
@@ -42,6 +78,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 24px 0;
 }
 
 
@@ -51,27 +88,159 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--chocolate-400);
+    cursor: pointer;
 }
 
 .copyright-container .privacy-terms {
     gap: 12px;
-    font-size: 16px;
-    line-height: 16px;
 }
 
 .privacy-terms .sepatator {
     height: 4px;
     width: 4px;
-    background-color: var(--chocolate-500);
+    background-color: var(--chocolate-300);
     border-radius: 4px;
 }
 
-.year-content p {
-    font-size: 16px;
-    line-height: 16px;
+.input-container {
+    min-width: 440px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    gap: 12px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-container .main-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-container .info {
+    font-size: 14px;
+    color: var(--chocolate-500);
+}
+
+.input-container .info-nav {
+    color: var(--chocolate-400);
+}
+
+.input-container .btn-main {
+    height: 46px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--chocolate-500);
+    color: var(--chocolate-100);
+    cursor: pointer;
+}
+
+.input-container .remember-forgot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.remember-forgot > button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.remember-forgot > button > div {
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-300);
+    font-size: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--chocolate-400);
+}
+
+.remember-forgot > a {
+    color: var(--chocolate-400);
+}
+
+.main-container .main-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main-header .upper-title {
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: var(--chocolate-400);
+}
+
+.title-container .form-title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: serif;
+}
+
+.title-container .form-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray-200);
+    max-width: 400px;
+} 
+
+.main-header .back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    color: var(--chocolate-400);
+    gap: 12px;
+    cursor: pointer;
 }
 
 .banner-container {
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
 }
 
+.banner-container .image-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    align-items:flex-end;
+    background-color: var(--chocolate-400);
+    border-radius: 10px;
+}
+
+.image-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
